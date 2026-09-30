@@ -1,0 +1,199 @@
+/* ------------------------------------------------------------------
+   App-specific CSS. Everything visual comes from the ported theme CSS
+   (vendor.css); the rules below only re-implement behaviour that the
+   original site produced with JavaScript plugins (Slider Revolution,
+   slick, waypoints, tilt) so the React components can match it.
+   ------------------------------------------------------------------ */
+
+/* ---------- Hero slider (replaces Slider Revolution "rev_slider_1_1") ---------- */
+#rev_slider_1_1_wrapper {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+  background: transparent;
+  padding: 0;
+  margin: 0 auto;
+}
+#rev_slider_1_1 {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+#rev_slider_1_1 .hero-slide {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 1000ms ease, visibility 0s linear 1000ms;
+  z-index: 1;
+}
+#rev_slider_1_1 .hero-slide.active {
+  opacity: 1;
+  visibility: visible;
+  transition: opacity 1000ms ease, visibility 0s;
+  z-index: 2;
+}
+#rev_slider_1_1 .hero-slide img.rev-slidebg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center center;
+  max-width: none;
+}
+#rev_slider_1_1 .hero-grid {
+  position: absolute;
+  top: 0;
+  transform-origin: 0 0;
+}
+#rev_slider_1_1 .hero-layer {
+  position: absolute;
+  left: 50%;
+  white-space: nowrap;
+  text-align: center;
+  z-index: 5;
+}
+#rev_slider_1_1 .hero-title {
+  font-family: Nunito;
+  font-weight: 700;
+  color: #ffffff;
+  margin: 0;
+  padding: 0;
+  z-index: 10;
+}
+#rev_slider_1_1 .hero-title .hero-mask {
+  display: block;
+  overflow: hidden;
+}
+#rev_slider_1_1 .hero-title .hero-mask > span {
+  display: block;
+  opacity: 0;
+  transform: translateX(-100%);
+}
+#rev_slider_1_1 .hero-slide.active .hero-title .hero-mask > span {
+  animation: heroTitleIn 1500ms cubic-bezier(0.215, 0.61, 0.355, 1) 1320ms forwards;
+}
+#rev_slider_1_1 .hero-quote {
+  font-family: Rubik;
+  color: #f4f4f4;
+  opacity: 0;
+  z-index: 9;
+}
+#rev_slider_1_1 .hero-slide.active .hero-quote {
+  animation: heroQuoteIn 1450ms cubic-bezier(0.215, 0.61, 0.355, 1) 1910ms forwards;
+}
+#rev_slider_1_1 .hero-search {
+  font-family: Roboto;
+  opacity: 0;
+  z-index: 11;
+}
+#rev_slider_1_1 .hero-slide.active .hero-search {
+  animation: heroSearchIn 1200ms cubic-bezier(0.215, 0.61, 0.355, 1) 2440ms forwards;
+}
+#rev_slider_1_1 .revtp-searchform {
+  position: relative;
+  margin: 0;
+}
+@keyframes heroTitleIn {
+  from { opacity: 0; transform: translateX(-100%); }
+  to { opacity: 1; transform: translateX(0); }
+}
+@keyframes heroQuoteIn {
+  from { opacity: 0; transform: translateX(-50%) translateX(120vw); }
+  to { opacity: 1; transform: translateX(-50%) translateX(0); }
+}
+@keyframes heroSearchIn {
+  from { opacity: 0; transform: translateX(-50%) translate(0, 0); }
+  to { opacity: 1; transform: translateX(-50%) translate(var(--hero-fx, 10px), var(--hero-fy, -78px)); }
+}
+#rev_slider_1_1 .hero-quote,
+#rev_slider_1_1 .hero-title {
+  transform: translateX(-50%);
+}
+#rev_slider_1_1 .hero-search {
+  transform: translateX(-50%) translate(var(--hero-fx, 10px), var(--hero-fy, -78px));
+}
+/* Arrow navigation (Slider Revolution "zeus" style, as injected by the plugin on the live site) */
+#rev_slider_1_1_wrapper .tparrows {
+  position: absolute;
+  top: 50%;
+  margin-top: -35px;
+  z-index: 1000;
+  cursor: pointer;
+}
+#rev_slider_1_1_wrapper .tparrows.tp-leftarrow { left: 30px; }
+#rev_slider_1_1_wrapper .tparrows.tp-rightarrow { right: 29px; }
+#rev_slider_1_1_wrapper .zeus.tparrows {
+  cursor: pointer;
+  min-width: 70px;
+  min-height: 70px;
+  position: absolute;
+  display: block;
+  z-index: 1000;
+  border-radius: 50%;
+  overflow: hidden;
+  background: rgba(0, 0, 0, 0.1);
+}
+#rev_slider_1_1_wrapper .zeus.tparrows:before {
+  font-family: 'revicons';
+  font-size: 20px;
+  color: #ffffff;
+  display: block;
+  line-height: 70px;
+  text-align: center;
+  z-index: 2;
+  position: relative;
+}
+#rev_slider_1_1_wrapper .zeus.tparrows.tp-leftarrow:before { content: '\e824'; }
+#rev_slider_1_1_wrapper .zeus.tparrows.tp-rightarrow:before { content: '\e825'; }
+#rev_slider_1_1_wrapper .zeus .tp-title-wrap {
+  background: rgba(0, 0, 0, 0.5);
+  width: 100%;
+  height: 100%;
+  top: 0px;
+  left: 0px;
+  position: absolute;
+  opacity: 0;
+  transform: scale(0);
+  transition: all 0.3s;
+  border-radius: 50%;
+}
+#rev_slider_1_1_wrapper .zeus .tp-arr-imgholder {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  background-position: center center;
+  background-size: cover;
+  border-radius: 50%;
+  transform: translatex(-100%);
+  transition: all 0.3s;
+}
+#rev_slider_1_1_wrapper .zeus.tp-rightarrow .tp-arr-imgholder { transform: translatex(100%); }
+#rev_slider_1_1_wrapper .zeus.tparrows:hover .tp-arr-imgholder { transform: translatex(0); opacity: 1; }
+#rev_slider_1_1_wrapper .zeus.tparrows:hover .tp-title-wrap { transform: scale(1); opacity: 1; }
+/* Slider Revolution "hide_under: 778" - the arrows are not shown below 778px */
+@media (max-width: 777px) {
+  #rev_slider_1_1_wrapper .tparrows,
+  #rev_slider_1_1_wrapper .zeus.tparrows { display: none; }
+}
+
+/* ---------- slick replacement (testimonial slider) ---------- */
+.rs-addon-slider.slick-slider .slick-list { overflow: hidden; }
+.rs-addon-slider.slick-slider .slick-track {
+  display: flex;
+  transition: transform 500ms ease;
+}
+.rs-addon-slider.slick-slider .slick-slide { flex: 0 0 auto; height: auto; }
+.rs-addon-slider.slick-slider .slick-slide > div { height: 100%; }
+
+/* ---------- misc ---------- */
+/* jQuery tilt equivalent */
+.titlt { will-change: transform; transform-style: preserve-3d; }

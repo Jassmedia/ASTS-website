@@ -1,0 +1,1507 @@
+{
+  "$schema": "https://openapi.vercel.sh/vercel.json",
+  "trailingSlash": true,
+  "cleanUrls": false,
+  "redirects": [
+    {
+      "source": "/:path*",
+      "has": [
+        {
+          "type": "host",
+          "value": "www.aststraining.com"
+        }
+      ],
+      "destination": "https://aststraining.com/:path*",
+      "permanent": true
+    },
+    {
+      "source": "/python-online-training",
+      "destination": "/courses/python-online-training/",
+      "permanent": true
+    },
+    {
+      "source": "/python-online-training/:rest*",
+      "destination": "/courses/python-online-training/",
+      "permanent": true
+    },
+    {
+      "source": "/ruby-on-rails-online-training",
+      "destination": "/courses/ruby-on-rails-online-training/",
+      "permanent": true
+    },
+    {
+      "source": "/ruby-on-rails-online-training/:rest*",
+      "destination": "/courses/ruby-on-rails-online-training/",
+      "permanent": true
+    },
+    {
+      "source": "/akka-with-scala-online-training",
+      "destination": "/courses/akka-with-scala-online-training/",
+      "permanent": true
+    },
+    {
+      "source": "/akka-with-scala-online-training/:rest*",
+      "destination": "/courses/akka-with-scala-online-training/",
+      "permanent": true
+    },
+    {
+      "source": "/angularjs-online-training",
+      "destination": "/courses/angularjs-online-training/",
+      "permanent": true
+    },
+    {
+      "source": "/angularjs-online-training/:rest*",
+      "destination": "/courses/angularjs-online-training/",
+      "permanent": true
+    },
+    {
+      "source": "/dot-net-online-training",
+      "destination": "/courses/dot-net-online-training/",
+      "permanent": true
+    },
+    {
+      "source": "/dot-net-online-training/:rest*",
+      "destination": "/courses/dot-net-online-training/",
+      "permanent": true
+    },
+    {
+      "source": "/django-online-training",
+      "destination": "/courses/django-online-training/",
+      "permanent": true
+    },
+    {
+      "source": "/django-online-training/:rest*",
+      "destination": "/courses/django-online-training/",
+      "permanent": true
+    },
+    {
+      "source": "/java-online-training",
+      "destination": "/courses/java-online-training/",
+      "permanent": true
+    },
+    {
+      "source": "/java-online-training/:rest*",
+      "destination": "/courses/java-online-training/",
+      "permanent": true
+    },
+    {
+      "source": "/jquery-online-training",
+      "destination": "/courses/jquery-online-training/",
+      "permanent": true
+    },
+    {
+      "source": "/jquery-online-training/:rest*",
+      "destination": "/courses/jquery-online-training/",
+      "permanent": true
+    },
+    {
+      "source": "/php-online-training",
+      "destination": "/courses/php-online-training/",
+      "permanent": true
+    },
+    {
+      "source": "/php-online-training/:rest*",
+      "destination": "/courses/php-online-training/",
+      "permanent": true
+    },
+    {
+      "source": "/fullstack-online-training",
+      "destination": "/courses/fullstack-online-training/",
+      "permanent": true
+    },
+    {
+      "source": "/fullstack-online-training/:rest*",
+      "destination": "/courses/fullstack-online-training/",
+      "permanent": true
+    },
+    {
+      "source": "/hadoop-testing-online-training",
+      "destination": "/courses/hadoop-testing-online-training/",
+      "permanent": true
+    },
+    {
+      "source": "/hadoop-testing-online-training/:rest*",
+      "destination": "/courses/hadoop-testing-online-training/",
+      "permanent": true
+    },
+    {
+      "source": "/selenium-online-training",
+      "destination": "/courses/selenium-online-training/",
+      "permanent": true
+    },
+    {
+      "source": "/selenium-online-training/:rest*",
+      "destination": "/courses/selenium-online-training/",
+      "permanent": true
+    },
+    {
+      "source": "/etl-testing-online-training",
+      "destination": "/courses/etl-testing-online-training/",
+      "permanent": true
+    },
+    {
+      "source": "/etl-testing-online-training/:rest*",
+      "destination": "/courses/etl-testing-online-training/",
+      "permanent": true
+    },
+    {
+      "source": "/blue-prism-online-training",
+      "destination": "/courses/blue-prism-online-training/",
+      "permanent": true
+    },
+    {
+      "source": "/blue-prism-online-training/:rest*",
+      "destination": "/courses/blue-prism-online-training/",
+      "permanent": true
+    },
+    {
+      "source": "/tibco-spotfire-online-training",
+      "destination": "/courses/tibco-spotfire-online-training/",
+      "permanent": true
+    },
+    {
+      "source": "/tibco-spotfire-online-training/:rest*",
+      "destination": "/courses/tibco-spotfire-online-training/",
+      "permanent": true
+    },
+    {
+      "source": "/mulesoft-online-training",
+      "destination": "/courses/mulesoft-online-training/",
+      "permanent": true
+    },
+    {
+      "source": "/mulesoft-online-training/:rest*",
+      "destination": "/courses/mulesoft-online-training/",
+      "permanent": true
+    },
+    {
+      "source": "/cognos-tm1-online-training",
+      "destination": "/courses/cognos-tm1-online-training/",
+      "permanent": true
+    },
+    {
+      "source": "/cognos-tm1-online-training/:rest*",
+      "destination": "/courses/cognos-tm1-online-training/",
+      "permanent": true
+    },
+    {
+      "source": "/microstrategy-online-training-2",
+      "destination": "/courses/microstrategy-online-training-2/",
+      "permanent": true
+    },
+    {
+      "source": "/microstrategy-online-training-2/:rest*",
+      "destination": "/courses/microstrategy-online-training-2/",
+      "permanent": true
+    },
+    {
+      "source": "/workday-online-training",
+      "destination": "/courses/workday-online-training/",
+      "permanent": true
+    },
+    {
+      "source": "/workday-online-training/:rest*",
+      "destination": "/courses/workday-online-training/",
+      "permanent": true
+    },
+    {
+      "source": "/salesforce-online-training",
+      "destination": "/courses/salesforce-online-training/",
+      "permanent": true
+    },
+    {
+      "source": "/salesforce-online-training/:rest*",
+      "destination": "/courses/salesforce-online-training/",
+      "permanent": true
+    },
+    {
+      "source": "/dell-boomi-online-training",
+      "destination": "/courses/dell-boomi-online-training/",
+      "permanent": true
+    },
+    {
+      "source": "/dell-boomi-online-training/:rest*",
+      "destination": "/courses/dell-boomi-online-training/",
+      "permanent": true
+    },
+    {
+      "source": "/obiee-online-training",
+      "destination": "/courses/obiee-online-training/",
+      "permanent": true
+    },
+    {
+      "source": "/obiee-online-training/:rest*",
+      "destination": "/courses/obiee-online-training/",
+      "permanent": true
+    },
+    {
+      "source": "/qlikview-online-training",
+      "destination": "/courses/qlikview-online-training/",
+      "permanent": true
+    },
+    {
+      "source": "/qlikview-online-training/:rest*",
+      "destination": "/courses/qlikview-online-training/",
+      "permanent": true
+    },
+    {
+      "source": "/microsoft-azure-online-training",
+      "destination": "/courses/microsoft-azure-online-training/",
+      "permanent": true
+    },
+    {
+      "source": "/microsoft-azure-online-training/:rest*",
+      "destination": "/courses/microsoft-azure-online-training/",
+      "permanent": true
+    },
+    {
+      "source": "/tableau-online-training",
+      "destination": "/courses/tableau-online-training/",
+      "permanent": true
+    },
+    {
+      "source": "/tableau-online-training/:rest*",
+      "destination": "/courses/tableau-online-training/",
+      "permanent": true
+    },
+    {
+      "source": "/cognos-online-training",
+      "destination": "/courses/cognos-online-training/",
+      "permanent": true
+    },
+    {
+      "source": "/cognos-online-training/:rest*",
+      "destination": "/courses/cognos-online-training/",
+      "permanent": true
+    },
+    {
+      "source": "/cognos-planning-online-training",
+      "destination": "/courses/cognos-planning-online-training/",
+      "permanent": true
+    },
+    {
+      "source": "/cognos-planning-online-training/:rest*",
+      "destination": "/courses/cognos-planning-online-training/",
+      "permanent": true
+    },
+    {
+      "source": "/salesforce-crm-online-training",
+      "destination": "/courses/salesforce-crm-online-training/",
+      "permanent": true
+    },
+    {
+      "source": "/salesforce-crm-online-training/:rest*",
+      "destination": "/courses/salesforce-crm-online-training/",
+      "permanent": true
+    },
+    {
+      "source": "/jaspersoft-online-training",
+      "destination": "/courses/jaspersoft-online-training/",
+      "permanent": true
+    },
+    {
+      "source": "/jaspersoft-online-training/:rest*",
+      "destination": "/courses/jaspersoft-online-training/",
+      "permanent": true
+    },
+    {
+      "source": "/msbi-online-training",
+      "destination": "/courses/msbi-online-training/",
+      "permanent": true
+    },
+    {
+      "source": "/msbi-online-training/:rest*",
+      "destination": "/courses/msbi-online-training/",
+      "permanent": true
+    },
+    {
+      "source": "/abinitio-online-training",
+      "destination": "/courses/abinitio-online-training/",
+      "permanent": true
+    },
+    {
+      "source": "/abinitio-online-training/:rest*",
+      "destination": "/courses/abinitio-online-training/",
+      "permanent": true
+    },
+    {
+      "source": "/datastage-online-training",
+      "destination": "/courses/datastage-online-training/",
+      "permanent": true
+    },
+    {
+      "source": "/datastage-online-training/:rest*",
+      "destination": "/courses/datastage-online-training/",
+      "permanent": true
+    },
+    {
+      "source": "/teradata-online-training",
+      "destination": "/courses/teradata-online-training/",
+      "permanent": true
+    },
+    {
+      "source": "/teradata-online-training/:rest*",
+      "destination": "/courses/teradata-online-training/",
+      "permanent": true
+    },
+    {
+      "source": "/sql-dba-online-training",
+      "destination": "/courses/sql-dba-online-training/",
+      "permanent": true
+    },
+    {
+      "source": "/sql-dba-online-training/:rest*",
+      "destination": "/courses/sql-dba-online-training/",
+      "permanent": true
+    },
+    {
+      "source": "/oracle-apps-dba-online-training",
+      "destination": "/courses/oracle-apps-dba-online-training/",
+      "permanent": true
+    },
+    {
+      "source": "/oracle-apps-dba-online-training/:rest*",
+      "destination": "/courses/oracle-apps-dba-online-training/",
+      "permanent": true
+    },
+    {
+      "source": "/ms-dynamics-online-training",
+      "destination": "/courses/ms-dynamics-online-training/",
+      "permanent": true
+    },
+    {
+      "source": "/ms-dynamics-online-training/:rest*",
+      "destination": "/courses/ms-dynamics-online-training/",
+      "permanent": true
+    },
+    {
+      "source": "/oracle-crm-online-training",
+      "destination": "/courses/oracle-crm-online-training/",
+      "permanent": true
+    },
+    {
+      "source": "/oracle-crm-online-training/:rest*",
+      "destination": "/courses/oracle-crm-online-training/",
+      "permanent": true
+    },
+    {
+      "source": "/oracle-hrms-online-training",
+      "destination": "/courses/oracle-hrms-online-training/",
+      "permanent": true
+    },
+    {
+      "source": "/oracle-hrms-online-training/:rest*",
+      "destination": "/courses/oracle-hrms-online-training/",
+      "permanent": true
+    },
+    {
+      "source": "/peoplesoft-online-training",
+      "destination": "/courses/peoplesoft-online-training/",
+      "permanent": true
+    },
+    {
+      "source": "/peoplesoft-online-training/:rest*",
+      "destination": "/courses/peoplesoft-online-training/",
+      "permanent": true
+    },
+    {
+      "source": "/deep-learning-online-training",
+      "destination": "/courses/deep-learning-online-training/",
+      "permanent": true
+    },
+    {
+      "source": "/deep-learning-online-training/:rest*",
+      "destination": "/courses/deep-learning-online-training/",
+      "permanent": true
+    },
+    {
+      "source": "/r-online-training",
+      "destination": "/courses/r-online-training/",
+      "permanent": true
+    },
+    {
+      "source": "/r-online-training/:rest*",
+      "destination": "/courses/r-online-training/",
+      "permanent": true
+    },
+    {
+      "source": "/sas-online-training",
+      "destination": "/courses/sas-online-training/",
+      "permanent": true
+    },
+    {
+      "source": "/sas-online-training/:rest*",
+      "destination": "/courses/sas-online-training/",
+      "permanent": true
+    },
+    {
+      "source": "/hyperion-essbase-online-training",
+      "destination": "/courses/hyperion-essbase-online-training/",
+      "permanent": true
+    },
+    {
+      "source": "/hyperion-essbase-online-training/:rest*",
+      "destination": "/courses/hyperion-essbase-online-training/",
+      "permanent": true
+    },
+    {
+      "source": "/oracle-apps-technical-online-training",
+      "destination": "/courses/oracle-apps-technical-online-training/",
+      "permanent": true
+    },
+    {
+      "source": "/oracle-apps-technical-online-training/:rest*",
+      "destination": "/courses/oracle-apps-technical-online-training/",
+      "permanent": true
+    },
+    {
+      "source": "/fdmee-online-training",
+      "destination": "/courses/fdmee-online-training/",
+      "permanent": true
+    },
+    {
+      "source": "/fdmee-online-training/:rest*",
+      "destination": "/courses/fdmee-online-training/",
+      "permanent": true
+    },
+    {
+      "source": "/oracle-odi-online-training",
+      "destination": "/courses/oracle-odi-online-training/",
+      "permanent": true
+    },
+    {
+      "source": "/oracle-odi-online-training/:rest*",
+      "destination": "/courses/oracle-odi-online-training/",
+      "permanent": true
+    },
+    {
+      "source": "/oracle-apps-func-scm-online-training",
+      "destination": "/courses/oracle-apps-func-scm-online-training/",
+      "permanent": true
+    },
+    {
+      "source": "/oracle-apps-func-scm-online-training/:rest*",
+      "destination": "/courses/oracle-apps-func-scm-online-training/",
+      "permanent": true
+    },
+    {
+      "source": "/oracle-apps-func-financials-online-training",
+      "destination": "/courses/oracle-apps-func-financials-online-training/",
+      "permanent": true
+    },
+    {
+      "source": "/oracle-apps-func-financials-online-training/:rest*",
+      "destination": "/courses/oracle-apps-func-financials-online-training/",
+      "permanent": true
+    },
+    {
+      "source": "/drm-data-relationship-management-online-training",
+      "destination": "/courses/drm-data-relationship-management-online-training/",
+      "permanent": true
+    },
+    {
+      "source": "/drm-data-relationship-management-online-training/:rest*",
+      "destination": "/courses/drm-data-relationship-management-online-training/",
+      "permanent": true
+    },
+    {
+      "source": "/devops-online-training",
+      "destination": "/courses/devops-online-training/",
+      "permanent": true
+    },
+    {
+      "source": "/devops-online-training/:rest*",
+      "destination": "/courses/devops-online-training/",
+      "permanent": true
+    },
+    {
+      "source": "/hyperion-planning-online-training",
+      "destination": "/courses/hyperion-planning-online-training/",
+      "permanent": true
+    },
+    {
+      "source": "/hyperion-planning-online-training/:rest*",
+      "destination": "/courses/hyperion-planning-online-training/",
+      "permanent": true
+    },
+    {
+      "source": "/hfm-online-training",
+      "destination": "/courses/hfm-online-training/",
+      "permanent": true
+    },
+    {
+      "source": "/hfm-online-training/:rest*",
+      "destination": "/courses/hfm-online-training/",
+      "permanent": true
+    },
+    {
+      "source": "/informatica-online-training",
+      "destination": "/courses/informatica-online-training/",
+      "permanent": true
+    },
+    {
+      "source": "/informatica-online-training/:rest*",
+      "destination": "/courses/informatica-online-training/",
+      "permanent": true
+    },
+    {
+      "source": "/workday-financials-online-training",
+      "destination": "/courses/workday-financials-online-training/",
+      "permanent": true
+    },
+    {
+      "source": "/workday-financials-online-training/:rest*",
+      "destination": "/courses/workday-financials-online-training/",
+      "permanent": true
+    },
+    {
+      "source": "/servicenow-online-training",
+      "destination": "/courses/servicenow-online-training/",
+      "permanent": true
+    },
+    {
+      "source": "/servicenow-online-training/:rest*",
+      "destination": "/courses/servicenow-online-training/",
+      "permanent": true
+    },
+    {
+      "source": "/hive-online-training",
+      "destination": "/courses/hive-online-training/",
+      "permanent": true
+    },
+    {
+      "source": "/hive-online-training/:rest*",
+      "destination": "/courses/hive-online-training/",
+      "permanent": true
+    },
+    {
+      "source": "/anaplan-online-training",
+      "destination": "/courses/anaplan-online-training/",
+      "permanent": true
+    },
+    {
+      "source": "/anaplan-online-training/:rest*",
+      "destination": "/courses/anaplan-online-training/",
+      "permanent": true
+    },
+    {
+      "source": "/epbcs-online-training",
+      "destination": "/courses/epbcs-online-training/",
+      "permanent": true
+    },
+    {
+      "source": "/epbcs-online-training/:rest*",
+      "destination": "/courses/epbcs-online-training/",
+      "permanent": true
+    },
+    {
+      "source": "/fccs-online-training",
+      "destination": "/courses/fccs-online-training/",
+      "permanent": true
+    },
+    {
+      "source": "/fccs-online-training/:rest*",
+      "destination": "/courses/fccs-online-training/",
+      "permanent": true
+    },
+    {
+      "source": "/kafka-online-training",
+      "destination": "/courses/kafka-online-training/",
+      "permanent": true
+    },
+    {
+      "source": "/kafka-online-training/:rest*",
+      "destination": "/courses/kafka-online-training/",
+      "permanent": true
+    },
+    {
+      "source": "/spark-online-training",
+      "destination": "/courses/spark-online-training/",
+      "permanent": true
+    },
+    {
+      "source": "/spark-online-training/:rest*",
+      "destination": "/courses/spark-online-training/",
+      "permanent": true
+    },
+    {
+      "source": "/rpa-uipath-online-training",
+      "destination": "/courses/rpa-uipath-online-training/",
+      "permanent": true
+    },
+    {
+      "source": "/rpa-uipath-online-training/:rest*",
+      "destination": "/courses/rpa-uipath-online-training/",
+      "permanent": true
+    },
+    {
+      "source": "/power-bi-online-training",
+      "destination": "/courses/power-bi-online-training/",
+      "permanent": true
+    },
+    {
+      "source": "/power-bi-online-training/:rest*",
+      "destination": "/courses/power-bi-online-training/",
+      "permanent": true
+    },
+    {
+      "source": "/talend-online-training",
+      "destination": "/courses/talend-online-training/",
+      "permanent": true
+    },
+    {
+      "source": "/talend-online-training/:rest*",
+      "destination": "/courses/talend-online-training/",
+      "permanent": true
+    },
+    {
+      "source": "/statistical-modelling-online-training",
+      "destination": "/courses/statistical-modelling-online-training/",
+      "permanent": true
+    },
+    {
+      "source": "/statistical-modelling-online-training/:rest*",
+      "destination": "/courses/statistical-modelling-online-training/",
+      "permanent": true
+    },
+    {
+      "source": "/sem-online-training",
+      "destination": "/courses/sem-online-training/",
+      "permanent": true
+    },
+    {
+      "source": "/sem-online-training/:rest*",
+      "destination": "/courses/sem-online-training/",
+      "permanent": true
+    },
+    {
+      "source": "/pbcs-online-training",
+      "destination": "/courses/pbcs-online-training/",
+      "permanent": true
+    },
+    {
+      "source": "/pbcs-online-training/:rest*",
+      "destination": "/courses/pbcs-online-training/",
+      "permanent": true
+    },
+    {
+      "source": "/arcs-online-training",
+      "destination": "/courses/arcs-online-training/",
+      "permanent": true
+    },
+    {
+      "source": "/arcs-online-training/:rest*",
+      "destination": "/courses/arcs-online-training/",
+      "permanent": true
+    },
+    {
+      "source": "/smm-online-training",
+      "destination": "/courses/smm-online-training/",
+      "permanent": true
+    },
+    {
+      "source": "/smm-online-training/:rest*",
+      "destination": "/courses/smm-online-training/",
+      "permanent": true
+    },
+    {
+      "source": "/aws-online-training",
+      "destination": "/courses/aws-online-training/",
+      "permanent": true
+    },
+    {
+      "source": "/aws-online-training/:rest*",
+      "destination": "/courses/aws-online-training/",
+      "permanent": true
+    },
+    {
+      "source": "/seo-online-training",
+      "destination": "/courses/seo-online-training/",
+      "permanent": true
+    },
+    {
+      "source": "/seo-online-training/:rest*",
+      "destination": "/courses/seo-online-training/",
+      "permanent": true
+    },
+    {
+      "source": "/hadoop-online-training",
+      "destination": "/courses/hadoop-online-training/",
+      "permanent": true
+    },
+    {
+      "source": "/hadoop-online-training/:rest*",
+      "destination": "/courses/hadoop-online-training/",
+      "permanent": true
+    },
+    {
+      "source": "/google-cloud-online-training",
+      "destination": "/courses/google-cloud-online-training/",
+      "permanent": true
+    },
+    {
+      "source": "/google-cloud-online-training/:rest*",
+      "destination": "/courses/google-cloud-online-training/",
+      "permanent": true
+    },
+    {
+      "source": "/nodejs-online-training",
+      "destination": "/courses/nodejs-online-training/",
+      "permanent": true
+    },
+    {
+      "source": "/nodejs-online-training/:rest*",
+      "destination": "/courses/nodejs-online-training/",
+      "permanent": true
+    },
+    {
+      "source": "/react-js-online-training",
+      "destination": "/courses/react-js-online-training/",
+      "permanent": true
+    },
+    {
+      "source": "/react-js-online-training/:rest*",
+      "destination": "/courses/react-js-online-training/",
+      "permanent": true
+    },
+    {
+      "source": "/arcs",
+      "destination": "/courses/arcs-online-training/",
+      "permanent": true
+    },
+    {
+      "source": "/arcs/:rest*",
+      "destination": "/courses/arcs-online-training/",
+      "permanent": true
+    },
+    {
+      "source": "/epbcs",
+      "destination": "/courses/epbcs-online-training/",
+      "permanent": true
+    },
+    {
+      "source": "/epbcs/:rest*",
+      "destination": "/courses/epbcs-online-training/",
+      "permanent": true
+    },
+    {
+      "source": "/pbcs",
+      "destination": "/courses/pbcs-online-training/",
+      "permanent": true
+    },
+    {
+      "source": "/pbcs/:rest*",
+      "destination": "/courses/pbcs-online-training/",
+      "permanent": true
+    },
+    {
+      "source": "/sas",
+      "destination": "/courses/sas-online-training/",
+      "permanent": true
+    },
+    {
+      "source": "/sas/:rest*",
+      "destination": "/courses/sas-online-training/",
+      "permanent": true
+    },
+    {
+      "source": "/sem",
+      "destination": "/courses/sem-online-training/",
+      "permanent": true
+    },
+    {
+      "source": "/sem/:rest*",
+      "destination": "/courses/sem-online-training/",
+      "permanent": true
+    },
+    {
+      "source": "/python",
+      "destination": "/courses/python-online-training/",
+      "permanent": true
+    },
+    {
+      "source": "/python/:rest*",
+      "destination": "/courses/python-online-training/",
+      "permanent": true
+    },
+    {
+      "source": "/hyperion-planning",
+      "destination": "/courses/hyperion-planning-online-training/",
+      "permanent": true
+    },
+    {
+      "source": "/hyperion-planning/:rest*",
+      "destination": "/courses/hyperion-planning-online-training/",
+      "permanent": true
+    },
+    {
+      "source": "/microsoft-azure",
+      "destination": "/courses/microsoft-azure-online-training/",
+      "permanent": true
+    },
+    {
+      "source": "/microsoft-azure/:rest*",
+      "destination": "/courses/microsoft-azure-online-training/",
+      "permanent": true
+    },
+    {
+      "source": "/salesforce-crm",
+      "destination": "/courses/salesforce-crm-online-training/",
+      "permanent": true
+    },
+    {
+      "source": "/salesforce-crm/:rest*",
+      "destination": "/courses/salesforce-crm-online-training/",
+      "permanent": true
+    },
+    {
+      "source": "/classroom-training",
+      "destination": "/corporate-training/",
+      "permanent": true
+    },
+    {
+      "source": "/classroom-training/:rest*",
+      "destination": "/corporate-training/",
+      "permanent": true
+    },
+    {
+      "source": "/courses-2",
+      "destination": "/courses/",
+      "permanent": true
+    },
+    {
+      "source": "/courses-2/:rest*",
+      "destination": "/courses/",
+      "permanent": true
+    },
+    {
+      "source": "/wp-login.php",
+      "destination": "/contact/",
+      "permanent": false
+    },
+    {
+      "source": "/wp-admin",
+      "destination": "/contact/",
+      "permanent": false
+    },
+    {
+      "source": "/wp-admin/:rest*",
+      "destination": "/contact/",
+      "permanent": false
+    },
+    {
+      "source": "/homepage/classroom-training-03",
+      "destination": "/",
+      "permanent": true
+    },
+    {
+      "source": "/homepage/idea-discussion-05",
+      "destination": "/",
+      "permanent": true
+    },
+    {
+      "source": "/homepage/project-support-04",
+      "destination": "/",
+      "permanent": true
+    },
+    {
+      "source": "/homepage/online-learning-02",
+      "destination": "/",
+      "permanent": true
+    },
+    {
+      "source": "/courses/react-js-online-training/react-js",
+      "destination": "/courses/react-js-online-training/",
+      "permanent": true
+    },
+    {
+      "source": "/courses/react-js-online-training/node-js",
+      "destination": "/courses/react-js-online-training/",
+      "permanent": true
+    },
+    {
+      "source": "/courses/react-js-online-training/google-cloud",
+      "destination": "/courses/react-js-online-training/",
+      "permanent": true
+    },
+    {
+      "source": "/courses/react-js-online-training/haddop",
+      "destination": "/courses/react-js-online-training/",
+      "permanent": true
+    },
+    {
+      "source": "/courses/react-js-online-training/seo-online-training-2",
+      "destination": "/courses/react-js-online-training/",
+      "permanent": true
+    },
+    {
+      "source": "/courses/react-js-online-training/aws-online-training-3",
+      "destination": "/courses/react-js-online-training/",
+      "permanent": true
+    },
+    {
+      "source": "/homepage/2-4",
+      "destination": "/",
+      "permanent": true
+    },
+    {
+      "source": "/homepage/about2orange",
+      "destination": "/",
+      "permanent": true
+    },
+    {
+      "source": "/homepage/home-8-bg",
+      "destination": "/",
+      "permanent": true
+    },
+    {
+      "source": "/homepage/dotss",
+      "destination": "/",
+      "permanent": true
+    },
+    {
+      "source": "/homepage/1-4",
+      "destination": "/",
+      "permanent": true
+    },
+    {
+      "source": "/homepage/2-5",
+      "destination": "/",
+      "permanent": true
+    },
+    {
+      "source": "/homepage/3-3",
+      "destination": "/",
+      "permanent": true
+    },
+    {
+      "source": "/testimonials/saiko-najran/test_1",
+      "destination": "/testimonials/saiko-najran/",
+      "permanent": true
+    },
+    {
+      "source": "/homepage/cta-bg22",
+      "destination": "/",
+      "permanent": true
+    },
+    {
+      "source": "/registration/registration-2",
+      "destination": "/registration/",
+      "permanent": true
+    },
+    {
+      "source": "/registration/con2",
+      "destination": "/registration/",
+      "permanent": true
+    },
+    {
+      "source": "/contact/inner12",
+      "destination": "/contact/",
+      "permanent": true
+    },
+    {
+      "source": "/corporate-training/classroom-training-2",
+      "destination": "/corporate-training/",
+      "permanent": true
+    },
+    {
+      "source": "/project-support/project-support-3",
+      "destination": "/project-support/",
+      "permanent": true
+    },
+    {
+      "source": "/payment/neft-rtgs-and-imps",
+      "destination": "/payment/",
+      "permanent": true
+    },
+    {
+      "source": "/payment/paytm",
+      "destination": "/payment/",
+      "permanent": true
+    },
+    {
+      "source": "/payment/others",
+      "destination": "/payment/",
+      "permanent": true
+    },
+    {
+      "source": "/about-asts-training/about-us-dots-bg",
+      "destination": "/about-asts-training/",
+      "permanent": true
+    },
+    {
+      "source": "/registration/registration-bg-dots",
+      "destination": "/registration/",
+      "permanent": true
+    },
+    {
+      "source": "/testimonials/james/testimonials-profile",
+      "destination": "/testimonials/james/",
+      "permanent": true
+    },
+    {
+      "source": "/courses/smm-online-training/smm-training",
+      "destination": "/courses/smm-online-training/",
+      "permanent": true
+    },
+    {
+      "source": "/homepage/1-5",
+      "destination": "/",
+      "permanent": true
+    },
+    {
+      "source": "/homepage/2-2",
+      "destination": "/",
+      "permanent": true
+    },
+    {
+      "source": "/homepage/3-4",
+      "destination": "/",
+      "permanent": true
+    },
+    {
+      "source": "/homepage/4-3",
+      "destination": "/",
+      "permanent": true
+    },
+    {
+      "source": "/homepage/5-3",
+      "destination": "/",
+      "permanent": true
+    },
+    {
+      "source": "/homepage/6-3",
+      "destination": "/",
+      "permanent": true
+    },
+    {
+      "source": "/homepage/7-2",
+      "destination": "/",
+      "permanent": true
+    },
+    {
+      "source": "/homepage/white-08",
+      "destination": "/",
+      "permanent": true
+    },
+    {
+      "source": "/homepage/white-09",
+      "destination": "/",
+      "permanent": true
+    },
+    {
+      "source": "/homepage/white-10",
+      "destination": "/",
+      "permanent": true
+    },
+    {
+      "source": "/homepage/white-11",
+      "destination": "/",
+      "permanent": true
+    },
+    {
+      "source": "/homepage/white-12",
+      "destination": "/",
+      "permanent": true
+    },
+    {
+      "source": "/homepage/white-13",
+      "destination": "/",
+      "permanent": true
+    },
+    {
+      "source": "/homepage/white-14",
+      "destination": "/",
+      "permanent": true
+    },
+    {
+      "source": "/testimonials/james/man",
+      "destination": "/testimonials/james/",
+      "permanent": true
+    },
+    {
+      "source": "/courses/arcs-online-training/arcs-online-training-3",
+      "destination": "/courses/arcs-online-training/",
+      "permanent": true
+    },
+    {
+      "source": "/courses/sem-online-training/sem-2",
+      "destination": "/courses/sem-online-training/",
+      "permanent": true
+    },
+    {
+      "source": "/courses/pbcs-online-training/pbcs-online-training-2",
+      "destination": "/courses/pbcs-online-training/",
+      "permanent": true
+    },
+    {
+      "source": "/courses/talend-online-training/talend-online-training",
+      "destination": "/courses/talend-online-training/",
+      "permanent": true
+    },
+    {
+      "source": "/courses/power-bi-online-training/microsoft-power-bi-online-training-courses",
+      "destination": "/courses/power-bi-online-training/",
+      "permanent": true
+    },
+    {
+      "source": "/courses/rpa-uipath-online-training/rpa-uipath-online-training",
+      "destination": "/courses/rpa-uipath-online-training/",
+      "permanent": true
+    },
+    {
+      "source": "/courses/spark-online-training/spark-online-training-3",
+      "destination": "/courses/spark-online-training/",
+      "permanent": true
+    },
+    {
+      "source": "/courses/kafka-online-training/kafka-online-training",
+      "destination": "/courses/kafka-online-training/",
+      "permanent": true
+    },
+    {
+      "source": "/courses/fccs-online-training/fccs-online-training",
+      "destination": "/courses/fccs-online-training/",
+      "permanent": true
+    },
+    {
+      "source": "/courses/epbcs-online-training/epbcs-online-training",
+      "destination": "/courses/epbcs-online-training/",
+      "permanent": true
+    },
+    {
+      "source": "/courses/anaplan-online-training/anaplan-online-training",
+      "destination": "/courses/anaplan-online-training/",
+      "permanent": true
+    },
+    {
+      "source": "/courses/hive-online-training/hive-online-training-3",
+      "destination": "/courses/hive-online-training/",
+      "permanent": true
+    },
+    {
+      "source": "/courses/hfm-online-training/hfm-online-training-2",
+      "destination": "/courses/hfm-online-training/",
+      "permanent": true
+    },
+    {
+      "source": "/courses/hyperion-planning-online-training/hyperion-planning-online-training",
+      "destination": "/courses/hyperion-planning-online-training/",
+      "permanent": true
+    },
+    {
+      "source": "/courses/informatica-online-training/informatica-online-training-3",
+      "destination": "/courses/informatica-online-training/",
+      "permanent": true
+    },
+    {
+      "source": "/courses/workday-financials-online-training/workday-financials-online-training-2",
+      "destination": "/courses/workday-financials-online-training/",
+      "permanent": true
+    },
+    {
+      "source": "/courses/servicenow-online-training/service-now-online-training-2",
+      "destination": "/courses/servicenow-online-training/",
+      "permanent": true
+    },
+    {
+      "source": "/courses/devops-online-training/devops-training-2",
+      "destination": "/courses/devops-online-training/",
+      "permanent": true
+    },
+    {
+      "source": "/courses/oracle-apps-func-financials-online-training/oracle-apps-financials-online-training-2",
+      "destination": "/courses/oracle-apps-func-financials-online-training/",
+      "permanent": true
+    },
+    {
+      "source": "/courses/oracle-apps-func-scm-online-training/oracle-scm-online-training-2",
+      "destination": "/courses/oracle-apps-func-scm-online-training/",
+      "permanent": true
+    },
+    {
+      "source": "/courses/oracle-apps-technical-online-training/oracle-apps-technical-online-training",
+      "destination": "/courses/oracle-apps-technical-online-training/",
+      "permanent": true
+    },
+    {
+      "source": "/courses/hyperion-essbase-online-training/hyperion-essbase-online-training-2",
+      "destination": "/courses/hyperion-essbase-online-training/",
+      "permanent": true
+    },
+    {
+      "source": "/courses/fdmee-online-training/hyperion-fdmee-online-training",
+      "destination": "/courses/fdmee-online-training/",
+      "permanent": true
+    },
+    {
+      "source": "/courses/oracle-odi-online-training/oracle-odi-online-training-3",
+      "destination": "/courses/oracle-odi-online-training/",
+      "permanent": true
+    },
+    {
+      "source": "/courses/drm-data-relationship-management-online-training/hyperion-drm-2",
+      "destination": "/courses/drm-data-relationship-management-online-training/",
+      "permanent": true
+    },
+    {
+      "source": "/courses/sas-online-training/sas-online-training-2",
+      "destination": "/courses/sas-online-training/",
+      "permanent": true
+    },
+    {
+      "source": "/courses/r-online-training/r-online-training-3",
+      "destination": "/courses/r-online-training/",
+      "permanent": true
+    },
+    {
+      "source": "/courses/statistical-modelling-online-training/statistical-modelling-online-training-2",
+      "destination": "/courses/statistical-modelling-online-training/",
+      "permanent": true
+    },
+    {
+      "source": "/courses/deep-learning-online-training/deel-learning-online-training-2",
+      "destination": "/courses/deep-learning-online-training/",
+      "permanent": true
+    },
+    {
+      "source": "/courses/peoplesoft-online-training/peoplesoft-online-training",
+      "destination": "/courses/peoplesoft-online-training/",
+      "permanent": true
+    },
+    {
+      "source": "/courses/oracle-hrms-online-training/oracle-hrms-online-training",
+      "destination": "/courses/oracle-hrms-online-training/",
+      "permanent": true
+    },
+    {
+      "source": "/courses/oracle-crm-online-training/oracle-crm-online-training",
+      "destination": "/courses/oracle-crm-online-training/",
+      "permanent": true
+    },
+    {
+      "source": "/courses/ms-dynamics-online-training/ms-dynamics-online-training",
+      "destination": "/courses/ms-dynamics-online-training/",
+      "permanent": true
+    },
+    {
+      "source": "/courses/oracle-apps-dba-online-training/oracle-apps-dba-online-training",
+      "destination": "/courses/oracle-apps-dba-online-training/",
+      "permanent": true
+    },
+    {
+      "source": "/courses/sql-dba-online-training/sql-dba-online-training-4",
+      "destination": "/courses/sql-dba-online-training/",
+      "permanent": true
+    },
+    {
+      "source": "/courses/teradata-online-training/oracle-teradata-online-training-2",
+      "destination": "/courses/teradata-online-training/",
+      "permanent": true
+    },
+    {
+      "source": "/courses/datastage-online-training/datastage-online-training",
+      "destination": "/courses/datastage-online-training/",
+      "permanent": true
+    },
+    {
+      "source": "/courses/abinitio-online-training/abinitio-training-2",
+      "destination": "/courses/abinitio-online-training/",
+      "permanent": true
+    },
+    {
+      "source": "/courses/msbi-online-training/msbi-online-training",
+      "destination": "/courses/msbi-online-training/",
+      "permanent": true
+    },
+    {
+      "source": "/courses/jaspersoft-online-training/jaspersoft-online-training-2",
+      "destination": "/courses/jaspersoft-online-training/",
+      "permanent": true
+    },
+    {
+      "source": "/courses/cognos-planning-online-training/cognos-online-training",
+      "destination": "/courses/cognos-planning-online-training/",
+      "permanent": true
+    },
+    {
+      "source": "/courses/salesforce-crm-online-training/salesforce-crm-2",
+      "destination": "/courses/salesforce-crm-online-training/",
+      "permanent": true
+    },
+    {
+      "source": "/courses/cognos-online-training/ibm-cognos-tm1-online-training-2",
+      "destination": "/courses/cognos-online-training/",
+      "permanent": true
+    },
+    {
+      "source": "/courses/tableau-online-training/tableau-advanced-training-2",
+      "destination": "/courses/tableau-online-training/",
+      "permanent": true
+    },
+    {
+      "source": "/courses/microsoft-azure-online-training/microsoft-azure-2",
+      "destination": "/courses/microsoft-azure-online-training/",
+      "permanent": true
+    },
+    {
+      "source": "/courses/qlikview-online-training/qlikview-online-training",
+      "destination": "/courses/qlikview-online-training/",
+      "permanent": true
+    },
+    {
+      "source": "/courses/obiee-online-training/obiee-online-training",
+      "destination": "/courses/obiee-online-training/",
+      "permanent": true
+    },
+    {
+      "source": "/courses/dell-boomi-online-training/dell-boomi-online-training",
+      "destination": "/courses/dell-boomi-online-training/",
+      "permanent": true
+    },
+    {
+      "source": "/courses/salesforce-online-training/salesforce-training-2",
+      "destination": "/courses/salesforce-online-training/",
+      "permanent": true
+    },
+    {
+      "source": "/courses/workday-online-training/workday-training-1-2",
+      "destination": "/courses/workday-online-training/",
+      "permanent": true
+    },
+    {
+      "source": "/courses/microstrategy-online-training-2/microstategy-2",
+      "destination": "/courses/microstrategy-online-training-2/",
+      "permanent": true
+    },
+    {
+      "source": "/courses/cognos-tm1-online-training/cognos-tm1-training-3",
+      "destination": "/courses/cognos-tm1-online-training/",
+      "permanent": true
+    },
+    {
+      "source": "/courses/tibco-spotfire-online-training/spotfire-training-1-2",
+      "destination": "/courses/tibco-spotfire-online-training/",
+      "permanent": true
+    },
+    {
+      "source": "/courses/mulesoft-online-training/mulesoft-online-training",
+      "destination": "/courses/mulesoft-online-training/",
+      "permanent": true
+    },
+    {
+      "source": "/courses/blue-prism-online-training/blueprism-online-training",
+      "destination": "/courses/blue-prism-online-training/",
+      "permanent": true
+    },
+    {
+      "source": "/courses/etl-testing-online-training/etl-testing-training-1-2",
+      "destination": "/courses/etl-testing-online-training/",
+      "permanent": true
+    },
+    {
+      "source": "/courses/selenium-online-training/selenium-training-2",
+      "destination": "/courses/selenium-online-training/",
+      "permanent": true
+    },
+    {
+      "source": "/courses/hadoop-testing-online-training/h_testing41-2",
+      "destination": "/courses/hadoop-testing-online-training/",
+      "permanent": true
+    },
+    {
+      "source": "/courses/fullstack-online-training/fullstack-online-training",
+      "destination": "/courses/fullstack-online-training/",
+      "permanent": true
+    },
+    {
+      "source": "/courses/php-online-training/php-online-training",
+      "destination": "/courses/php-online-training/",
+      "permanent": true
+    },
+    {
+      "source": "/courses/jquery-online-training/jquery-online-training",
+      "destination": "/courses/jquery-online-training/",
+      "permanent": true
+    },
+    {
+      "source": "/courses/java-online-training/java-online-training-3",
+      "destination": "/courses/java-online-training/",
+      "permanent": true
+    },
+    {
+      "source": "/courses/django-online-training/django-online-training",
+      "destination": "/courses/django-online-training/",
+      "permanent": true
+    },
+    {
+      "source": "/courses/dot-net-online-training/dotnet-online-training",
+      "destination": "/courses/dot-net-online-training/",
+      "permanent": true
+    },
+    {
+      "source": "/courses/angularjs-online-training/angularjs-online-training",
+      "destination": "/courses/angularjs-online-training/",
+      "permanent": true
+    },
+    {
+      "source": "/courses/akka-with-scala-online-training/akka-with-scala-online-training-2",
+      "destination": "/courses/akka-with-scala-online-training/",
+      "permanent": true
+    },
+    {
+      "source": "/courses/ruby-on-rails-online-training/ruby-on-rails-training-2",
+      "destination": "/courses/ruby-on-rails-online-training/",
+      "permanent": true
+    },
+    {
+      "source": "/courses/python-online-training/python-2",
+      "destination": "/courses/python-online-training/",
+      "permanent": true
+    },
+    {
+      "source": "/homepage/chatgpt-image-sep-22-2026-12_44_51-pm",
+      "destination": "/",
+      "permanent": true
+    },
+    {
+      "source": "/feed",
+      "destination": "/",
+      "permanent": false
+    },
+    {
+      "source": "/comments/feed",
+      "destination": "/",
+      "permanent": false
+    }
+  ],
+  "headers": [
+    {
+      "source": "/assets/(.*)",
+      "headers": [
+        {
+          "key": "Cache-Control",
+          "value": "public, max-age=31536000, immutable"
+        }
+      ]
+    },
+    {
+      "source": "/wp-content/(.*)",
+      "headers": [
+        {
+          "key": "Cache-Control",
+          "value": "public, max-age=604800"
+        }
+      ]
+    },
+    {
+      "source": "/(.*)",
+      "headers": [
+        {
+          "key": "X-Content-Type-Options",
+          "value": "nosniff"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,5 @@
+# Same directives as the current site (Yoast SEO block)
+User-agent: *
+Disallow:
+
+Sitemap: https://aststraining.com/sitemap_index.xml

@@ -1,0 +1,659 @@
+[
+ {
+  "url": "https://aststraining.com/courses-category/bi/",
+  "slug": "bi",
+  "name": "BI",
+  "termId": "733",
+  "seoTitle": "BI Archives - ASTSTraining",
+  "metaDesc": "",
+  "count": 7,
+  "items": [
+   {
+    "id": "4131",
+    "thumb": "https://aststraining.com/wp-content/uploads/2021/03/obiee-online-training-400x250.png",
+    "url": "https://aststraining.com/courses/obiee-online-training/",
+    "title": "OBIEE Online Training",
+    "short": "What Is OBIEE Architecture? ASTS Training is in the field of OBIEE Online Training for the last 10 years. We are one..."
+   },
+   {
+    "id": "4118",
+    "thumb": "https://aststraining.com/wp-content/uploads/2021/03/qlikview-online-training-400x250.png",
+    "url": "https://aststraining.com/courses/qlikview-online-training/",
+    "title": "Qlikview Online Training",
+    "short": "Qlikview Online Training handled by Hands-On By Real-Time Experts. ASTS Training offers One to One Sessions, daily online class recording sessions,..."
+   },
+   {
+    "id": "4093",
+    "thumb": "https://aststraining.com/wp-content/uploads/2021/03/tableau-advanced-training-400x250.png",
+    "url": "https://aststraining.com/courses/tableau-online-training/",
+    "title": "Tableau Online Training",
+    "short": "What Is Tableau Software? Tableau Online Training is designed for the beginner to intermediate-level for every Tableau user. This Tableau Online Training..."
+   },
+   {
+    "id": "4077",
+    "thumb": "https://aststraining.com/wp-content/uploads/2021/03/ibm-cognos-tm1-online-training-400x250.png",
+    "url": "https://aststraining.com/courses/cognos-online-training/",
+    "title": "Cognos Online Training",
+    "short": "About Cognos Online Training Cognos Online Training is IBM’s business intelligence (BI) and performance management software suite. The software is designed to enable..."
+   },
+   {
+    "id": "4015",
+    "thumb": "https://aststraining.com/wp-content/uploads/2021/03/cognos-online-training-400x250.png",
+    "url": "https://aststraining.com/courses/cognos-planning-online-training/",
+    "title": "Cognos Planning Online Training",
+    "short": "About Cognos Planning Online Training Cognos Planning Online Training is a finance-managed solution for both operational and business planning with the flexibility to..."
+   },
+   {
+    "id": "3919",
+    "thumb": "https://aststraining.com/wp-content/uploads/2021/03/Jaspersoft-Online-Training-400x250.jpg",
+    "url": "https://aststraining.com/courses/jaspersoft-online-training/",
+    "title": "JasperSoft Online Training",
+    "short": "About JasperSoft Online Training Jaspersoft Online Training is a commercial open supply software vendor focused on enterprise intelligence, including data..."
+   },
+   {
+    "id": "2809",
+    "thumb": "https://aststraining.com/wp-content/uploads/2021/03/Microsoft-Power-Bi-Online-Training-Courses-400x250.jpg",
+    "url": "https://aststraining.com/courses/power-bi-online-training/",
+    "title": "Microsoft Power Bi Online Training Courses",
+    "short": "What Is Power Bi? Microsoft Power Bi Online Training Courses is nothing but a business analytics service that is used to..."
+   }
+  ],
+  "hasPagination": false
+ },
+ {
+  "url": "https://aststraining.com/courses-category/business-intelligence-tools/",
+  "slug": "business-intelligence-tools",
+  "name": "Business Intelligence Tools",
+  "termId": "745",
+  "seoTitle": "Business Intelligence Tools Archives - ASTSTraining",
+  "metaDesc": "",
+  "count": 3,
+  "items": [
+   {
+    "id": "4260",
+    "thumb": "https://aststraining.com/wp-content/uploads/2021/03/Spotfire-Training-1-400x250.jpg",
+    "url": "https://aststraining.com/courses/tibco-spotfire-online-training/",
+    "title": "TIBCO Spotfire Online Training",
+    "short": "TIBCO Spotfire Online Training gives you complete training and understanding of the Spotfire business intelligence tool. You will learn about the interactive apps..."
+   },
+   {
+    "id": "4247",
+    "thumb": "https://aststraining.com/wp-content/uploads/2021/03/cognos-tm1-training-400x250.jpg",
+    "url": "https://aststraining.com/courses/cognos-tm1-online-training/",
+    "title": "Cognos TM1 Online Training",
+    "short": "Cognos TM1 is a tool provided by IBM. It falls under the Business Intelligence and Analysis department. It was formerly known..."
+   },
+   {
+    "id": "4217",
+    "thumb": "https://aststraining.com/wp-content/uploads/2021/03/Microstategy-400x250.jpg",
+    "url": "https://aststraining.com/courses/microstrategy-online-training-2/",
+    "title": "Microstrategy Online Training",
+    "short": "About MICROSTRATEGY Online Training: Microstrategy may be a business intelligence tool for reporting purpose where users can ready to analyze..."
+   }
+  ],
+  "hasPagination": false
+ },
+ {
+  "url": "https://aststraining.com/courses-category/cloud-computing/",
+  "slug": "cloud-computing",
+  "name": "Cloud Computing",
+  "termId": "736",
+  "seoTitle": "Cloud Computing Archives - ASTSTraining",
+  "metaDesc": "",
+  "count": 9,
+  "items": [
+   {
+    "id": "4193",
+    "thumb": "https://aststraining.com/wp-content/uploads/2021/03/workday-training-1-400x250.jpg",
+    "url": "https://aststraining.com/courses/workday-online-training/",
+    "title": "Workday Online Training",
+    "short": "About WORKDAY Online Training Workday Online Training is a cloud, on demand financial and human capital management software. It provides similar services..."
+   },
+   {
+    "id": "4188",
+    "thumb": "https://aststraining.com/wp-content/uploads/2021/03/salesforce-training-400x250.jpg",
+    "url": "https://aststraining.com/courses/salesforce-online-training/",
+    "title": "SalesForce Online Training",
+    "short": "Cloud Computing is now the concept that is being put to use in our everyday lives, be it at work or..."
+   },
+   {
+    "id": "4178",
+    "thumb": "https://aststraining.com/wp-content/uploads/2021/03/Dell-Boomi-Online-Training-400x250.jpg",
+    "url": "https://aststraining.com/courses/dell-boomi-online-training/",
+    "title": "Dell Boomi Online Training",
+    "short": "What Is Dell Boomi Online Training? Dell Boomi Online Training is a cloud-based integration software designed for connecting to..."
+   },
+   {
+    "id": "4066",
+    "thumb": "https://aststraining.com/wp-content/uploads/2021/03/Microsoft-azure-400x250.jpg",
+    "url": "https://aststraining.com/courses/microsoft-azure-online-training/",
+    "title": "Microsoft Azure Online Training",
+    "short": "About MICROSOFT AZURE Online Training: As Microsoft Azure Online Training Cloud Computing is ramping up in no time and most of the highest companies..."
+   },
+   {
+    "id": "3929",
+    "thumb": "https://aststraining.com/wp-content/uploads/2021/03/Salesforce-CRM-400x250.jpg",
+    "url": "https://aststraining.com/courses/salesforce-crm-online-training/",
+    "title": "Salesforce CRM Online Training",
+    "short": "About SALESFORCE CRM Online Training: Salesforce Customer Relationship Management usually pronounced as Salesforce CRM which has began with the vision..."
+   },
+   {
+    "id": "3009",
+    "thumb": "https://aststraining.com/wp-content/uploads/2021/03/Service-Now-Online-Training-400x250.jpg",
+    "url": "https://aststraining.com/courses/servicenow-online-training/",
+    "title": "ServiceNow Online Training",
+    "short": "About ServiceNow Online Training ServiceNow Online Training may be a cloud-based IT Service management tool, which is growing exponentially within the space of ITSM..."
+   },
+   {
+    "id": "2944",
+    "thumb": "https://aststraining.com/wp-content/uploads/2021/03/Anaplan-Online-Training-400x250.jpg",
+    "url": "https://aststraining.com/courses/anaplan-online-training/",
+    "title": "Anaplan Online Training",
+    "short": "About Anaplan Online Training Anaplan Online Training is an Integrated Business Planning Platform and it’s really important that you simply specialise in the platform aspect of..."
+   },
+   {
+    "id": "1950",
+    "thumb": "https://aststraining.com/wp-content/uploads/2020/12/AWS-Online-Training-400x250.jpg",
+    "url": "https://aststraining.com/courses/aws-online-training/",
+    "title": "AWS Online Training",
+    "short": "About AWS Online Training Amazon Web Services (AWS) may be a comprehensive, widely adopted, and secured on-demand cloud platform offered by Amazon. AWS..."
+   },
+   {
+    "id": "1943",
+    "thumb": "https://aststraining.com/wp-content/uploads/2020/12/google-cloud-400x250.jpg",
+    "url": "https://aststraining.com/courses/google-cloud-online-training/",
+    "title": "Google Cloud Online Training",
+    "short": "About GOOGLE CLOUD Online Training: Google is one among the main platforms for providing the cloud services. Google Cloud Online Training is cloud..."
+   }
+  ],
+  "hasPagination": false
+ },
+ {
+  "url": "https://aststraining.com/courses-category/datascience-ml/",
+  "slug": "datascience-ml",
+  "name": "Datascience & ML",
+  "termId": "730",
+  "seoTitle": "Datascience & ML Archives - ASTSTraining",
+  "metaDesc": "",
+  "count": 4,
+  "items": [
+   {
+    "id": "3606",
+    "thumb": "https://aststraining.com/wp-content/uploads/2021/03/Deel-Learning-Online-Training-400x250.jpg",
+    "url": "https://aststraining.com/courses/deep-learning-online-training/",
+    "title": "Deep Learning Online Training",
+    "short": "About Deep Learning Online Training Deep learning training gives you an in-depth understanding of the architecture of TensorFlow Core, API..."
+   },
+   {
+    "id": "3580",
+    "thumb": "https://aststraining.com/wp-content/uploads/2021/03/R-Online-Training-400x250.jpg",
+    "url": "https://aststraining.com/courses/r-online-training/",
+    "title": "R Online Training",
+    "short": "About R Online Training R Online Training programing language is one the foremost powerful tool for computational statistics, visualization and data science. Data scientists..."
+   },
+   {
+    "id": "3544",
+    "thumb": "https://aststraining.com/wp-content/uploads/2021/03/SAS-Online-Training-400x250.jpg",
+    "url": "https://aststraining.com/courses/sas-online-training/",
+    "title": "SAS Online Training",
+    "short": "About SAS Online Training The SAS Training and Certification Course is designed to provide concept and skills of SAS Programming..."
+   },
+   {
+    "id": "2792",
+    "thumb": "https://aststraining.com/wp-content/uploads/2021/03/statistical-modelling-online-Training-400x250.jpg",
+    "url": "https://aststraining.com/courses/statistical-modelling-online-training/",
+    "title": "Statistical Modelling Online Training",
+    "short": "About Statistical Modelling Online Training A statistical model is a mathematical model that embodies a set of statistical assumptions concerning the generation of sample data (and..."
+   }
+  ],
+  "hasPagination": false
+ },
+ {
+  "url": "https://aststraining.com/courses-category/devops/",
+  "slug": "devops",
+  "name": "DevOps",
+  "termId": "737",
+  "seoTitle": "DevOps Archives - ASTSTraining",
+  "metaDesc": "",
+  "count": 5,
+  "items": [
+   {
+    "id": "3203",
+    "thumb": "https://aststraining.com/wp-content/uploads/2021/03/devops-training-400x250.jpg",
+    "url": "https://aststraining.com/courses/devops-online-training/",
+    "title": "Devops Online Training",
+    "short": "Which Is The Best Online Training For DEVOPS? ASTS Training is a Devops Online Training organization offering state-of-the-art placement oriented courses. ASTS Training..."
+   },
+   {
+    "id": "2971",
+    "thumb": "https://aststraining.com/wp-content/uploads/2021/03/Hive-Online-Training-400x250.jpg",
+    "url": "https://aststraining.com/courses/hive-online-training/",
+    "title": "Hive Online Training",
+    "short": "About HIVE Online Training: Hive Online Training may be a data warehouse infrastructure. it’s wont to process structured data in Hadoop. Hive handles Petabytes of..."
+   },
+   {
+    "id": "2894",
+    "thumb": "https://aststraining.com/wp-content/uploads/2021/03/Kafka-Online-Training-400x250.jpg",
+    "url": "https://aststraining.com/courses/kafka-online-training/",
+    "title": "Kafka Online Training",
+    "short": "ABOUT KAFKA ONLINE TRAINING: Apache Kafka Online Training is an open source data streaming system. it’s designed to efficiently manage and process..."
+   },
+   {
+    "id": "2850",
+    "thumb": "https://aststraining.com/wp-content/uploads/2021/03/Spark-Online-Training-400x250.jpg",
+    "url": "https://aststraining.com/courses/spark-online-training/",
+    "title": "Spark Online Training",
+    "short": "About SPARK Online Training: Spark Online Training may be a unique framework for giant data analytics which provides one unique integrated API by developers for the aim of..."
+   },
+   {
+    "id": "1945",
+    "thumb": "https://aststraining.com/wp-content/uploads/2020/12/Haddop-400x250.jpg",
+    "url": "https://aststraining.com/courses/hadoop-online-training/",
+    "title": "Hadoop Online Training",
+    "short": "ABOUT HADOOP ONLINE TRAINING: Hadoop Online Training is Development course teaches the skill set required for the learners the way to setup..."
+   }
+  ],
+  "hasPagination": false
+ },
+ {
+  "url": "https://aststraining.com/courses-category/digital-marketing/",
+  "slug": "digital-marketing",
+  "name": "Digital Marketing",
+  "termId": "738",
+  "seoTitle": "Digital Marketing Archives - ASTSTraining",
+  "metaDesc": "",
+  "count": 3,
+  "items": [
+   {
+    "id": "2713",
+    "thumb": "https://aststraining.com/wp-content/uploads/2021/02/SEM-400x250.jpg",
+    "url": "https://aststraining.com/courses/sem-online-training/",
+    "title": "SEM Online Training",
+    "short": "About SEM Search engine marketing SEM Online Training involves promoting your brand’s presence through paid advertising via search engines. This Training Course..."
+   },
+   {
+    "id": "2473",
+    "thumb": "https://aststraining.com/wp-content/uploads/2020/12/SMM-Training-400x250.jpg",
+    "url": "https://aststraining.com/courses/smm-online-training/",
+    "title": "SMM Online Training",
+    "short": "About SMM This is an in-depth Training Course that can be taken by freshers and professionals in order to learn..."
+   },
+   {
+    "id": "1948",
+    "thumb": "https://aststraining.com/wp-content/uploads/2020/12/SEO-Online-Training-400x250.jpg",
+    "url": "https://aststraining.com/courses/seo-online-training/",
+    "title": "SEO Online Training",
+    "short": "About SEO This is a detailed Training Course in Search Engine Optimization SEO Online Training that includes various techniques and study of..."
+   }
+  ],
+  "hasPagination": false
+ },
+ {
+  "url": "https://aststraining.com/courses-category/erp/",
+  "slug": "erp",
+  "name": "ERP",
+  "termId": "731",
+  "seoTitle": "ERP Archives - ASTSTraining",
+  "metaDesc": "",
+  "count": 10,
+  "items": [
+   {
+    "id": "3747",
+    "thumb": "https://aststraining.com/wp-content/uploads/2020/12/sql-dba-online-training-400x250.jpg",
+    "url": "https://aststraining.com/courses/sql-dba-online-training/",
+    "title": "SQL DBA Online Training",
+    "short": "About SQL DBA Online Training This SQL DBA Online Training from Real-time, Certified Trainers includes Basic to Advanced Database Administration..."
+   },
+   {
+    "id": "3725",
+    "thumb": "https://aststraining.com/wp-content/uploads/2021/03/oracle-apps-dba-online-training-400x250.png",
+    "url": "https://aststraining.com/courses/oracle-apps-dba-online-training/",
+    "title": "Oracle Apps DBA Online Training",
+    "short": "About Apps DBA Oracle Applications DBA tasks (Oracle Financials, Oracle eBusiness Suite) is a complex framework of modules that performs basic business administration and..."
+   },
+   {
+    "id": "3706",
+    "thumb": "https://aststraining.com/wp-content/uploads/2021/03/MS-Dynamics-Online-Training-400x250.jpg",
+    "url": "https://aststraining.com/courses/ms-dynamics-online-training/",
+    "title": "MS Dynamics Online Training",
+    "short": "About MS Dynamics Online Training Microsoft Dynamics CRM training helps to create your skills and knowledge for a career as..."
+   },
+   {
+    "id": "3674",
+    "thumb": "https://aststraining.com/wp-content/uploads/2021/03/Oracle-CRM-Online-Training-400x250.jpg",
+    "url": "https://aststraining.com/courses/oracle-crm-online-training/",
+    "title": "Oracle CRM Online Training",
+    "short": "About Oracle CRM Online Training The Oracle CRM Online Training may be a customer relationship management application developed by Oracle Corporation. it’s widely referred to..."
+   },
+   {
+    "id": "3656",
+    "thumb": "https://aststraining.com/wp-content/uploads/2021/03/Oracle-HRMS-Online-Training-400x250.jpg",
+    "url": "https://aststraining.com/courses/oracle-hrms-online-training/",
+    "title": "Oracle HRMS Online Training",
+    "short": "About Oracle HRMS Online Training Oracle HRMS Online Training useful square measure as are designed on a typical platform of..."
+   },
+   {
+    "id": "3628",
+    "thumb": "https://aststraining.com/wp-content/uploads/2021/03/Peoplesoft-Online-Training-400x250.jpg",
+    "url": "https://aststraining.com/courses/peoplesoft-online-training/",
+    "title": "PeopleSoft Online Training",
+    "short": "About PeopleSoft Online Training PeopleSoft Online Training Human Resources is a web-based application and users login by opening. PeopleSoft system..."
+   },
+   {
+    "id": "3417",
+    "thumb": "https://aststraining.com/wp-content/uploads/2021/03/oracle-apps-technical-online-training-400x250.png",
+    "url": "https://aststraining.com/courses/oracle-apps-technical-online-training/",
+    "title": "Oracle Apps Technical Online Training",
+    "short": "About APPS TECHNICAL Oracle Apps Technical is an ERP package (Enterprise Resource Planning) designed on the basis of Generally Acceptable Accounting..."
+   },
+   {
+    "id": "3299",
+    "thumb": "https://aststraining.com/wp-content/uploads/2021/03/oracle-scm-online-training-400x250.png",
+    "url": "https://aststraining.com/courses/oracle-apps-func-scm-online-training/",
+    "title": "Oracle Apps Func SCM Online Training",
+    "short": "About APPS FUNC SCM Oracle Apps Func Supply Chain Management (SCM) basically integrates and automates all key supply chain activities starting..."
+   },
+   {
+    "id": "3262",
+    "thumb": "https://aststraining.com/wp-content/uploads/2021/03/oracle-apps-financials-online-training-400x250.png",
+    "url": "https://aststraining.com/courses/oracle-apps-func-financials-online-training/",
+    "title": "Oracle Apps Func Financials Online Training",
+    "short": "About ORACLE APPS FUNC FINANCIALS Online Traning Oracle Apps Finance Functional R12 is the basics of ORACLE Financial Applications and it is used..."
+   },
+   {
+    "id": "3046",
+    "thumb": "https://aststraining.com/wp-content/uploads/2021/03/Workday-Financials-Online-Training-400x250.jpg",
+    "url": "https://aststraining.com/courses/workday-financials-online-training/",
+    "title": "Workday Financials Online Training",
+    "short": "About Workday Financials Online Training Workday Financial Management goes beyond the fundamentals of accounting and focuses on the speed, agility, cost, and insights. it’s delivered within the cloud, and..."
+   }
+  ],
+  "hasPagination": false
+ },
+ {
+  "url": "https://aststraining.com/courses-category/etl-tools/",
+  "slug": "etl-tools",
+  "name": "ETL Tools",
+  "termId": "732",
+  "seoTitle": "ETL Tools Archives - ASTSTraining",
+  "metaDesc": "",
+  "count": 7,
+  "items": [
+   {
+    "id": "4249",
+    "thumb": "https://aststraining.com/wp-content/uploads/2021/03/Mulesoft-Online-Training-400x250.jpg",
+    "url": "https://aststraining.com/courses/mulesoft-online-training/",
+    "title": "Mulesoft Online Training",
+    "short": "What Is Mulesoft training? Mulesoft Online Training is the skill of building awesome software that connects world applications. It involves applying..."
+   },
+   {
+    "id": "3885",
+    "thumb": "https://aststraining.com/wp-content/uploads/2021/03/msbi-online-training-400x250.png",
+    "url": "https://aststraining.com/courses/msbi-online-training/",
+    "title": "MSBI Online Training",
+    "short": "What Is The MSBI Course? MSBI Online Training is one of all the tools associated with the database side. This tool..."
+   },
+   {
+    "id": "3816",
+    "thumb": "https://aststraining.com/wp-content/uploads/2021/03/abinitio-training-400x250.png",
+    "url": "https://aststraining.com/courses/abinitio-online-training/",
+    "title": "Abinitio Online Training",
+    "short": "About Abinitio Online Training The AbInitio software is a Business Intelligence platform containing six data processing products: Co&gt;Operating System, The Component Library,..."
+   },
+   {
+    "id": "3796",
+    "thumb": "https://aststraining.com/wp-content/uploads/2021/03/datastage-online-training-400x250.png",
+    "url": "https://aststraining.com/courses/datastage-online-training/",
+    "title": "DataStage Online Training",
+    "short": "About DataStage Online Training IBM InfoSphere DataStage is an ETL tool and part of the IBM Information Platforms Solutions suite and IBM InfoSphere. It..."
+   },
+   {
+    "id": "3774",
+    "thumb": "https://aststraining.com/wp-content/uploads/2021/03/oracle-teradata-online-training-400x250.png",
+    "url": "https://aststraining.com/courses/teradata-online-training/",
+    "title": "TeraData Online Training",
+    "short": "About TeraData Online Training Teradata is a fully scalable relational database management system produced by Teradata Corp. It is widely used..."
+   },
+   {
+    "id": "3088",
+    "thumb": "https://aststraining.com/wp-content/uploads/2021/03/informatica-online-training-400x250.png",
+    "url": "https://aststraining.com/courses/informatica-online-training/",
+    "title": "Informatica Online Training",
+    "short": "About Informatica Online Training Informatica Online Training is successful ETL and EAI tool. Over the course of last 10 years Informatica..."
+   },
+   {
+    "id": "2800",
+    "thumb": "https://aststraining.com/wp-content/uploads/2021/03/Talend-Online-Training-400x250.jpg",
+    "url": "https://aststraining.com/courses/talend-online-training/",
+    "title": "Talend Online Training",
+    "short": "About Talend Online Training Talend Online Training is known to be the primary supplier of open-source information incorporation programming, and..."
+   }
+  ],
+  "hasPagination": false
+ },
+ {
+  "url": "https://aststraining.com/courses-category/hyperion/",
+  "slug": "hyperion",
+  "name": "Hyperion",
+  "termId": "729",
+  "seoTitle": "Hyperion Archives - ASTSTraining",
+  "metaDesc": "",
+  "count": 10,
+  "items": [
+   {
+    "id": "3482",
+    "thumb": "https://aststraining.com/wp-content/uploads/2021/03/hyperion-essbase-online-training-400x250.jpg",
+    "url": "https://aststraining.com/courses/hyperion-essbase-online-training/",
+    "title": "Hyperion Essbase Training",
+    "short": "Welcome to Hyperion Essbase Training Hyperion Essbase Training is the industry-leading multidimensional online analytical processing (OLAP) server, providing a rich environment..."
+   },
+   {
+    "id": "3369",
+    "thumb": "https://aststraining.com/wp-content/uploads/2021/03/hyperion-fdmee-online-training-400x250.jpg",
+    "url": "https://aststraining.com/courses/fdmee-online-training/",
+    "title": "FDMEE Training Courses",
+    "short": "What Is Hyperion & Used For? FDMEE Training Courses is a packaged solution for finance users that helps develop standardized financial..."
+   },
+   {
+    "id": "3324",
+    "thumb": "https://aststraining.com/wp-content/uploads/2021/03/oracle-odi-online-training-400x250.png",
+    "url": "https://aststraining.com/courses/oracle-odi-online-training/",
+    "title": "Oracle Data Integration Training Course",
+    "short": "Asts Training offers Oracle Data Integration Training Course by real-time experts at affordable prices. We are proud to be one of the..."
+   },
+   {
+    "id": "3229",
+    "thumb": "https://aststraining.com/wp-content/uploads/2021/03/hyperion-drm-400x250.jpg",
+    "url": "https://aststraining.com/courses/drm-data-relationship-management-online-training/",
+    "title": "Hyperion DRM Training",
+    "short": "Welcome To Hyperion DRM Training We specialize in delivering practical hands-on training for individuals. Our fully experienced trainers encourage trainees..."
+   },
+   {
+    "id": "3175",
+    "thumb": "https://aststraining.com/wp-content/uploads/2021/03/hyperion-planning-online-training-400x250.jpg",
+    "url": "https://aststraining.com/courses/hyperion-planning-online-training/",
+    "title": "Hyperion Planning Online Training",
+    "short": "Welcome To Hyperion Planning Training Our Hyperion Planning Training is planned to provide an exhaustive learning experience for trainees through different..."
+   },
+   {
+    "id": "3136",
+    "thumb": "https://aststraining.com/wp-content/uploads/2021/03/HFM-Online-Training-400x250.jpg",
+    "url": "https://aststraining.com/courses/hfm-online-training/",
+    "title": "HFM Online Training",
+    "short": "Hyperion Financial Management Online Training Hyperion Financial Management is one of the web-based application that provides global financial consolidation, generation..."
+   },
+   {
+    "id": "2928",
+    "thumb": "https://aststraining.com/wp-content/uploads/2021/03/EPBCS-Online-Training-400x250.jpg",
+    "url": "https://aststraining.com/courses/epbcs-online-training/",
+    "title": "EPBCS Online Training",
+    "short": "About EPBCS Online Training Enterprise Planning and Budgeting Cloud Service (EPBCS) training will show you how to implement, administer and..."
+   },
+   {
+    "id": "2912",
+    "thumb": "https://aststraining.com/wp-content/uploads/2021/03/FCCS-Online-Training-400x250.jpg",
+    "url": "https://aststraining.com/courses/fccs-online-training/",
+    "title": "FCCS Online Training",
+    "short": "About FCCS Online Training FCCS Online Training program is designed to prepare the students for HFM, SmartView and Financial Reporting Developer...."
+   },
+   {
+    "id": "2712",
+    "thumb": "https://aststraining.com/wp-content/uploads/2021/02/PBCS-Online-Training-400x250.jpg",
+    "url": "https://aststraining.com/courses/pbcs-online-training/",
+    "title": "PBCS Online Training",
+    "short": "About PBCS Online Training Asts Training is offering PBCS Online Training. Oracle released Enterprise Planning and Budgeting Cloud Service (EPBCS), a..."
+   },
+   {
+    "id": "2686",
+    "thumb": "https://aststraining.com/wp-content/uploads/2021/02/ARCS-Online-Training-400x250.jpg",
+    "url": "https://aststraining.com/courses/arcs-online-training/",
+    "title": "ARCS Online Training",
+    "short": "About ARCS Online Training ARCS online Training is nothing but Oracle Account Reconciliation Cloud helps manage account reconciliation processes. Find out..."
+   }
+  ],
+  "hasPagination": false
+ },
+ {
+  "url": "https://aststraining.com/courses-category/programming/",
+  "slug": "programming",
+  "name": "Programming",
+  "termId": "735",
+  "seoTitle": "Programming Archives - ASTSTraining",
+  "metaDesc": "",
+  "count": 12,
+  "items": [
+   {
+    "id": "4981",
+    "thumb": "https://aststraining.com/wp-content/uploads/2021/04/Python-400x250.jpg",
+    "url": "https://aststraining.com/courses/python-online-training/",
+    "title": "Python Online Training",
+    "short": "This certification course on Python is a complete course that will help you to clearly understand the programming language. In this training..."
+   },
+   {
+    "id": "4924",
+    "thumb": "https://aststraining.com/wp-content/uploads/2021/04/Ruby-on-Rails-Training-400x250.jpg",
+    "url": "https://aststraining.com/courses/ruby-on-rails-online-training/",
+    "title": "Ruby On Rails Online Training",
+    "short": ""
+   },
+   {
+    "id": "4910",
+    "thumb": "https://aststraining.com/wp-content/uploads/2021/04/Akka-with-Scala-Online-Training-400x250.jpg",
+    "url": "https://aststraining.com/courses/akka-with-scala-online-training/",
+    "title": "Akka With Scala Online Training",
+    "short": "About AKKA WITH SCALA Online Training Akka with Scala Online Training may be a toolkit and runtime for building highly concurrent, distributed,..."
+   },
+   {
+    "id": "4880",
+    "thumb": "https://aststraining.com/wp-content/uploads/2021/04/Angularjs-Online-Training-400x250.jpg",
+    "url": "https://aststraining.com/courses/angularjs-online-training/",
+    "title": "AngularJs Online Training",
+    "short": "About ANGULARJS Online Training: Angularjs Online Training may be a structural framework for creating dynamic web applications. HTML may be a..."
+   },
+   {
+    "id": "4799",
+    "thumb": "https://aststraining.com/wp-content/uploads/2021/04/Dotnet-Online-Training-400x250.jpg",
+    "url": "https://aststraining.com/courses/dot-net-online-training/",
+    "title": "Dot Net Online Training",
+    "short": "About DOT NET Online Training: Dot Net Online Training may be asoftware technology, which was introduced by MICROSOFT within the year 2002. Dot..."
+   },
+   {
+    "id": "4733",
+    "thumb": "https://aststraining.com/wp-content/uploads/2021/04/Django-Online-Training-400x250.jpg",
+    "url": "https://aststraining.com/courses/django-online-training/",
+    "title": "Django Online Training",
+    "short": "About DJANGO Online Training: Django Online Training is PYTHON MVT web framework. It highly demands within the current market to create rapid web applications. it’s suitable..."
+   },
+   {
+    "id": "4680",
+    "thumb": "https://aststraining.com/wp-content/uploads/2021/04/Java-Online-Training-400x250.jpg",
+    "url": "https://aststraining.com/courses/java-online-training/",
+    "title": "Java Online Training",
+    "short": "About JAVA Online Training: Java programing language is developed by Sun Microsystems. Java is object oriented, platform independent, simple, secure, architectural–neutral, portable,..."
+   },
+   {
+    "id": "4652",
+    "thumb": "https://aststraining.com/wp-content/uploads/2021/03/Jquery-Online-Training-400x250.jpg",
+    "url": "https://aststraining.com/courses/jquery-online-training/",
+    "title": "Jquery Online Training",
+    "short": "About JQUERY Online Training: Jquery is a Multi-browser Java script web based Applications. jquery Training Design and develop web applications...."
+   },
+   {
+    "id": "4604",
+    "thumb": "https://aststraining.com/wp-content/uploads/2021/03/PHP-Online-Training-400x250.jpg",
+    "url": "https://aststraining.com/courses/php-online-training/",
+    "title": "PHP Online Training",
+    "short": "About PHP Online Training: PHP Online Training may be a widely-used general-purpose scripting language that’s especially fitted to Web development and may be embedded into HTML. PHP..."
+   },
+   {
+    "id": "4473",
+    "thumb": "https://aststraining.com/wp-content/uploads/2021/03/Fullstack-Online-Training-400x250.jpg",
+    "url": "https://aststraining.com/courses/fullstack-online-training/",
+    "title": "Fullstack Online Training",
+    "short": "About FULLSTACK Online Training: Full Stack Web Development is nothing but complete designing of both websites and applications where the developers got..."
+   },
+   {
+    "id": "1941",
+    "thumb": "https://aststraining.com/wp-content/uploads/2020/12/Node-js-400x250.jpg",
+    "url": "https://aststraining.com/courses/nodejs-online-training/",
+    "title": "NodeJS Online Training",
+    "short": "About NODEJS Online Training: NodeJS Online Training is an open source framework which has been developed for developers to know and build..."
+   },
+   {
+    "id": "1932",
+    "thumb": "https://aststraining.com/wp-content/uploads/2020/12/React-js-400x250.jpg",
+    "url": "https://aststraining.com/courses/react-js-online-training/",
+    "title": "React JS Online Training",
+    "short": "About REACT JS Online Training: Developed by Facebook and Instagram, React.js makes views easier to increase and maintain by unifying your markup..."
+   }
+  ],
+  "hasPagination": false
+ },
+ {
+  "url": "https://aststraining.com/courses-category/testing/",
+  "slug": "testing",
+  "name": "Testing",
+  "termId": "734",
+  "seoTitle": "Testing Archives - ASTSTraining",
+  "metaDesc": "",
+  "count": 5,
+  "items": [
+   {
+    "id": "4430",
+    "thumb": "https://aststraining.com/wp-content/uploads/2021/03/H_testing41-400x250.jpg",
+    "url": "https://aststraining.com/courses/hadoop-testing-online-training/",
+    "title": "Hadoop Testing Online Training",
+    "short": "This Hadoop Testing Online Training will provide you with the right skills to detect, analyze and rectify errors in Hadoop framework. You..."
+   },
+   {
+    "id": "4390",
+    "thumb": "https://aststraining.com/wp-content/uploads/2021/03/Selenium-Training-400x250.jpg",
+    "url": "https://aststraining.com/courses/selenium-online-training/",
+    "title": "Selenium Online Training",
+    "short": "This is a detailed Selenium Training Course that helps you master Selenium testing. Selenium is a portable software testing framework that is used for..."
+   },
+   {
+    "id": "4369",
+    "thumb": "https://aststraining.com/wp-content/uploads/2021/03/ETL-Testing-training-1-400x250.jpg",
+    "url": "https://aststraining.com/courses/etl-testing-online-training/",
+    "title": "ETL Testing Online Training",
+    "short": "About ETL TESTING This ETL Testing online Training can be taken by anybody from beginners to experts. This course follows a step-by-step..."
+   },
+   {
+    "id": "4328",
+    "thumb": "https://aststraining.com/wp-content/uploads/2021/03/Blueprism-Online-Training-400x250.jpg",
+    "url": "https://aststraining.com/courses/blue-prism-online-training/",
+    "title": "Blue Prism Online Training",
+    "short": "About BLUE PRISM Online Training: Blue Prism Online Training is an RPA Tool which holds the potential of virtual workforce powered..."
+   },
+   {
+    "id": "2818",
+    "thumb": "https://aststraining.com/wp-content/uploads/2021/03/RPA-Uipath-Online-Training-400x250.jpg",
+    "url": "https://aststraining.com/courses/rpa-uipath-online-training/",
+    "title": "RPA UiPath Online Training",
+    "short": "About Rpa Uipath Online Training: This training encompasses in-depth information about the licensing model of every UiPath software component – Studio, Robot, and..."
+   }
+  ],
+  "hasPagination": false
+ }
+]

@@ -1,0 +1,7 @@
+/* Order matters: the live site's stylesheets first (vendor.css), then the small
+   set of app-specific rules, then Tailwind utilities (preflight disabled). */
+@import './vendor.css';
+@import './app.css';
+@tailwind base;
+@tailwind components;
+@tailwind utilities;

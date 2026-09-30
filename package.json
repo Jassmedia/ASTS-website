@@ -1,0 +1,33 @@
+{
+  "name": "aststraining",
+  "private": true,
+  "version": "1.0.0",
+  "description": "ASTS Training website - React/Vite migration of https://aststraining.com/",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build && vite build --ssr src/entry-server.jsx --outDir dist-ssr && node scripts/prerender.mjs && node scripts/sitemap.mjs dist",
+    "sync": "node scripts/sync-from-wp.mjs && node scripts/build-data.mjs",
+    "build:client": "vite build",
+    "preview": "vite preview",
+    "check:links": "node scripts/check-links.mjs",
+    "gen:vercel": "node scripts/gen-vercel.mjs",
+    "gen:course-tiles": "node scripts/course-tiles.mjs",
+    "build:data": "node scripts/build-data.mjs"
+  },
+  "dependencies": {
+    "@fontsource/inter": "^5.3.0",
+    "@fontsource/plus-jakarta-sans": "^5.3.0",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "react-helmet-async": "^2.0.5",
+    "react-router-dom": "^6.28.0"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-react": "^4.3.4",
+    "autoprefixer": "^10.4.20",
+    "postcss": "^8.4.49",
+    "tailwindcss": "^3.4.17",
+    "vite": "^6.0.7"
+  }
+}

@@ -1,0 +1,8 @@
+/* Stylesheet bundle for LearnPress pages (courses, categories, lessons, checkout,
+   profile, instructors): the same theme CSS with learnpress.min.css and the
+   course-review CSS at the positions the current site loads them. */
+@import './vendor-lp.css';
+@import './app.css';
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
