@@ -26,6 +26,7 @@ Fonts: Plus Jakarta Sans and Inter (SIL Open Font License), self-hosted via @fon
 
 ## Course card images
 
-`public/images/courses/*.webp` are original tiles made for this site (no third-party artwork or
-logos): generated from the course titles in `src/data/trending-courses.js` by
-`scripts/course-tiles.mjs` (`npm run gen:course-tiles`), using the self-hosted fonts above.
+`public/images/courses/*.webp` are original images made for this site (no third-party artwork or logos),
+one per course in `src/data/local-courses.mjs`, which have no image on the current site. They are drawn
+from each course's `image` text by `scripts/course-images.mjs` (`npm run gen:course-images`), using the
+self-hosted fonts above. The other course images are the courses' own images from the current site.

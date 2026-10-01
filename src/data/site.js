@@ -1,3 +1,5 @@
+import { TRENDING_COURSES } from './trending-courses';
+
 // Site-wide constants captured from the current site (do not invent values here).
 export const SITE = {
   name: 'ASTSTraining',
@@ -34,32 +36,31 @@ export const TRACKING = {
   tidio: 'eqws5nvtzvdolqavuol3gv5hzxn8rarg',
 };
 
-// Footer widget columns (exact content of the current footer)
-export const FOOTER_COURSES = [
-  { label: 'Hyperion', url: '/courses-category/hyperion/' },
-  { label: 'Programming', url: '/courses-category/programming/' },
-  { label: 'Cloud Computing', url: '/courses-category/cloud-computing/' },
-  { label: 'Datascience & ML', url: '/courses-category/datascience-ml/' },
-  { label: 'ERP', url: '/courses-category/erp/' },
-  { label: 'Digital Marketing', url: '/courses-category/digital-marketing/' },
-];
+// Categories of the owner's featured courses (data/trending-courses.js), in the order their first course
+// appears there. They are the only categories the site links to: homepage cards and chips, footer, sidebars.
+const FEATURED_CATEGORIES = [
+  { slug: 'bi', name: 'BI', termId: 733, image: '/wp-content/uploads/2020/12/business-intelligence-BI.jpg' },
+  { slug: 'cloud-computing', name: 'Cloud Computing', termId: 736, image: '/wp-content/uploads/2020/12/Cloud-Computing-CC.jpg' },
+  { slug: 'hyperion', name: 'Hyperion', termId: 729, image: '/wp-content/uploads/2020/12/Hyperion-training-HT.jpg' },
+  { slug: 'etl-tools', name: 'ETL Tools', termId: 732, image: '/wp-content/uploads/2020/12/etl-tools-to-learn-in-2020.jpg' },
+].map((c) => ({ ...c, url: `/courses-category/${c.slug}/` }));
+
+// "06 Courses": how many featured courses a category holds (what its category page lists).
+const featuredCount = (cat) => {
+  const n = TRENDING_COURSES.filter((t) => t.category && t.category.url === cat.url).length;
+  return `${String(n).padStart(2, '0')} Course${n === 1 ? '' : 's'}`;
+};
+
+// Footer widget columns
+export const FOOTER_COURSES = FEATURED_CATEGORIES.map((c) => ({ label: c.name, url: c.url }));
 export const FOOTER_SERVICES = [
   { label: 'Online Training', url: '/online-training/' },
   { label: 'Corporate Training', url: '/corporate-training/' },
   { label: 'Project Support', url: '/project-support/' },
 ];
 
-// Course sidebar widgets (identical on every single course page of the current site)
-export const COURSE_SIDEBAR_CATEGORIES = [
-  { cls: 'cat-item cat-item-16', label: 'BigData and Analytics', url: '/category/bigdata/' },
-  { cls: 'cat-item cat-item-49', label: 'Business Intelligence Tools', url: '/courses-category/business-intelligence-tools/' },
-  { cls: 'cat-item cat-item-50', label: 'Cloud Computing', url: '/courses-category/cloud-computing/' },
-  { cls: 'cat-item cat-item-51', label: 'DevOps', url: '/courses-category/devops/' },
-  { cls: 'cat-item cat-item-54', label: 'Digital Marketing', url: '/courses-category/digital-marketing/' },
-  { cls: 'cat-item cat-item-14', label: 'DWH ETL', url: '/courses-category/dwh-etl/' },
-  { cls: 'cat-item cat-item-15', label: 'DWH Reporting', url: '/courses-category/dwh-reporting/' },
-  { cls: 'cat-item cat-item-11', label: 'Hyperion', url: '/courses-category/hyperion/' },
-];
+// Course sidebar widgets (every single course page)
+export const COURSE_SIDEBAR_CATEGORIES = FEATURED_CATEGORIES.map((c) => ({ cls: `cat-item cat-item-${c.termId}`, label: c.name, url: c.url }));
 export const EXPLORE_MENU = [
   { id: 2054, label: 'Home', url: '/', cls: 'menu-item-home' },
   { id: 2055, label: 'About', url: '/about-asts-training/' },
@@ -68,34 +69,11 @@ export const EXPLORE_MENU = [
   { id: 2057, label: 'Contact', url: '/contact/' },
 ];
 // Archive (courses / category) sidebar widgets
-export const LATEST_COURSES_MENU = [
-  { id: 2061, label: 'AWS Online Training', url: '/courses/aws-online-training/' },
-  { id: 2062, label: 'SEO Online Training', url: '/courses/seo-online-training/' },
-  { id: 2063, label: 'Hadoop Online Training', url: '/courses/hadoop-online-training/' },
-  { id: 2064, label: 'Google Cloud Online Training', url: '/courses/google-cloud-online-training/' },
-  { id: 2065, label: 'NodeJS Online Training', url: '/courses/nodejs-online-training/' },
-  { id: 2066, label: 'React JS Online Training', url: '/courses/react-js-online-training/' },
-];
-export const COURSE_CATEGORIES_MENU = [
-  { id: 2837, label: 'Digital Marketing', url: '/courses-category/digital-marketing/' },
-  { id: 2838, label: 'Hyperion', url: '/courses-category/hyperion/' },
-  { id: 2839, label: 'Programming', url: '/courses-category/programming/' },
-  { id: 2840, label: 'Cloud Computing', url: '/courses-category/cloud-computing/' },
-  { id: 2841, label: 'Datascience & ML', url: '/courses-category/datascience-ml/' },
-  { id: 2842, label: 'ERP', url: '/courses-category/erp/' },
-];
+export const LATEST_COURSES_MENU = TRENDING_COURSES.map((c) => ({ id: c.id, label: c.title, url: c.url }));
+export const COURSE_CATEGORIES_MENU = FEATURED_CATEGORIES.map((c) => ({ id: c.slug, label: c.name, url: c.url }));
 
-// Homepage "All Courses" category cards (8 of the 11 categories, in the current order/labels)
-export const HOME_CATEGORY_CARDS = [
-  { slug: 'bi', name: 'BI', count: '07 Courses', image: '/wp-content/uploads/2020/12/business-intelligence-BI.jpg' },
-  { slug: 'cloud-computing', name: 'Cloud Computing', count: '09 Courses', image: '/wp-content/uploads/2020/12/Cloud-Computing-CC.jpg' },
-  { slug: 'datascience-ml', name: 'Datascience & ML', count: '04 Courses', image: '/wp-content/uploads/2020/12/Data-Science-ML-Training.jpg' },
-  { slug: 'erp', name: 'ERP', count: '10 Courses', image: '/wp-content/uploads/2020/12/ERP-Development-image.jpg' },
-  { slug: 'etl-tools', name: 'ETL Tools', count: '07 Courses', image: '/wp-content/uploads/2020/12/etl-tools-to-learn-in-2020.jpg' },
-  { slug: 'hyperion', name: 'Hyperion', count: '10 Courses', image: '/wp-content/uploads/2020/12/Hyperion-training-HT.jpg' },
-  { slug: 'programming', name: 'Programming', count: '10 Courses', image: '/wp-content/uploads/2020/12/programming-course-training-online.jpg' },
-  { slug: 'testing', name: 'Testing', count: '05 Courses', image: '/wp-content/uploads/2020/12/software-testing-training.jpg' },
-];
+// Homepage "All Courses" category cards and the hero's category chips
+export const HOME_CATEGORY_CARDS = FEATURED_CATEGORIES.map((c) => ({ slug: c.slug, name: c.name, count: featuredCount(c), image: c.image }));
 
 // "Our Training" cards (homepage) and Services page cards
 export const TRAINING_CARDS = [

@@ -6,94 +6,95 @@
  *   id        unique key (e.g. the course slug)
  *   title     course name shown on the card
  *   url       page the card and its "View Course" link open
- *   image     { src, width, height, alt }. The tiles in public/images/courses/<id>.webp are drawn
- *             from each course's title by `npm run gen:course-tiles`: re-run it after adding or
- *             renaming a course. A custom image can go in the same folder instead.
+ *   image     { src, width, height, alt }: the course's own image from the current site
+ *             (/wp-content/uploads/...), or for a course of data/local-courses.mjs, its image
+ *             public/images/courses/<id>.webp drawn by `npm run gen:course-images`.
  *   category  { name, url }                       optional
  *   duration  e.g. '10 Weeks'                     optional
  *   lessons   number of lessons                   optional
  *   students  number of students                  optional
  *   price     e.g. 'Free' or '₹15,000'            optional: no price, no badge
  */
+// Owner's course list (2026-09-30), most in-demand first: ranked by job-market demand
+// (job-board openings, competitors' course line-ups). The first entry is the hero featured course.
 export const TRENDING_COURSES = [
   {
-    id: 'python-online-training',
-    title: 'Python Online Training',
-    url: '/courses/python-online-training/',
-    image: { src: '/images/courses/python-online-training.webp', width: 1000, height: 600, alt: 'Python Online Training' },
-    category: { name: 'Programming', url: '/courses-category/programming/' },
+    id: 'data-analytics-online-training',
+    title: 'Data Analytics Online Training',
+    url: '/courses/data-analytics-online-training/',
+    image: { src: '/images/courses/data-analytics-online-training.webp', width: 1000, height: 600, alt: 'Data Analytics Online Training' },
+    category: { name: 'BI', url: '/courses-category/bi/' },
     duration: '10 Weeks',
-    lessons: 10,
-    students: 122,
   },
   {
-    id: 'ruby-on-rails-online-training',
-    title: 'Ruby On Rails Online Training',
-    url: '/courses/ruby-on-rails-online-training/',
-    image: { src: '/images/courses/ruby-on-rails-online-training.webp', width: 1000, height: 600, alt: 'Ruby On Rails Online Training' },
-    category: { name: 'Programming', url: '/courses-category/programming/' },
+    id: 'anaplan-online-training',
+    title: 'Anaplan Online Training',
+    url: '/courses/anaplan-online-training/',
+    image: { src: '/wp-content/uploads/2021/03/Anaplan-Online-Training-400x250.jpg', width: 400, height: 250, alt: 'Anaplan Online Training' },
+    category: { name: 'Cloud Computing', url: '/courses-category/cloud-computing/' },
     duration: '10 Weeks',
-    lessons: 27,
-    students: 0,
   },
   {
-    id: 'akka-with-scala-online-training',
-    title: 'Akka With Scala Online Training',
-    url: '/courses/akka-with-scala-online-training/',
-    image: { src: '/images/courses/akka-with-scala-online-training.webp', width: 1000, height: 600, alt: 'Akka With Scala Online Training' },
-    category: { name: 'Programming', url: '/courses-category/programming/' },
+    id: 'epbcs-online-training',
+    title: 'EPBCS Online Training',
+    url: '/courses/epbcs-online-training/',
+    image: { src: '/wp-content/uploads/2021/03/EPBCS-Online-Training-400x250.jpg', width: 400, height: 250, alt: 'EPBCS Online Training' },
+    category: { name: 'Hyperion', url: '/courses-category/hyperion/' },
     duration: '10 Weeks',
-    lessons: 6,
-    students: 0,
   },
   {
-    id: 'angularjs-online-training',
-    title: 'AngularJs Online Training',
-    url: '/courses/angularjs-online-training/',
-    image: { src: '/images/courses/angularjs-online-training.webp', width: 1000, height: 600, alt: 'AngularJs Online Training' },
-    category: { name: 'Programming', url: '/courses-category/programming/' },
+    id: 'fccs-online-training',
+    title: 'FCCS Online Training',
+    url: '/courses/fccs-online-training/',
+    image: { src: '/wp-content/uploads/2021/03/FCCS-Online-Training-400x250.jpg', width: 400, height: 250, alt: 'FCCS Online Training' },
+    category: { name: 'Hyperion', url: '/courses-category/hyperion/' },
     duration: '10 Weeks',
-    lessons: 4,
-    students: 0,
   },
   {
-    id: 'dot-net-online-training',
-    title: 'Dot Net Online Training',
-    url: '/courses/dot-net-online-training/',
-    image: { src: '/images/courses/dot-net-online-training.webp', width: 1000, height: 600, alt: 'Dot Net Online Training' },
-    category: { name: 'Programming', url: '/courses-category/programming/' },
+    id: 'ibm-mq-online-training',
+    title: 'IBM MQ Online Training',
+    url: '/courses/ibm-mq-online-training/',
+    image: { src: '/images/courses/ibm-mq-online-training.webp', width: 1000, height: 600, alt: 'IBM MQ Online Training' },
+    category: { name: 'ETL Tools', url: '/courses-category/etl-tools/' },
     duration: '10 Weeks',
-    lessons: 38,
-    students: 0,
   },
   {
-    id: 'django-online-training',
-    title: 'Django Online Training',
-    url: '/courses/django-online-training/',
-    image: { src: '/images/courses/django-online-training.webp', width: 1000, height: 600, alt: 'Django Online Training' },
-    category: { name: 'Programming', url: '/courses-category/programming/' },
+    id: 'arcs-online-training',
+    title: 'ARCS Online Training',
+    url: '/courses/arcs-online-training/',
+    image: { src: '/wp-content/uploads/2021/02/ARCS-Online-Training-400x250.jpg', width: 400, height: 250, alt: 'ARCS Online Training' },
+    category: { name: 'Hyperion', url: '/courses-category/hyperion/' },
     duration: '10 Weeks',
-    lessons: 31,
-    students: 0,
   },
   {
-    id: 'java-online-training',
-    title: 'Java Online Training',
-    url: '/courses/java-online-training/',
-    image: { src: '/images/courses/java-online-training.webp', width: 1000, height: 600, alt: 'Java Online Training' },
-    category: { name: 'Programming', url: '/courses-category/programming/' },
+    id: 'edmcs-online-training',
+    title: 'EDMCS Online Training',
+    url: '/courses/edmcs-online-training/',
+    image: { src: '/images/courses/edmcs-online-training.webp', width: 1000, height: 600, alt: 'EDMCS Online Training' },
+    category: { name: 'Hyperion', url: '/courses-category/hyperion/' },
     duration: '10 Weeks',
-    lessons: 23,
-    students: 1,
   },
   {
-    id: 'jquery-online-training',
-    title: 'Jquery Online Training',
-    url: '/courses/jquery-online-training/',
-    image: { src: '/images/courses/jquery-online-training.webp', width: 1000, height: 600, alt: 'Jquery Online Training' },
-    category: { name: 'Programming', url: '/courses-category/programming/' },
+    id: 'pcmcs-online-training',
+    title: 'PCMCS Online Training',
+    url: '/courses/pcmcs-online-training/',
+    image: { src: '/images/courses/pcmcs-online-training.webp', width: 1000, height: 600, alt: 'PCMCS Online Training' },
+    category: { name: 'Hyperion', url: '/courses-category/hyperion/' },
     duration: '10 Weeks',
-    lessons: 12,
-    students: 0,
+  },
+  {
+    id: 'narrative-reporting-online-training',
+    title: 'Narrative Reporting Online Training',
+    url: '/courses/narrative-reporting-online-training/',
+    image: { src: '/images/courses/narrative-reporting-online-training.webp', width: 1000, height: 600, alt: 'Narrative Reporting Online Training' },
+    category: { name: 'Hyperion', url: '/courses-category/hyperion/' },
+    duration: '10 Weeks',
   },
 ];
+
+/**
+ * The featured courses are the site's course catalogue: /courses/, the category pages of these
+ * courses and the course sidebars list only these, in this order (see lib/featured.js). The other
+ * course pages synced from WordPress stay online at their URLs but are not listed anywhere.
+ */
+export const FEATURED_COURSE_SLUGS = TRENDING_COURSES.map((c) => c.id);

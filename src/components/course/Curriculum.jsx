@@ -67,9 +67,9 @@ export default function Curriculum({ course, currentUrl }) {
                 <div className="section-count-items">{s.count}</div>
               </div>
               <ul className="course-section__items">
-                {s.items.map((it) => (
-                  <li key={it.id} className={'course-item ' + (currentUrl === it.url ? 'current' : '')} data-item-id={it.id} data-item-order={it.order} data-item-type={it.type}>
-                    <Link to={it.url} className="course-item__link">
+                {s.items.map((it) => {
+                  const inner = (
+                    <>
                       <div className="course-item__info">
                         <span className={'course-item-ico ' + it.type}></span>
                         <span className="course-item-order lp-hidden">{it.number}</span>
@@ -82,9 +82,21 @@ export default function Curriculum({ course, currentUrl }) {
                       <div className="course-item__status">
                         <span className={'course-item-ico ' + it.status}></span>
                       </div>
-                    </Link>
-                  </li>
-                ))}
+                    </>
+                  );
+                  return (
+                    <li key={it.id} className={'course-item ' + (currentUrl && currentUrl === it.url ? 'current' : '')} data-item-id={it.id} data-item-order={it.order} data-item-type={it.type}>
+                      {/* Lessons of courses that exist only on this site have no page of their own. */}
+                      {it.url ? (
+                        <Link to={it.url} className="course-item__link">
+                          {inner}
+                        </Link>
+                      ) : (
+                        <div className="course-item__link">{inner}</div>
+                      )}
+                    </li>
+                  );
+                })}
               </ul>
             </li>
           ))}

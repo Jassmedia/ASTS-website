@@ -5,6 +5,7 @@ import NotFound from './NotFound';
 import { LpBreadcrumb, LpStyles, ReviewStars } from '../components/learnpress';
 import Curriculum from '../components/course/Curriculum';
 import CourseSidebar from '../components/course/CourseSidebar';
+import CourseRegister from '../components/course/CourseRegister';
 import CommentForm from '../components/course/CommentForm';
 import LpModal from '../components/course/LpModal';
 import LpAjaxElement from '../components/course/LpAjaxElement';
@@ -17,6 +18,8 @@ const TABS = [
   ['instructor', 'Instructor'],
   ['reviews', 'Reviews'],
 ];
+// Courses that exist only on this site have no WordPress reviews (see data/local-courses.mjs).
+const LOCAL_TABS = TABS.filter(([key]) => key !== 'reviews');
 const SKELETON = [92, 95, 92, 92, 98, 94, 92, 95, 94, 92];
 
 /** Single course page (LearnPress single-course template as rendered on the current site). */
@@ -30,7 +33,7 @@ export default function CourseSingle() {
 function CourseSingleInner({ course }) {
   const full = useCourseData(course.slug);
   const [tab, setTab] = useState('overview');
-  const cat = course.categories[0];
+  const tabs = course.local ? LOCAL_TABS : TABS;
 
   return (
     <>
@@ -112,12 +115,12 @@ function CourseSingleInner({ course }) {
               <div className="lp-entry-content lp-content-area">
                 <div className="entry-content-left">
                   <div id="learn-press-course-tabs" className="course-tabs">
-                    {TABS.map(([key]) => (
+                    {tabs.map(([key]) => (
                       <input key={key} type="radio" name="learn-press-course-tab-radio" id={`tab-${key}-input`} checked={tab === key} onChange={() => setTab(key)} value={key} />
                     ))}
                     <div className="wrapper-course-nav-tabs TabsDragScroll">
-                      <ul className="learn-press-nav-tabs course-nav-tabs" data-tabs="4">
-                        {TABS.map(([key, label]) => (
+                      <ul className="learn-press-nav-tabs course-nav-tabs" data-tabs={tabs.length}>
+                        {tabs.map(([key, label]) => (
                           <li key={key} className={`course-nav course-nav-tab-${key}` + (tab === key ? ' active' : '')}>
                             <label htmlFor={`tab-${key}-input`}>{label}</label>
                           </li>
@@ -127,6 +130,7 @@ function CourseSingleInner({ course }) {
                     <div className="course-tab-panels">
                       <div className="course-tab-panel-overview course-tab-panel" id="tab-overview">
                         <div className="course-description" id="learn-press-course-description" dangerouslySetInnerHTML={{ __html: full.description }} />
+                        <CourseRegister course={course} />
                       </div>
                       <div className="course-tab-panel-curriculum course-tab-panel" id="tab-curriculum">
                         <Curriculum course={full} />
@@ -149,23 +153,25 @@ function CourseSingleInner({ course }) {
                           </div>
                         </div>
                       </div>
-                      <div className="course-tab-panel-reviews course-tab-panel" id="tab-reviews">
-                        <div className="lp-courses-rating-reviews-ajax">
-                          {/* Rendered by the WordPress backend (LearnPress Course Review), as on the live site. */}
-                          <LpAjaxElement
-                            key={course.id}
-                            targetId={'lp-target-reviews-' + course.id}
-                            skeleton={SKELETON}
-                            send={{
-                              args: { id_url: 'course-rating-reviews', course_id: Number(course.id), paged: 1 },
-                              callback: { class: 'LearnPress\\CourseReview\\TemplateHooks\\CourseRatingTemplate', method: 'render_rating_reviews' },
-                            }}
-                          />
+                      {course.local ? null : (
+                        <div className="course-tab-panel-reviews course-tab-panel" id="tab-reviews">
+                          <div className="lp-courses-rating-reviews-ajax">
+                            {/* Rendered by the WordPress backend (LearnPress Course Review), as on the live site. */}
+                            <LpAjaxElement
+                              key={course.id}
+                              targetId={'lp-target-reviews-' + course.id}
+                              skeleton={SKELETON}
+                              send={{
+                                args: { id_url: 'course-rating-reviews', course_id: Number(course.id), paged: 1 },
+                                callback: { class: 'LearnPress\\CourseReview\\TemplateHooks\\CourseRatingTemplate', method: 'render_rating_reviews' },
+                              }}
+                            />
+                          </div>
                         </div>
-                      </div>
+                      )}
                     </div>
                   </div>
-                  <CommentForm course={course} />
+                  {course.local ? null : <CommentForm course={course} />}
                   {/* end entry content left */}
                 </div>
                 <CourseSidebar course={course} full={full} />

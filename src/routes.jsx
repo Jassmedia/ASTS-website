@@ -57,9 +57,11 @@ const courseBanner = (params) => {
     currentUrl: c.url,
   };
 };
+// Courses that exist only on this site (data/local-courses.mjs) have no WordPress post id.
+const postId = (c) => (c.local ? '' : ` postid-${c.id}`);
 const courseBody = (params) => {
   const c = findCourse(params.slug);
-  return c ? `wp-singular lp_course-template-default single single-lp_course postid-${c.id} wp-custom-logo wp-theme-Aststraining Aststraining learnpress learnpress-page elementor-default elementor-kit-1820` : '';
+  return c ? `wp-singular lp_course-template-default single single-lp_course${postId(c)} wp-custom-logo wp-theme-Aststraining Aststraining learnpress learnpress-page elementor-default elementor-kit-1820` : '';
 };
 const courseItemBody = (type) => (params) => {
   const c = findCourse(params.slug);

@@ -1,7 +1,9 @@
 import React, { useState } from 'react';
-import { Link } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 import { COURSE_SIDEBAR_CATEGORIES, EXPLORE_MENU, SITE } from '../../data/site';
 import { showLpToast } from '../../lib/lpToast';
+
+const REGISTRATION_URL = '/student-registration/';
 
 /**
  * LearnPress 4.4.7 enrol request (single-course.js): wp.apiFetch POST to the
@@ -37,6 +39,7 @@ async function enrollCourse(id) {
 export default function CourseSidebar({ course, full }) {
   const [loading, setLoading] = useState(false);
   const [done, setDone] = useState(null); // { status, message } after a successful request
+  const navigate = useNavigate();
 
   // Same flow as LearnPress: the backend decides (guest -> checkout, logged-in -> enrolled)
   // and answers with a message and a redirect.
@@ -74,15 +77,34 @@ export default function CourseSidebar({ course, full }) {
               </div>
             ) : null}
             <div className="lp-course-buttons">
-              <form name="enroll-course" className="enroll-course" method="post" onSubmit={onEnroll}>
-                <input type="hidden" name="enroll-course" value={course.id} />
-                {done ? null : (
-                  <button type="submit" className={'lp-button button-enroll-course' + (loading ? ' loading' : '')}>
-                    {full.enrollBtn || 'Start Now'}
+              {course.local ? (
+                // Not a LearnPress course: WordPress cannot enrol in it, so the button opens the registration
+                // form (a real <button>, which is what the LearnPress sidebar styles; works without JS too).
+                <form
+                  name="enroll-course"
+                  className="enroll-course"
+                  method="get"
+                  action={REGISTRATION_URL}
+                  onSubmit={(e) => {
+                    e.preventDefault();
+                    navigate(REGISTRATION_URL);
+                  }}
+                >
+                  <button type="submit" className="lp-button button-enroll-course">
+                    {full.enrollBtn}
                   </button>
-                )}
-                {done && done.message ? <div className={'learn-press-message ' + done.status} dangerouslySetInnerHTML={{ __html: done.message }} /> : null}
-              </form>
+                </form>
+              ) : (
+                <form name="enroll-course" className="enroll-course" method="post" onSubmit={onEnroll}>
+                  <input type="hidden" name="enroll-course" value={course.id} />
+                  {done ? null : (
+                    <button type="submit" className={'lp-button button-enroll-course' + (loading ? ' loading' : '')}>
+                      {full.enrollBtn || 'Start Now'}
+                    </button>
+                  )}
+                  {done && done.message ? <div className={'learn-press-message ' + done.status} dangerouslySetInnerHTML={{ __html: done.message }} /> : null}
+                </form>
+              )}
               <div style={{ display: 'flex', flexDirection: 'column' }}></div>
             </div>
           </div>

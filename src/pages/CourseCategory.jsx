@@ -4,7 +4,7 @@ import Seo from '../components/Seo';
 import NotFound from './NotFound';
 import { ArchiveSidebar, CourseCard, CoursesBar, LpBreadcrumb, LpStyles, filterAndSort, useCoursesLayout } from '../components/learnpress';
 import categories from '../data/categories.json';
-import coursesIndex from '../data/courses-index.json';
+import { categoryCourses } from '../lib/featured';
 
 /** Course category archive (/courses-category/<slug>/). */
 export default function CourseCategory() {
@@ -18,7 +18,7 @@ export default function CourseCategory() {
   const sp = new URLSearchParams(search);
   const q = sp.get('c_search') || '';
   const orderBy = sp.get('order_by') || 'post_date';
-  const courses = cat.courses.map((s) => coursesIndex.find((c) => c.slug === s)).filter(Boolean);
+  const courses = categoryCourses(cat);
   const list = filterAndSort(courses, q, orderBy);
 
   const update = (patch) => {

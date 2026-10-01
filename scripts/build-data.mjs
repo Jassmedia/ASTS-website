@@ -2,6 +2,7 @@
 // Run: node scripts/build-data.mjs
 import fs from 'fs';
 import path from 'path';
+import { LOCAL_COURSES, PUBLISHED } from '../src/data/local-courses.mjs';
 
 const RAW = 'src/data/raw';
 const raw = (f) => JSON.parse(fs.readFileSync(path.join(RAW, f), 'utf8'));
@@ -117,7 +118,6 @@ const index = order.map((o, i) => {
     seoTitle: c.seoTitle,
   };
 });
-write('src/data/courses-index.json', index);
 
 fs.rmSync('src/data/courses', { recursive: true, force: true });
 for (const c of courses) {
@@ -143,13 +143,166 @@ for (const c of courses) {
   });
 }
 
+// --- courses that exist only on this site (src/data/local-courses.mjs) ---
+// Same shapes as the WordPress courses above; `local: true` tells the course page to skip the
+// LearnPress parts WordPress would have to answer (enrolment, reviews, comments).
+const LOCAL_TERMS = [
+  'We will Provide Supporting to resolve Student practical Issues.',
+  'We will provide server Access and 100% Lab Facility.',
+  'Resume Preparation.',
+  'Interview Questions &amp; Answers.',
+  'We will conduct mock interviews. Student also gets 100% supporting before and after getting job.',
+];
+const LOCAL_AVATAR = 'https://secure.gravatar.com/avatar/?s=200&d=mm&r=g';
+const LOCAL_BODY = 'wp-singular lp_course-template-default single single-lp_course wp-custom-logo wp-theme-Aststraining Aststraining learnpress learnpress-page elementor-default elementor-kit-1820';
+const escHtml = (s) => s.replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;');
+const stripTags = (h) => h.replace(/<[^>]+>/g, ' ').replace(/&amp;/g, '&').replace(/\s+/g, ' ').trim();
+const plural = (n, word) => `${n} ${word}${n === 1 ? '' : 's'}`;
+const cap = (s) => s.charAt(0).toUpperCase() + s.slice(1);
+// "About X ..." cut at a word boundary, like the LearnPress archive excerpts.
+const excerpt = (text, max = 150) => (text.length <= max ? text : text.slice(0, text.lastIndexOf(' ', max)) + '...');
+
+const localIndex = LOCAL_COURSES.map((lc) => {
+  const cat = cats.find((c) => c.slug === lc.category);
+  if (!cat) throw new Error(`local course ${lc.slug}: unknown category "${lc.category}"`);
+  const url = `/courses/${lc.slug}/`;
+  const canonical = ORIGIN + url;
+  const image = `/images/courses/${lc.slug}.webp`;
+  const category = { slug: cat.slug, name: cat.name, url: rel(cat.url) };
+  const lessons = lc.sections.reduce((n, s) => n + s.items.length, 0);
+  const list = (items) => '<ul>\n' + items.map((i) => `<li>${escHtml(i)}</li>`).join('\n') + '\n</ul>';
+  const description = [
+    `<h3>About ${escHtml(lc.title)}</h3>`,
+    ...lc.about.map((p) => `<p style="text-align: justify;">${escHtml(p)}</p>`),
+    '<h3>What You Will Learn</h3>',
+    list(lc.learn),
+    `<h3>Prerequisites For Learning ${escHtml(lc.title)}</h3>`,
+    list(lc.prerequisites),
+    '<h3>Terms And Conditions</h3>',
+    '<ul>\n' + LOCAL_TERMS.map((t) => `<li>${t}</li>`).join('\n') + '\n</ul>',
+  ].join('\n');
+  const text = stripTags(description);
+  const short = excerpt(text);
+  // Search-result snippet: the course summary itself, without the repeated heading.
+  const metaDesc = excerpt(lc.about[0], 155);
+  const minutes = Math.max(1, Math.round(text.split(' ').length / 200));
+  const seoTitle = `${lc.title} - ASTSTraining`;
+  const name = lc.title.replace(/ Online Training$/, '');
+
+  write('src/data/courses/' + lc.slug + '.json', {
+    slug: lc.slug,
+    id: lc.slug,
+    local: true,
+    title: lc.title,
+    description,
+    curriculumInfo: plural(lc.sections.length, 'Section') + plural(lessons, 'Lesson') + lc.duration,
+    sections: lc.sections.map((s, si) => ({
+      id: `${lc.slug}-${si + 1}`,
+      title: s.title,
+      count: String(s.items.length),
+      collapsed: true,
+      items: s.items.map((title, ii) => ({ id: `${lc.slug}-${si + 1}-${ii + 1}`, order: ii + 1, type: 'lp_lesson', number: `${si + 1}.${ii + 1}`, title, status: 'locked' })),
+    })),
+    author: {
+      title: 'ASTS Training',
+      link: '',
+      desc: `${lc.title} is provided by a real time consultant. The experience acquired by our trainer on ${name}, is promisingly helpful to the corporate trainee’s. Our instructors are experts in the implementation and support projects. ASTS always works on real time scenarios. It is extremely useful for the professionals to handle the projects easily in the IT industry.`,
+      avatar: LOCAL_AVATAR,
+    },
+    instructorAvatar: LOCAL_AVATAR,
+    lpBreadcrumb: [{ url: '/', name: 'Home' }, { url: '/courses/', name: 'Courses' }, { url: category.url, name: category.name }],
+    enrollBtn: 'Register Now',
+    seo: {
+      title: seoTitle,
+      description: metaDesc,
+      canonical,
+      robots: 'index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1',
+      ogType: 'article',
+      ogTitle: seoTitle,
+      ogDescription: metaDesc,
+      ogImage: ORIGIN + image,
+      ogImageWidth: '1000',
+      ogImageHeight: '600',
+      ogImageType: 'image/webp',
+      articlePublisher: 'https://www.facebook.com/aststrainingonline/',
+      articleModified: PUBLISHED,
+      twitterCard: 'summary_large_image',
+      twitterSite: '@AstsTraining',
+      twitterLabel1: 'Est. reading time',
+      twitterData1: plural(minutes, 'minute'),
+      schema: {
+        type: 'WebPage',
+        url: canonical,
+        name: seoTitle,
+        description: metaDesc,
+        datePublished: PUBLISHED,
+        dateModified: PUBLISHED,
+        about: false,
+        image: { url: ORIGIN + image, width: 1000, height: 600 },
+        breadcrumb: [{ name: 'Courses', item: ORIGIN + '/courses/' }, { name: lc.title }],
+      },
+      bodyClass: LOCAL_BODY,
+      pageTitle: lc.title,
+      bcBg: '/wp-content/uploads/2020/12/Home-dot-bg.jpg',
+      bcTitle: ['ASTSTraining', 'Courses', category.name, lc.title],
+      bcLinks: [
+        { url: '/', name: 'ASTSTraining' },
+        { url: '/courses/', name: 'Courses' },
+        { url: category.url, name: category.name },
+      ],
+      bcWrapperClass: 'porfolio-details',
+      hasBreadcrumbs: true,
+    },
+  });
+
+  return {
+    slug: lc.slug,
+    id: lc.slug,
+    local: true,
+    title: lc.title,
+    url,
+    categories: [category],
+    instructor: 'ASTS Training',
+    instructorUrl: '',
+    duration: lc.duration,
+    level: lc.level,
+    lessons: plural(lessons, 'lesson'),
+    quizzes: '0 quizzes',
+    students: '0 students',
+    lessonsLabel: cap(plural(lessons, 'Lesson')),
+    quizzesLabel: '0 Quizzes',
+    studentsLabel: '0 Students',
+    thumb: image,
+    thumbAlt: 'course thumbnail',
+    preview: image,
+    previewAlt: lc.title,
+    short,
+    readmore: 'Enroll Now',
+    published: PUBLISHED,
+    modified: PUBLISHED,
+    seoTitle,
+  };
+});
+for (const c of localIndex) {
+  if (index.some((x) => x.slug === c.slug)) throw new Error(`local course ${c.slug} is also a WordPress course`);
+}
+// The newest courses lead the archive, as LearnPress orders it.
+const fullIndex = [...localIndex, ...index].map((c, i) => ({ ...c, archiveIndex: i }));
+write('src/data/courses-index.json', fullIndex);
+// Paths the proxy must never hand to WordPress (it has no such page, not even for logged-in visitors).
+fs.writeFileSync(
+  'src/data/local-course-paths.js',
+  '// Generated by scripts/build-data.mjs from src/data/local-courses.mjs: do not edit.\n' +
+    `export const LOCAL_COURSE_PATHS = ${JSON.stringify(localIndex.map((c) => c.url), null, 2)};\n`,
+);
+
 // --- categories ---
 const catData = cats.map((c) => ({
   slug: c.slug,
   name: c.name,
   url: rel(c.url),
   termId: c.termId,
-  courses: c.items.map((i) => index.find((x) => x.url === rel(i.url)).slug),
+  courses: [...localIndex.filter((l) => l.categories[0].slug === c.slug).map((l) => l.slug), ...c.items.map((i) => index.find((x) => x.url === rel(i.url)).slug)],
   seo: seoOf(rel(c.url)),
 }));
 write('src/data/categories.json', catData);
@@ -196,7 +349,7 @@ write('src/data/testimonials.json', tst);
 // --- attachment pages (WordPress media pages) for redirect generation ---
 write('src/data/attachments.json', attachments.map((a) => rel(a.loc)));
 
-console.log('courses', index.length, '| categories', catData.length, '| page seo', Object.keys(pagesSeo).length, '| content', Object.keys(content).length, '| testimonials', tst.length);
+console.log('courses', fullIndex.length, `(${localIndex.length} local)`, '| categories', catData.length, '| page seo', Object.keys(pagesSeo).length, '| content', Object.keys(content).length, '| testimonials', tst.length);
 console.log('index.json bytes', fs.statSync('src/data/courses-index.json').size, '| page-content bytes', fs.statSync('src/data/page-content.json').size, '| pages-seo bytes', fs.statSync('src/data/pages-seo.json').size);
 const sizes = fs.readdirSync('src/data/courses').map((f) => fs.statSync(path.join('src/data/courses', f)).size);
 console.log('course chunk bytes min/max/avg', Math.min(...sizes), Math.max(...sizes), Math.round(sizes.reduce((a, b) => a + b) / sizes.length));

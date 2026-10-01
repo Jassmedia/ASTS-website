@@ -18,7 +18,8 @@ export function listRoutes() {
   const itemUrls = [];
   for (const c of coursesIndex) {
     const full = j(path.join('src/data/courses', c.slug + '.json'));
-    for (const s of full.sections) for (const it of s.items) itemUrls.push(it.url);
+    // Lessons of local courses (data/local-courses.mjs) have no page.
+    for (const s of full.sections) for (const it of s.items) if (it.url) itemUrls.push(it.url);
   }
   const categoryUrls = categories.map((c) => c.url);
   const testimonialUrls = testimonials.map((t) => '/testimonials/' + t.slug + '/');

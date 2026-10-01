@@ -12,7 +12,7 @@
     "preview": "vite preview",
     "check:links": "node scripts/check-links.mjs",
     "gen:vercel": "node scripts/gen-vercel.mjs",
-    "gen:course-tiles": "node scripts/course-tiles.mjs",
+    "gen:course-images": "node scripts/course-images.mjs",
     "build:data": "node scripts/build-data.mjs"
   },
   "dependencies": {

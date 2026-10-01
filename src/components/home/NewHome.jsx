@@ -365,7 +365,7 @@ function Trending() {
             </Link>
           }
         />
-        <div className="nx-grid nx-grid-4">
+        <div className="nx-grid nx-grid-3">
           {TRENDING_COURSES.map((c, i) => (
             <CourseCard key={c.id} course={c} index={i} />
           ))}

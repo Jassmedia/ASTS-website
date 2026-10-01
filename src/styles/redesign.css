@@ -933,6 +933,20 @@ body.nx-drawer-open {
     gap: 18px;
   }
 }
+.nx-grid-3 {
+  grid-template-columns: repeat(3, 1fr);
+}
+@media (max-width: 991px) {
+  .nx-grid-3 {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media (max-width: 575px) {
+  .nx-grid-3 {
+    grid-template-columns: 1fr;
+    gap: 18px;
+  }
+}
 .nx-card {
   background: var(--nx-white);
   border: 1px solid var(--nx-line);
@@ -1951,4 +1965,89 @@ body.nx-drawer-open {
 /* course archive cards without a price: keep "Enroll Now" where the price used to push it (list layout) */
 .learn-press-courses .course-content .course-info .course-readmore {
   margin-left: auto;
+}
+
+/* course pages: "Register for this course" box at the end of the Overview tab (course/CourseRegister.jsx) */
+.nx-course-register {
+  display: flex;
+  gap: 18px;
+  align-items: flex-start;
+  margin-top: 32px;
+  padding: 24px;
+  background: var(--nx-cyan-50);
+  border: 1px solid #cdeaf4;
+  border-radius: var(--nx-radius);
+  font-family: var(--nx-body);
+}
+.nx-course-register-icon {
+  flex: none;
+  display: grid;
+  place-items: center;
+  width: 52px;
+  height: 52px;
+  border-radius: 14px;
+  background: var(--nx-cyan);
+  color: var(--nx-white);
+}
+.nx-course-register-icon svg {
+  width: 26px;
+  height: 26px;
+}
+.nx-course-register h3 {
+  margin: 0 0 6px;
+  font-family: var(--nx-head);
+  font-size: 20px;
+  font-weight: 800;
+  line-height: 1.3;
+  color: var(--nx-navy);
+}
+.nx-course-register p {
+  margin: 0 0 16px;
+  font-size: 15px;
+  line-height: 1.6;
+  color: var(--nx-muted);
+}
+.nx-course-register-actions {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 12px 20px;
+}
+.nx-course-register-actions a {
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--nx-navy);
+  text-decoration: none;
+}
+.nx-course-register-actions a:hover {
+  color: var(--nx-cyan-600);
+}
+.nx-course-register-actions svg {
+  width: 17px;
+  height: 17px;
+}
+.nx-course-register-actions .fa {
+  font-size: 18px;
+  color: #25d366;
+}
+.nx-course-register-actions .nx-course-register-btn {
+  padding: 11px 20px;
+  border-radius: 999px;
+  background: var(--nx-cyan);
+  color: var(--nx-white);
+  font-family: var(--nx-head);
+  font-weight: 700;
+}
+.nx-course-register-actions .nx-course-register-btn:hover {
+  background: var(--nx-cyan-600);
+  color: var(--nx-white);
+}
+@media (max-width: 575px) {
+  .nx-course-register {
+    flex-direction: column;
+    padding: 20px;
+  }
 }

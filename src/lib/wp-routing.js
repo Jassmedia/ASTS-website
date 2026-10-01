@@ -9,6 +9,7 @@
  * comments, Contact Form 7, search, feeds, Yoast sitemaps, the REST API and
  * any URL the front end does not prerender (attachment pages, legacy URLs, 404s).
  */
+import { LOCAL_COURSE_PATHS } from '../data/local-course-paths.js';
 
 /** Paths that only WordPress can serve. */
 const WP_PATHS = [
@@ -69,6 +70,13 @@ const WP_COOKIE = /(?:^|;\s*)(?:wordpress_logged_in_[^=]*|wp-postpass_[^=]*|comm
 /** Header the front end sends when it needs WordPress' rendering of a page (e.g. published comments). */
 export const WP_RENDER_HEADER = 'x-asts-render';
 
+const LOCAL_ONLY = new Set(LOCAL_COURSE_PATHS);
+
+/** True for pages that exist only on this site (never on WordPress). */
+export function isLocalOnlyPath(pathname) {
+  return LOCAL_ONLY.has(pathname.endsWith('/') ? pathname : pathname + '/');
+}
+
 export function isWordPressPath(pathname) {
   return WP_PATHS.some((re) => re.test(pathname));
 }
@@ -86,6 +94,8 @@ export function hasWordPressQuery(searchParams) {
  */
 export function wordPressReason({ method, url, cookie, renderHeader }) {
   if (method !== 'GET' && method !== 'HEAD') return 'method';
+  // Pages of courses that exist only on this site: WordPress has no such page, even for logged-in visitors.
+  if (isLocalOnlyPath(url.pathname) && !hasWordPressQuery(url.searchParams)) return null;
   if (cookie && WP_COOKIE.test(cookie)) return 'session';
   if (renderHeader === 'wordpress') return 'render-header';
   if (isWordPressPath(url.pathname)) return 'path';
