@@ -3,6 +3,8 @@
 import fs from 'fs';
 import path from 'path';
 import { LOCAL_COURSES, PUBLISHED } from '../src/data/local-courses.mjs';
+import { NOINDEX_PAGES, PAGE_REDIRECTS } from '../src/data/retired-pages.mjs';
+import { resolveLegacyUrl } from '../src/lib/legacy-urls.js';
 
 const RAW = 'src/data/raw';
 const raw = (f) => JSON.parse(fs.readFileSync(path.join(RAW, f), 'utf8'));
@@ -12,6 +14,26 @@ const write = (f, data) => {
 };
 const ORIGIN = 'https://aststraining.com';
 const rel = (u) => (u || '').replace(ORIGIN, '');
+// The snapshot keeps &gt; &lt; &nbsp; encoded in text values; React escapes attribute values
+// itself, so they are decoded here (otherwise "Co&gt;Operating" is served as "Co&amp;gt;Operating").
+const plain = (s) => (typeof s === 'string' ? s.replace(/&gt;/g, '>').replace(/&lt;/g, '<').replace(/&nbsp;/g, ' ') : s);
+
+// Links inside captured content: same-site links become relative, links to an old address go
+// straight to the page that now answers it (src/lib/legacy-urls.js), and page links end in "/".
+const SAME_SITE = /^https?:\/\/(www\.)?aststraining\.com(?=\/|$)/i;
+const fixLinks = (html) =>
+  (html || '').replace(/(<a\b[^>]*?\bhref=")([^"]*)(")/gi, (m, pre, href, post) => {
+    let target = href.trim();
+    if (SAME_SITE.test(target)) target = target.replace(SAME_SITE, '') || '/';
+    else if (!target.startsWith('/') || target.startsWith('//')) return m; // external, anchor, mailto, tel
+    const cut = target.search(/[?#]/);
+    const pathname = cut < 0 ? target : target.slice(0, cut);
+    const tail = cut < 0 ? '' : target.slice(cut);
+    const legacy = resolveLegacyUrl(pathname);
+    if (legacy && legacy.redirect) return pre + legacy.redirect + tail + post;
+    const isPage = !/\.[a-z0-9]{2,5}$/i.test(pathname) && !/^\/wp-/.test(pathname);
+    return pre + (isPage && !pathname.endsWith('/') ? pathname + '/' : pathname) + tail + post;
+  });
 
 const courses = raw('courses.json');
 const cards = raw('courses-cards.json');
@@ -50,13 +72,14 @@ function seoOf(key) {
   const e = seo[key];
   if (!e) return null;
   const o = {
-    title: e.title,
-    description: e.description || undefined,
+    title: plain(e.title),
+    description: plain(e.description) || undefined,
     canonical: e.canonical || undefined,
-    robots: e.robots,
+    // Leftover pages kept online but out of the index (src/data/retired-pages.mjs).
+    robots: NOINDEX_PAGES.includes(key) ? 'noindex, follow' : e.robots,
     ogType: e.ogType || undefined,
-    ogTitle: e.ogTitle || undefined,
-    ogDescription: e.ogDescription || undefined,
+    ogTitle: plain(e.ogTitle) || undefined,
+    ogDescription: plain(e.ogDescription) || undefined,
     ogImage: e.ogImage || undefined,
     ogImageWidth: e.ogImageWidth || undefined,
     ogImageHeight: e.ogImageHeight || undefined,
@@ -126,7 +149,7 @@ for (const c of courses) {
     slug: c.slug,
     id: c.id,
     title: c.title,
-    description: c.description,
+    description: fixLinks(c.description),
     curriculumInfo: c.curriculumInfo,
     sections: c.sections.map((s) => ({
       id: s.id,
@@ -310,6 +333,7 @@ write('src/data/categories.json', catData);
 // --- static pages seo (everything that is not a course/category/testimonial) ---
 const pagesSeo = {};
 for (const key of Object.keys(seo)) {
+  if (key in PAGE_REDIRECTS) continue; // redirected to its equivalent page, not built
   if (/^\/courses\/.+|^\/courses-category\/|^\/testimonials\//.test(key)) continue;
   pagesSeo[key] = seoOf(key);
 }
@@ -320,11 +344,14 @@ const content = {};
 const STATIC_PAGES = ['about-asts-training', 'about-asts-training__testimonials', 'a-homepage-section', 'become-a-teacher', 'blog', 'blog-old', 'hadoop', 'home', 'instructor', 'instructors', 'lp-checkout', 'lp-profile', 'privacy-policy', 'privacy-policy-2', 'sample-page', 'terms-conditions', 'term_conditions', 'thanks', 'training-programs'];
 for (const f of fs.readdirSync(path.join(RAW, 'content'))) {
   if (!STATIC_PAGES.includes(f.replace('.html', ''))) continue;
-  content[f.replace('.html', '')] = fs
-    .readFileSync(path.join(RAW, 'content', f), 'utf8')
-    .replace(/https:\/\/aststraining\.com\//g, '/')
-    .replace(/ srcset="[^"]*"/g, '')
-    .replace(/ sizes="[^"]*"/g, '');
+  if (('/' + f.replace('.html', '').replace(/__/g, '/') + '/') in PAGE_REDIRECTS) continue;
+  content[f.replace('.html', '')] = fixLinks(
+    fs
+      .readFileSync(path.join(RAW, 'content', f), 'utf8')
+      .replace(/https:\/\/aststraining\.com\//g, '/')
+      .replace(/ srcset="[^"]*"/g, '')
+      .replace(/ sizes="[^"]*"/g, ''),
+  );
 }
 write('src/data/page-content.json', content);
 

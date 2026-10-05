@@ -1,4 +1,5 @@
 import { TRENDING_COURSES } from './trending-courses';
+import categories from './categories.json';
 
 // Site-wide constants captured from the current site (do not invent values here).
 export const SITE = {
@@ -37,7 +38,7 @@ export const TRACKING = {
 };
 
 // Categories of the owner's featured courses (data/trending-courses.js), in the order their first course
-// appears there. They are the only categories the site links to: homepage cards and chips, footer, sidebars.
+// appears there: the ones the homepage (cards, chips) and the footer show.
 const FEATURED_CATEGORIES = [
   { slug: 'bi', name: 'BI', termId: 733, image: '/wp-content/uploads/2020/12/business-intelligence-BI.jpg' },
   { slug: 'cloud-computing', name: 'Cloud Computing', termId: 736, image: '/wp-content/uploads/2020/12/Cloud-Computing-CC.jpg' },
@@ -45,14 +46,20 @@ const FEATURED_CATEGORIES = [
   { slug: 'etl-tools', name: 'ETL Tools', termId: 732, image: '/wp-content/uploads/2020/12/etl-tools-to-learn-in-2020.jpg' },
 ].map((c) => ({ ...c, url: `/courses-category/${c.slug}/` }));
 
-// "06 Courses": how many featured courses a category holds (what its category page lists).
-const featuredCount = (cat) => {
-  const n = TRENDING_COURSES.filter((t) => t.category && t.category.url === cat.url).length;
+// All 11 course categories (the sidebars of the course pages link every one of them), featured first.
+const ALL_CATEGORIES = [
+  ...FEATURED_CATEGORIES.map((f) => categories.find((c) => c.slug === f.slug)),
+  ...categories.filter((c) => !FEATURED_CATEGORIES.some((f) => f.slug === c.slug)).sort((a, b) => a.name.localeCompare(b.name)),
+];
+
+// "08 Courses": how many courses a category page lists.
+const courseCount = (cat) => {
+  const n = categories.find((c) => c.slug === cat.slug).courses.length;
   return `${String(n).padStart(2, '0')} Course${n === 1 ? '' : 's'}`;
 };
 
 // Footer widget columns
-export const FOOTER_COURSES = FEATURED_CATEGORIES.map((c) => ({ label: c.name, url: c.url }));
+export const FOOTER_COURSES = [...FEATURED_CATEGORIES.map((c) => ({ label: c.name, url: c.url })), { label: 'All Courses', url: '/courses/' }];
 export const FOOTER_SERVICES = [
   { label: 'Online Training', url: '/online-training/' },
   { label: 'Corporate Training', url: '/corporate-training/' },
@@ -60,7 +67,7 @@ export const FOOTER_SERVICES = [
 ];
 
 // Course sidebar widgets (every single course page)
-export const COURSE_SIDEBAR_CATEGORIES = FEATURED_CATEGORIES.map((c) => ({ cls: `cat-item cat-item-${c.termId}`, label: c.name, url: c.url }));
+export const COURSE_SIDEBAR_CATEGORIES = ALL_CATEGORIES.map((c) => ({ cls: `cat-item cat-item-${c.termId}`, label: c.name, url: c.url }));
 export const EXPLORE_MENU = [
   { id: 2054, label: 'Home', url: '/', cls: 'menu-item-home' },
   { id: 2055, label: 'About', url: '/about-asts-training/' },
@@ -70,10 +77,10 @@ export const EXPLORE_MENU = [
 ];
 // Archive (courses / category) sidebar widgets
 export const LATEST_COURSES_MENU = TRENDING_COURSES.map((c) => ({ id: c.id, label: c.title, url: c.url }));
-export const COURSE_CATEGORIES_MENU = FEATURED_CATEGORIES.map((c) => ({ id: c.slug, label: c.name, url: c.url }));
+export const COURSE_CATEGORIES_MENU = ALL_CATEGORIES.map((c) => ({ id: c.slug, label: c.name, url: c.url }));
 
 // Homepage "All Courses" category cards and the hero's category chips
-export const HOME_CATEGORY_CARDS = FEATURED_CATEGORIES.map((c) => ({ slug: c.slug, name: c.name, count: featuredCount(c), image: c.image }));
+export const HOME_CATEGORY_CARDS = FEATURED_CATEGORIES.map((c) => ({ slug: c.slug, name: c.name, count: courseCount(c), image: c.image }));
 
 // "Our Training" cards (homepage) and Services page cards
 export const TRAINING_CARDS = [
@@ -90,7 +97,7 @@ export const TRAINING_CARDS = [
     id: '48a5036',
     col: 'f05a408',
     title: 'Corporate Training',
-    url: '/classroom-training/',
+    url: '/corporate-training/',
     image: '/wp-content/uploads/2020/12/classroom-training-03.png',
     alt: '',
     text: 'Corporate Training gives you a hands-on interactive experience on any technology you choose.',
@@ -116,7 +123,7 @@ export const TRAINING_CARDS = [
 ];
 export const SERVICES_PAGE_CARDS = [
   { id: 'ad5e261', col: '321d70a', title: 'Online Training', url: '/online-training/', image: '/wp-content/uploads/2020/12/online-learning-02.png', alt: 'online-learning-02', text: TRAINING_CARDS[0].text },
-  { id: '4649a2c', col: '8b9afe2', title: 'Classroom Training', url: '/classroom-training/', image: '/wp-content/uploads/2020/12/classroom-training-03.png', alt: '', text: 'Classroom Training gives you a hands-on interactive experience on any technology you choose.' },
+  { id: '4649a2c', col: '8b9afe2', title: 'Classroom Training', url: '/corporate-training/', image: '/wp-content/uploads/2020/12/classroom-training-03.png', alt: '', text: 'Classroom Training gives you a hands-on interactive experience on any technology you choose.' },
   { id: '9d9f02e', col: 'afab84c', title: 'Project Support', url: '/project-support/', image: '/wp-content/uploads/2020/12/project-support-04.png', alt: '', text: TRAINING_CARDS[2].text },
   { id: '5fb97e0', col: 'c19a95e', title: 'Idea Discussion', url: '/idea-discussion/', image: '/wp-content/uploads/2020/12/idea-discussion-05.png', alt: '', text: TRAINING_CARDS[3].text },
 ];

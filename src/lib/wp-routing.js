@@ -6,8 +6,11 @@
  *
  * WordPress keeps everything that is dynamic on the live site: accounts and
  * login, LearnPress profile/enrolment/checkout/lessons for logged-in users,
- * comments, Contact Form 7, search, feeds, Yoast sitemaps, the REST API and
- * any URL the front end does not prerender (attachment pages, legacy URLs, 404s).
+ * comments, Contact Form 7, search, feeds and the REST API.
+ *
+ * Not WordPress any more: the XML sitemaps (generated at build time by
+ * scripts/sitemap.mjs, so they list exactly the pages of this site) and old URLs
+ * (answered by src/lib/legacy-urls.js before these rules are consulted).
  */
 import { LOCAL_COURSE_PATHS } from '../data/local-course-paths.js';
 
@@ -26,14 +29,10 @@ const WP_PATHS = [
   /^\/wp-content\/(plugins|themes)\//,
   /^\/lp-ajax-handle\/?$/,
   /^\/lp-checkout(\/|$)/,
+  // LearnPress profile pages of a user (/lp-profile/<user>/...); /lp-profile/ itself is prerendered
+  /^\/lp-profile\/[^/]+/,
   // RSS/Atom feeds (site, comments, per-term and per-post feeds)
   /(^|\/)feed(\/|$)/,
-  // Yoast SEO sitemaps and their stylesheet
-  /^\/sitemap_index\.xml$/,
-  /^\/sitemap\.xml$/,
-  /^\/[a-z0-9_-]+-sitemap[0-9]*\.xml$/i,
-  /^\/main-sitemap\.xsl$/,
-  /^\/wp-sitemap/,
 ];
 
 /** WordPress query variables that change what WordPress renders for a URL. */

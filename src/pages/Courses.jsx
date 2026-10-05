@@ -2,14 +2,16 @@ import React from 'react';
 import { useLocation, useNavigate } from 'react-router-dom';
 import Seo from '../components/Seo';
 import { ArchiveSidebar, CourseCard, CoursesBar, LpBreadcrumb, LpPagination, LpStyles, filterAndSort, useCoursesLayout } from '../components/learnpress';
-import { FEATURED_COURSES } from '../lib/featured';
+import CourseDirectory from '../components/course/CourseDirectory';
+import { ALL_COURSES } from '../lib/featured';
 import pagesSeo from '../data/pages-seo.json';
 
 const PER_PAGE = 15;
 
 /**
- * Courses archive (/courses/): the featured courses (data/trending-courses.js) in their order, 15 per page,
- * with the LearnPress search / sort / grid-list bar and the archive sidebar.
+ * Courses archive (/courses/): the whole catalogue, the featured courses (data/trending-courses.js)
+ * first, 15 per page, with the LearnPress search / sort / grid-list bar and the archive sidebar,
+ * followed by the "All Courses" directory that links every course by category.
  */
 export default function Courses() {
   const { search } = useLocation();
@@ -20,7 +22,7 @@ export default function Courses() {
   const orderBy = sp.get('order_by') || 'post_date';
   const [layout, setLayout] = useCoursesLayout();
 
-  const list = filterAndSort(FEATURED_COURSES, q, orderBy);
+  const list = filterAndSort(ALL_COURSES, q, orderBy);
   const pages = Math.max(1, Math.ceil(list.length / PER_PAGE));
   const slice = list.slice((page - 1) * PER_PAGE, page * PER_PAGE);
 
@@ -67,6 +69,9 @@ export default function Courses() {
               </div>
             </div>
             <ArchiveSidebar />
+          </div>
+          <div className="lp-content-area">
+            <CourseDirectory />
           </div>
         </div>
       </div>

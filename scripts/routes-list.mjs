@@ -1,6 +1,7 @@
 // Enumerates every URL of the site (used by prerender and sitemap generation).
 import fs from 'fs';
 import path from 'path';
+import { NOINDEX_PAGES } from '../src/data/retired-pages.mjs';
 
 const j = (f) => JSON.parse(fs.readFileSync(f, 'utf8'));
 
@@ -10,9 +11,8 @@ export function listRoutes() {
   const categories = j('src/data/categories.json');
   const testimonials = j('src/data/testimonials.json');
 
-  const staticPages = Object.keys(pagesSeo)
-    .filter((k) => k !== '/?s=' && k !== '/404')
-    .map((k) => (k === '/courses__trashed/hadoop/' ? '/hadoop/' : k));
+  // pages-seo.json no longer holds the leftover pages that redirect (data/retired-pages.mjs).
+  const staticPages = Object.keys(pagesSeo).filter((k) => k !== '/?s=' && k !== '/404');
 
   const courseUrls = coursesIndex.map((c) => c.url);
   const itemUrls = [];
@@ -28,19 +28,20 @@ export function listRoutes() {
   return all;
 }
 
+/**
+ * The URLs of the XML sitemaps, grouped under the file names Yoast used (page-sitemap.xml, ...).
+ * Only pages that are indexable and canonical for themselves: no noindex pages, no lessons or
+ * quizzes (their canonical is the course), no attachment pages, nothing that redirects.
+ */
 export function sitemapGroups() {
   const pagesSeo = j('src/data/pages-seo.json');
   const coursesIndex = j('src/data/courses-index.json');
   const categories = j('src/data/categories.json');
   const testimonials = j('src/data/testimonials.json');
   return {
-    page: Object.keys(pagesSeo)
-      .filter((k) => !['/?s=', '/404', '/rselements_pro/courses-categories/', '/testimonial-category/student-reviews/'].includes(k))
-      .map((k) => (k === '/courses__trashed/hadoop/' ? '/hadoop/' : k)),
+    page: Object.keys(pagesSeo).filter((k) => !['/?s=', '/404', '/courses/'].includes(k) && !NOINDEX_PAGES.includes(k)),
     lp_course: ['/courses/', ...coursesIndex.map((c) => c.url)],
     course_category: categories.map((c) => c.url),
     testimonials: testimonials.map((t) => '/testimonials/' + t.slug + '/'),
-    rselements_pro: ['/rselements_pro/courses-categories/'],
-    'testimonial-category': ['/testimonial-category/student-reviews/'],
   };
 }

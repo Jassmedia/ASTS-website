@@ -21,7 +21,7 @@ export default function Testimonials({ id, sliderId }) {
                 <div className="row y-middle no-gutter">
                   <div className="col-lg-4 col-md-3">
                     <div className="user-info">
-                      <img loading="lazy" decoding="async" width="120" height="120" src={t.thumb} className="attachment-educavo_testimonial_image size-educavo_testimonial_image wp-post-image" alt="" />{' '}
+                      <img loading="lazy" decoding="async" width="120" height="120" src={t.thumb} className="attachment-educavo_testimonial_image size-educavo_testimonial_image wp-post-image" alt={t.name} />{' '}
                     </div>
                   </div>
                   <div className="col-lg-8 col-md-9">

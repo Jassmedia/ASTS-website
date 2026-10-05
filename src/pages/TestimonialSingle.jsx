@@ -52,7 +52,7 @@ export default function TestimonialSingle() {
                       </ul>
                     </div>
                     <div className="bs-img">
-                      <img width="128" height="128" src={t.image} className="attachment-post-thumbnail size-post-thumbnail wp-post-image" alt="" />{' '}
+                      <img width="128" height="128" src={t.image} className="attachment-post-thumbnail size-post-thumbnail wp-post-image" alt={t.name} />{' '}
                     </div>
                     <div className="single-content-full">
                       <div className="bs-desc">

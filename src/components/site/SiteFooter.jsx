@@ -9,7 +9,7 @@ export default function SiteFooter() {
     <footer className="nx-footer">
       <div className="nx-container nx-footer-top">
         <div className="nx-footer-brand">
-          <img loading="lazy" decoding="async" width="150" height="46" src={SITE.footerLogo} alt="" />
+          <img loading="lazy" decoding="async" width="150" height="46" src={SITE.footerLogo} alt="ASTS Training" />
           <p dangerouslySetInnerHTML={{ __html: SITE.tagline }} />
         </div>
         <div>

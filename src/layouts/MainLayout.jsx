@@ -15,6 +15,9 @@ import pageInlineCss from '../data/page-inline-css.json';
 import defaultCss from '../styles/index.css?url';
 import lpCss from '../styles/index-lp.css?url';
 
+const THEME_FONTS =
+  'https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..900;1,200..900&family=Roboto:ital,wght@0,100..900;1,100..900&family=Roboto+Slab:wght@100..900&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap';
+
 /**
  * Page chrome shared by every route: off-canvas menu, header (+ page banner),
  * the routed page, footer, back-to-top button and the floating social bar.
@@ -30,6 +33,14 @@ export default function MainLayout() {
   const banner = typeof handle.banner === 'function' ? handle.banner(match.params, location) : handle.banner || null;
   const pageBodyClass = typeof handle.bodyClass === 'function' ? handle.bodyClass(match.params, location) : handle.bodyClass || '';
   const bare = !!handle.bare; // 404 template of the current site has no header/footer
+  // Pages built only from the redesign (the homepage) skip the old theme's stylesheet bundle and its
+  // web fonts: the build gives them a small stylesheet with just the theme rules they use
+  // (scripts/light-css.mjs). That stylesheet is part of the page as served, so this applies only
+  // while the document is the one the server sent for a light page; arriving here from another
+  // page without a reload keeps the full bundle that page already loaded.
+  const lightRoute = typeof handle.lightCss === 'function' ? handle.lightCss(match.params, location) : !!handle.lightCss;
+  const servedLight = useRef(lightRoute).current;
+  const light = lightRoute && servedLight;
   const css = handle.lp ? lpCss : defaultCss;
   const otherCss = handle.lp ? defaultCss : lpCss;
   const pathKey = location.pathname.replace(/\/?$/, '/');
@@ -54,6 +65,28 @@ export default function MainLayout() {
   useElementorStretch(location.key);
   useElementorAnimations(location.key);
   useTilt(location.key);
+
+  // A light page has not loaded the theme stylesheets the other pages need, so links leaving it
+  // are ordinary page loads (the prerendered page arrives with its styles) instead of client-side
+  // route changes, which would show the next page unstyled for a moment.
+  useEffect(() => {
+    if (!light) return undefined;
+    const onClickCapture = (e) => {
+      if (e.defaultPrevented || e.button !== 0 || e.metaKey || e.ctrlKey || e.shiftKey || e.altKey) return;
+      const a = e.target.closest && e.target.closest('a[href]');
+      if (!a || a.target === '_blank') return;
+      let url;
+      try {
+        url = new URL(a.getAttribute('href'), window.location.href);
+      } catch {
+        return;
+      }
+      if (url.origin !== window.location.origin || url.pathname === window.location.pathname) return;
+      e.stopPropagation(); // keep the router out of it: the browser follows the link
+    };
+    document.addEventListener('click', onClickCapture, true);
+    return () => document.removeEventListener('click', onClickCapture, true);
+  }, [light]);
 
   // Client-side navigation for internal links inside captured CMS HTML
   useEffect(() => {
@@ -87,9 +120,15 @@ export default function MainLayout() {
   return (
     <>
       <Helmet>
-        <link rel="stylesheet" href={css} />
+        {light ? null : <link rel="preconnect" href="https://fonts.googleapis.com" />}
+        {light ? null : <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="" />}
+        {/* The theme fonts of the inner pages in ONE request, with every weight and style the old six
+            stylesheet links asked for; text shows at once and swaps to the web font. */}
+        {light ? null : <link rel="stylesheet" href={THEME_FONTS} />}
+        {light ? null : <link rel="stylesheet" href={css} />}
         {/* Redesign (header, footer, homepage): after the theme bundle so it takes precedence. */}
         <link rel="stylesheet" href={redesignCss} />
+        {light ? <link rel="prefetch" href={css} as="style" /> : null}
         <link rel="prefetch" href={otherCss} as="style" />
         {inlineCss ? <style type="text/css">{inlineCss}</style> : null}
         <body className={pageBodyClass} />

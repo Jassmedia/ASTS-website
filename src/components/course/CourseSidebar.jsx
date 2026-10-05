@@ -149,9 +149,6 @@ export default function CourseSidebar({ course, full }) {
                     <Link to={m.url}>{m.label}</Link>
                   </li>
                 ))}
-                <li id="menu-item-5206" className="menu-item menu-item-type- menu-item-object- menu-item-5206">
-                  <a></a>
-                </li>
               </ul>
             </div>
           </div>

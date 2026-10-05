@@ -124,13 +124,13 @@ export function EImage({ id, src, width, height, className, alt = '', fetchPrior
 }
 
 /** RS Elements "rs-image-hover" widget (tilting image), used on the service pages and contact page. */
-export function RsImageHover({ id, src, width, height, imgClass, fetchPriority }) {
+export function RsImageHover({ id, src, width, height, imgClass, alt = '', fetchPriority }) {
   return (
     <EWidget id={id} type="rs-image-hover">
       <div className="elementor-image">
         <div className="image titlt" data-tilt="" data-tilt-max="3">
           <a>
-            <img fetchpriority={fetchPriority} decoding="async" width={width} height={height} src={src} className={imgClass} alt="" />
+            <img fetchpriority={fetchPriority} decoding="async" width={width} height={height} src={src} className={imgClass} alt={alt} />
           </a>
         </div>
       </div>

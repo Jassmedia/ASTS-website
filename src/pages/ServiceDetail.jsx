@@ -69,7 +69,7 @@ export default function ServiceDetail({ slug }) {
                   <ETextEditor id={ids.text} html={p.html} />
                 </EColumn>
                 <EColumn id={ids.right} col={50} inner>
-                  <RsImageHover id={ids.image} src={p.image.src} width={p.image.width} height={p.image.height} imgClass={p.image.cls} fetchPriority="high" />
+                  <RsImageHover id={ids.image} src={p.image.src} width={p.image.width} height={p.image.height} imgClass={p.image.cls} alt={p.title} fetchPriority="high" />
                 </EColumn>
               </ESection>
               <EHeading id={ids.bottom} text={p.bottom} />

@@ -25,7 +25,7 @@ const CATEGORY_IMAGES = {
 };
 const TRAINING_EXTRA = {
   '/online-training/': ['training-online.webp', 'Live online class with participants on a video call', 'laptop'],
-  '/classroom-training/': ['training-corporate.webp', 'Trainer presenting to a corporate group with laptops', 'building'],
+  '/corporate-training/': ['training-corporate.webp', 'Trainer presenting to a corporate group with laptops', 'building'],
   '/project-support/': ['training-project-support.webp', 'Team collaborating on a project around laptops', 'lifeBuoy'],
   '/idea-discussion/': ['training-idea-discussion.webp', 'Two people sketching ideas on a whiteboard', 'bulb'],
 };
@@ -107,7 +107,6 @@ function Hero() {
           <h3 className="nx-hero-title">
             ASTS - <em>Online Training</em>
           </h3>
-          <p className="nx-hero-text">Every act of conscious learning requires the willingness to suffer an injury to one’s self-esteem during COVID-19.</p>
           <form role="search" method="get" id="searchform" className="nx-search" action="/">
             <Icon name="search" />
             <input type="text" defaultValue="" name="s" id="s" placeholder="What do you want to learn?" aria-label="What do you want to learn?" />
@@ -247,7 +246,7 @@ function Categories() {
         <SectionHead
           title="All Courses"
           action={
-            <Link to="/courses" className="nx-btn nx-btn-outline">
+            <Link to="/courses/" className="nx-btn nx-btn-outline">
               VIEW ALL COURSES <Icon name="arrowRight" className="nx-arrow" />
             </Link>
           }

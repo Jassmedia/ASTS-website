@@ -25,7 +25,7 @@ export default function TrendingCourses({ id, count = 8, variant = 'home' }) {
                 <div className="courses-item">
                   <div className="img-part">
                     <Link to={c.url}>
-                      <img loading="lazy" decoding="async" width={c.image.width} height={c.image.height} src={c.image.src} className="attachment-large size-large wp-post-image" alt="" />
+                      <img loading="lazy" decoding="async" width={c.image.width} height={c.image.height} src={c.image.src} className="attachment-large size-large wp-post-image" alt={c.image.alt || c.title} />
                     </Link>
                   </div>
                   <div className="content-part">

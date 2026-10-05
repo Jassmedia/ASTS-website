@@ -61,7 +61,8 @@ function CourseSingleInner({ course }) {
                           <div className="meta-item__value">
                             <label>Instructor</label>
                             <div>
-                              <a href="">
+                              {/* The old site's instructor URLs all redirected to the course itself. */}
+                              <a href={course.url}>
                                 <span className="instructor-display-name">{course.instructor}</span>
                               </a>
                             </div>
@@ -143,7 +144,7 @@ function CourseSingleInner({ course }) {
                             </div>
                             <div className="course-author__pull-right">
                               <h4 className="author-title">
-                                <a href={full.author.link}>
+                                <a href={course.url}>
                                   {' '}
                                   <span className="instructor-display-name">{full.author.title}</span>
                                 </a>

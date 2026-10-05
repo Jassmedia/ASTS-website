@@ -15,7 +15,7 @@ const ROWS = [
     image: '1535796',
     title: 'Payment Mode',
     html: '<p>ASTS offers safe and secure payment options to Students and Trainees</p><p>Transfer using NEFT/IMPS from any Nationalized/Private bank directly into ASTS Account</p>',
-    img: { src: '/wp-content/uploads/2020/12/NEFT-RTGS-and-IMPS.jpg', cls: 'attachment-large size-large wp-image-2296', priority: 'high' },
+    img: { src: '/wp-content/uploads/2020/12/NEFT-RTGS-and-IMPS.jpg', alt: 'NEFT, RTGS and IMPS bank transfer', cls: 'attachment-large size-large wp-image-2296', priority: 'high' },
   },
   {
     section: 'f64c2a2',
@@ -26,7 +26,7 @@ const ROWS = [
     image: 'e0cb05c',
     title: 'Paytm',
     html: '<p>Use a PAYTM account to transfer money in a simple and safe manner for any course selected.</p><p>All you need is the PAYTM App installed on your device and ASTS Mobile number to which funds need to be transferred</p>',
-    img: { src: '/wp-content/uploads/2020/12/paytm.jpg', cls: 'attachment-large size-large wp-image-2304' },
+    img: { src: '/wp-content/uploads/2020/12/paytm.jpg', alt: 'Paytm', cls: 'attachment-large size-large wp-image-2304' },
   },
   {
     section: '13893bd',
@@ -37,7 +37,7 @@ const ROWS = [
     image: 'b81838e',
     title: 'Others',
     html: '<p>We are striving to add more payment options in future to make it easy for everyone .</p><p>We will keep you updated on this front</p>',
-    img: { src: '/wp-content/uploads/2020/12/others.jpg', cls: 'attachment-large size-large wp-image-2324' },
+    img: { src: '/wp-content/uploads/2020/12/others.jpg', alt: 'Other payment options', cls: 'attachment-large size-large wp-image-2324' },
   },
 ];
 
@@ -57,7 +57,7 @@ export default function Payment() {
                 <ETextEditor id={r.text} html={r.html} />
               </EColumn>
               <EColumn id={r.right} col={50}>
-                <EImage id={r.image} src={r.img.src} width={640} height={168} className={r.img.cls} fetchPriority={r.img.priority} />
+                <EImage id={r.image} src={r.img.src} width={640} height={168} className={r.img.cls} alt={r.img.alt} fetchPriority={r.img.priority} />
               </EColumn>
             </ESection>
           ))}

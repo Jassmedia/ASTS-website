@@ -11,7 +11,7 @@
  * When a request carries the matching X-ASTS-Proxy-Secret header, WordPress treats it as a request
  * to the public host (https://aststraining.com) from the real visitor IP, so canonical redirects,
  * login cookies, nonces and IP-based tools behave exactly as they do today. Requests without the
- * secret are left untouched.
+ * secret (the backend host opened directly) are served as usual, with a "noindex" header.
  */
 
 if ( ! defined( 'ASTS_PROXY_SECRET' ) || '' === ASTS_PROXY_SECRET ) {
@@ -20,6 +20,12 @@ if ( ! defined( 'ASTS_PROXY_SECRET' ) || '' === ASTS_PROXY_SECRET ) {
 
 $asts_secret = isset( $_SERVER['HTTP_X_ASTS_PROXY_SECRET'] ) ? (string) $_SERVER['HTTP_X_ASTS_PROXY_SECRET'] : '';
 if ( '' === $asts_secret || ! hash_equals( ASTS_PROXY_SECRET, $asts_secret ) ) {
+	// Not a request from the front-end proxy: someone opened the backend host (cms.aststraining.com)
+	// directly. It still works (wp-admin is used this way), but it must never be indexed as a second
+	// copy of the site.
+	if ( ! headers_sent() ) {
+		header( 'X-Robots-Tag: noindex, nofollow', true );
+	}
 	return;
 }
 

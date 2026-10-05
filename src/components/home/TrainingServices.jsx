@@ -16,7 +16,7 @@ export default function TrainingServices({ cards }) {
             <div className="rs-image-hover-effect">
               <div className="animation-effect rs-image-fade">
                 <div className="image-part">
-                  <img decoding="async" width="101" height="101" src={c.image} className="attachment-thumbnail size-thumbnail" alt={c.alt} />{' '}
+                  <img decoding="async" width="101" height="101" src={c.image} className="attachment-thumbnail size-thumbnail" alt={c.alt || c.title} />{' '}
                 </div>
                 <div className="image-content">
                   <div className="title-part">

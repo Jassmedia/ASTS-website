@@ -50,6 +50,16 @@ function makeRewriter(fromOrigins, toOrigin) {
 }
 
 /**
+ * The canonical URL of a WordPress-rendered page stays on the public origin whatever host the
+ * visitor used: a staging or preview address must never be named as the canonical version.
+ */
+function keepCanonical(html, requestOrigin, publicOrigin) {
+  if (requestOrigin === publicOrigin) return html;
+  const toPublic = (tag) => tag.split(requestOrigin).join(publicOrigin);
+  return html.replace(/<link\b[^>]*\brel=["']canonical["'][^>]*>/gi, toPublic).replace(/<meta\b[^>]*\bproperty=["']og:url["'][^>]*>/gi, toPublic);
+}
+
+/**
  * Forwards `request` to WordPress and returns WordPress' response, adapted for
  * the host the visitor used. Returns null when WordPress cannot be reached so
  * the caller can fall back to the static site.
@@ -112,6 +122,7 @@ export async function proxyToWordPress(request, env = {}) {
   let body = upstream.body;
   if (rewrite && body && TEXT_TYPES.test(type)) {
     body = rewrite(await upstream.text());
+    if (/^text\/html/i.test(type)) body = keepCanonical(body, requestOrigin, publicOrigin);
   }
   const noBody = request.method === 'HEAD' || [101, 204, 205, 304].includes(upstream.status);
   return new Response(noBody ? null : body, {

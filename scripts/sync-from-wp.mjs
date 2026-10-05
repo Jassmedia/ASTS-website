@@ -15,7 +15,9 @@
 //       (search results, 404, a lesson page, rselements_pro, testimonial-category)
 //   and writes:
 //     attachments.json, categories.json, courses.json, courses-cards.json,
-//     courses-archive-order.json, seo.json, seo-inventory.json, content/*.html
+//     courses-archive-order.json, seo.json, seo-inventory.json, content/*.html,
+//     media.json and tags.json (REST API lists of every media item and tag: their
+//     attachment/archive URLs are in no sitemap; see scripts/gen-redirects.mjs)
 //
 // READ-ONLY
 //   Only HTTP GET requests are made (max 4 in flight, browser User-Agent,
@@ -492,6 +494,29 @@ async function main() {
     process.exit(1);
   }
 
+  // ---- media and tag lists (WordPress REST API) ----
+  // Every media item has an attachment page and every tag an archive URL, and almost none of them
+  // are in a sitemap. scripts/gen-redirects.mjs maps these old URLs to their closest page.
+  const restList = async (base, fields) => {
+    const out = [];
+    for (let page = 1; ; page++) {
+      let batch;
+      try {
+        batch = JSON.parse((await get(`${P}/wp-json/wp/v2/${base}?per_page=100&page=${page}&_fields=${fields}`)).html);
+      } catch (e) {
+        if (page === 1) throw e;
+        break; // WordPress answers 400 past the last page
+      }
+      out.push(...batch);
+      if (batch.length < 100) break;
+    }
+    return out;
+  };
+  const media = (await restList('media', 'id,slug,link,parent,title'))
+    .map((m) => ({ id: m.id, slug: m.slug, link: m.link, parent: m.parent || 0, title: (m.title && m.title.rendered) || '' }))
+    .sort((a, b) => a.id - b.id);
+  const tags = (await restList('tags', 'id,slug,name,count')).map((t) => ({ id: t.id, slug: t.slug, name: t.name, count: t.count })).sort((a, b) => a.slug.localeCompare(b.slug));
+
   // ---- write ----
   const write = (f, data) => {
     const p = path.join(OUT, f);
@@ -506,6 +531,8 @@ async function main() {
   write('courses-archive-order.json', order);
   write('seo.json', seo);
   write('seo-inventory.json', inventory);
+  write('media.json', media);
+  write('tags.json', tags);
   for (const [k, v] of Object.entries(content)) write('content/' + k + '.html', v);
 
   console.log(

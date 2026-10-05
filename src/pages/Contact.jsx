@@ -72,7 +72,7 @@ export default function Contact() {
           </ESection>
           <ESection id="1aebb90" extra="elementor-section-content-bottom elementor-section-boxed">
             <EColumn id="6bbbf74" col={50}>
-              <RsImageHover id="7e1bef1" src="/wp-content/uploads/2020/12/con2.png" width={413} height={605} imgClass="attachment-large size-large wp-image-2143" fetchPriority="high" />
+              <RsImageHover id="7e1bef1" src="/wp-content/uploads/2020/12/con2.png" width={413} height={605} imgClass="attachment-large size-large wp-image-2143" alt="Contact ASTS Training" fetchPriority="high" />
             </EColumn>
             <EColumn id="513f375" col={50}>
               <RsHeading

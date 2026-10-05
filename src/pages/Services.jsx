@@ -32,7 +32,7 @@ export default function Services() {
                   <RsHeading id="3a596e1" align="left" subText="TOP COURSES" watermark="Trending" title="Trending Courses" />
                 </EColumn>
                 <EColumn id="0efeb1e" col={50} inner>
-                  <RsButton id="bc2af31" to="/courses-2/" text="VIEW ALL COURSES" />
+                  <RsButton id="bc2af31" to="/courses/" text="VIEW ALL COURSES" />
                 </EColumn>
               </ESection>
               <ESection id="a4e3c62" inner extra="elementor-section-content-middle elementor-section-boxed" animation="fadeInUp">

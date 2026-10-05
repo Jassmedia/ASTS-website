@@ -1,6 +1,9 @@
 // Generates the XML sitemaps into dist/ using the same file names as the
 // current Yoast SEO sitemaps (sitemap_index.xml, page-sitemap.xml, ...),
 // so the sitemap already submitted in Google Search Console keeps working.
+// These static files are what the site serves (WordPress' own sitemaps are not proxied): they
+// list the pages of this site only, always with the production origin, and never a URL that
+// redirects or answers 404 (see sitemapGroups in routes-list.mjs).
 import fs from 'fs';
 import path from 'path';
 import { sitemapGroups } from './routes-list.mjs';
@@ -13,8 +16,7 @@ const categories = j('src/data/categories.json');
 const testimonials = j('src/data/testimonials.json');
 
 const lastmodOf = (url) => {
-  const key = url === '/hadoop/' ? '/courses__trashed/hadoop/' : url;
-  if (pagesSeo[key] && pagesSeo[key].articleModified) return pagesSeo[key].articleModified;
+  if (pagesSeo[url] && pagesSeo[url].articleModified) return pagesSeo[url].articleModified;
   const c = coursesIndex.find((x) => x.url === url);
   if (c && c.modified) return c.modified;
   const cat = categories.find((x) => x.url === url);

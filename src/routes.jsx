@@ -20,15 +20,11 @@ const CourseCategory = lazy(() => import('./pages/CourseCategory'));
 const CourseSingle = lazy(() => import('./pages/CourseSingle'));
 const CourseItem = lazy(() => import('./pages/CourseItem'));
 const TestimonialSingle = lazy(() => import('./pages/TestimonialSingle'));
-const TestimonialCategory = lazy(() => import('./pages/TestimonialCategory'));
-const RsElementsPro = lazy(() => import('./pages/RsElementsPro'));
 const NotFound = lazy(() => import('./pages/NotFound'));
 
 export const HOME_BG = '/wp-content/uploads/2020/12/Home-dot-bg.jpg';
 
-/** seo key for a static page path (the /hadoop/ page's canonical lives under a trashed parent on the current site). */
-export const seoKeyFor = (path) => (path === '/hadoop/' ? '/courses__trashed/hadoop/' : path);
-const seoFor = (path) => pagesSeo[seoKeyFor(path)];
+const seoFor = (path) => pagesSeo[path];
 
 // `lp: true` marks pages that load the LearnPress stylesheets on the current site
 // (a differently ordered CSS bundle, see MainLayout).
@@ -94,28 +90,23 @@ export const routes = [
     path: '/',
     element: <MainLayout />,
     children: [
-      { index: true, element: <Home />, handle: searchHandle },
+      // The redesigned homepage needs none of the old theme's stylesheets (see MainLayout).
+      { index: true, element: <Home />, handle: { ...searchHandle, lightCss: (params, location) => !new URLSearchParams(location.search).has('s') } },
       { path: 'page/:n', element: <SearchResults />, handle: searchHandle },
 
       // --- static (CMS) pages ---
+      // Leftover pages that duplicate another page are not routes: they redirect (data/retired-pages.mjs).
       staticRoute('/about-asts-training/'),
       staticRoute('/about-asts-training/testimonials/'),
       staticRoute('/a-homepage-section/'),
       staticRoute('/become-a-teacher/', {}, true),
-      staticRoute('/blog-old/'),
       staticRoute('/blog/', { col: 'col-lg-8' }),
-      staticRoute('/hadoop/'),
-      staticRoute('/home/'),
-      staticRoute('/instructor/', {}, true),
       staticRoute('/instructors/', {}, true),
       staticRoute('/lp-profile/', {}, true),
       staticRoute('/privacy-policy/'),
-      staticRoute('/privacy-policy-2/'),
       staticRoute('/sample-page/'),
       staticRoute('/terms-conditions/'),
-      staticRoute('/term_conditions/'),
       staticRoute('/thanks/'),
-      staticRoute('/training-programs/'),
       { path: '/lp-checkout/', element: <LpCheckout />, handle: { bodyClass: pagesSeo['/lp-checkout/'].bodyClass, banner: pageBanner(pagesSeo['/lp-checkout/']), lp: true } },
 
       // --- Elementor pages ---
@@ -170,25 +161,6 @@ export const routes = [
 
       // --- testimonials ---
       { path: '/testimonials/:slug/', element: <TestimonialSingle />, handle: { bodyClass: (params) => (testimonials.find((t) => t.slug === params.slug) || { seo: {} }).seo.bodyClass || '', banner: null } },
-      {
-        path: '/testimonial-category/student-reviews/',
-        element: <TestimonialCategory />,
-        handle: {
-          bodyClass: pagesSeo['/testimonial-category/student-reviews/'].bodyClass,
-          banner: {
-            title: (
-              <>
-                Testimonial Categories: <span>Student Reviews</span>
-              </>
-            ),
-            bg: HOME_BG,
-            wrapperClass: 'porfolio-details',
-            trailing: true,
-            crumbs: [crumbHome, { name: 'Student Reviews' }],
-          },
-        },
-      },
-      { path: '/rselements_pro/courses-categories/', element: <RsElementsPro />, handle: { bodyClass: pagesSeo['/rselements_pro/courses-categories/'].bodyClass, banner: null } },
 
       // --- 404 (the current site's 404 template has no header/footer) ---
       { path: '*', element: <NotFound />, handle: { bodyClass: 'error404 wp-custom-logo wp-theme-Aststraining elementor-default elementor-kit-1820', banner: null, bare: true } },

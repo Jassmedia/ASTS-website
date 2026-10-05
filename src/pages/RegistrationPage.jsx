@@ -90,7 +90,7 @@ export default function RegistrationPage({ variant }) {
             <EColumn id={ids.column} col={100}>
               <ESection id={ids.inner} inner extra="elementor-section-boxed">
                 <EColumn id={ids.imgCol} col={50} inner>
-                  <EImage id={ids.image} src="/wp-content/uploads/2020/12/con2.png" width={413} height={605} className="attachment-large size-large wp-image-2143" fetchPriority="high" />
+                  <EImage id={ids.image} src="/wp-content/uploads/2020/12/con2.png" width={413} height={605} className="attachment-large size-large wp-image-2143" alt="Register with ASTS Training" fetchPriority="high" />
                 </EColumn>
                 <EColumn id={ids.formCol} col={50} inner>
                   <EWidget id={ids.form} type="rs-cf7" extra="registration-form">

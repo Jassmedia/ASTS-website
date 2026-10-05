@@ -1,0 +1,2809 @@
+[
+ {
+  "id": 6,
+  "slug": "espresso",
+  "link": "https://aststraining.com/espresso/",
+  "parent": 0,
+  "title": "Espresso"
+ },
+ {
+  "id": 7,
+  "slug": "sandwich",
+  "link": "https://aststraining.com/sandwich/",
+  "parent": 0,
+  "title": "Sandwich"
+ },
+ {
+  "id": 8,
+  "slug": "coffee",
+  "link": "https://aststraining.com/coffee/",
+  "parent": 0,
+  "title": "Coffee"
+ },
+ {
+  "id": 49,
+  "slug": "slider2_new",
+  "link": "https://aststraining.com/slider2_new/",
+  "parent": 0,
+  "title": "slider2_new"
+ },
+ {
+  "id": 50,
+  "slug": "slider",
+  "link": "https://aststraining.com/slider/",
+  "parent": 0,
+  "title": "slider"
+ },
+ {
+  "id": 51,
+  "slug": "bg-overlay",
+  "link": "https://aststraining.com/bg-overlay/",
+  "parent": 0,
+  "title": "bg-overlay"
+ },
+ {
+  "id": 52,
+  "slug": "1",
+  "link": "https://aststraining.com/1/",
+  "parent": 0,
+  "title": "1"
+ },
+ {
+  "id": 53,
+  "slug": "2",
+  "link": "https://aststraining.com/2/",
+  "parent": 0,
+  "title": "2"
+ },
+ {
+  "id": 54,
+  "slug": "3",
+  "link": "https://aststraining.com/3/",
+  "parent": 0,
+  "title": "3"
+ },
+ {
+  "id": 55,
+  "slug": "4",
+  "link": "https://aststraining.com/4/",
+  "parent": 0,
+  "title": "4"
+ },
+ {
+  "id": 56,
+  "slug": "5",
+  "link": "https://aststraining.com/5/",
+  "parent": 0,
+  "title": "5"
+ },
+ {
+  "id": 57,
+  "slug": "6",
+  "link": "https://aststraining.com/6/",
+  "parent": 0,
+  "title": "6"
+ },
+ {
+  "id": 58,
+  "slug": "7",
+  "link": "https://aststraining.com/7/",
+  "parent": 0,
+  "title": "7"
+ },
+ {
+  "id": 59,
+  "slug": "8",
+  "link": "https://aststraining.com/8/",
+  "parent": 0,
+  "title": "8"
+ },
+ {
+  "id": 60,
+  "slug": "9",
+  "link": "https://aststraining.com/9/",
+  "parent": 0,
+  "title": "9"
+ },
+ {
+  "id": 61,
+  "slug": "bg-green",
+  "link": "https://aststraining.com/bg-green/",
+  "parent": 0,
+  "title": "bg-green"
+ },
+ {
+  "id": 63,
+  "slug": "1-1",
+  "link": "https://aststraining.com/1-1/",
+  "parent": 0,
+  "title": "1-1"
+ },
+ {
+  "id": 66,
+  "slug": "1-2",
+  "link": "https://aststraining.com/1-2/",
+  "parent": 0,
+  "title": "1-2"
+ },
+ {
+  "id": 71,
+  "slug": "c1",
+  "link": "https://aststraining.com/c1/",
+  "parent": 0,
+  "title": "c1"
+ },
+ {
+  "id": 72,
+  "slug": "c2",
+  "link": "https://aststraining.com/c2/",
+  "parent": 0,
+  "title": "c2"
+ },
+ {
+  "id": 73,
+  "slug": "c3",
+  "link": "https://aststraining.com/c3/",
+  "parent": 0,
+  "title": "c3"
+ },
+ {
+  "id": 75,
+  "slug": "t1",
+  "link": "https://aststraining.com/t1/",
+  "parent": 0,
+  "title": "t1"
+ },
+ {
+  "id": 104,
+  "slug": "page-title-bg",
+  "link": "https://aststraining.com/page-title-bg/",
+  "parent": 0,
+  "title": "page-title-bg"
+ },
+ {
+  "id": 370,
+  "slug": "asts_training",
+  "link": "https://aststraining.com/asts_training/",
+  "parent": 0,
+  "title": "asts_training"
+ },
+ {
+  "id": 375,
+  "slug": "asts-footer",
+  "link": "https://aststraining.com/asts-footer/",
+  "parent": 0,
+  "title": "asts-footer"
+ },
+ {
+  "id": 379,
+  "slug": "hadoop-online-training",
+  "link": "https://aststraining.com/hadoop-online-training/",
+  "parent": 0,
+  "title": "hadoop-online-training"
+ },
+ {
+  "id": 385,
+  "slug": "hyperion-financial-management-training",
+  "link": "https://aststraining.com/hyperion-financial-management-training/",
+  "parent": 0,
+  "title": "HFM"
+ },
+ {
+  "id": 388,
+  "slug": "hyperion-essbase-online-training",
+  "link": "https://aststraining.com/hyperion-essbase-online-training/",
+  "parent": 0,
+  "title": "hyperion-essbase-online-training"
+ },
+ {
+  "id": 394,
+  "slug": "hyperion-drm-online-training",
+  "link": "https://aststraining.com/hyperion-drm-online-training/",
+  "parent": 0,
+  "title": "hyperion-drm-online-training"
+ },
+ {
+  "id": 395,
+  "slug": "oracle-hyperion-planning",
+  "link": "https://aststraining.com/oracle-hyperion-planning/",
+  "parent": 0,
+  "title": "oracle-hyperion-planning"
+ },
+ {
+  "id": 396,
+  "slug": "oracle-hyperion-fdmee",
+  "link": "https://aststraining.com/oracle-hyperion-fdmee/",
+  "parent": 0,
+  "title": "oracle-hyperion-FDMEE"
+ },
+ {
+  "id": 399,
+  "slug": "oracle-hyperion",
+  "link": "https://aststraining.com/oracle-hyperion/",
+  "parent": 0,
+  "title": "HFM Online Training"
+ },
+ {
+  "id": 406,
+  "slug": "sap-fico-online-training",
+  "link": "https://aststraining.com/sap-fico-online-training/",
+  "parent": 0,
+  "title": "SAP-FICO-online-training"
+ },
+ {
+  "id": 408,
+  "slug": "sap-hana-online-training-2",
+  "link": "https://aststraining.com/sap-hana-online-training-2/",
+  "parent": 0,
+  "title": "sap-hana-online-training"
+ },
+ {
+  "id": 410,
+  "slug": "sap-bo-online-training",
+  "link": "https://aststraining.com/sap-bo-online-training/",
+  "parent": 0,
+  "title": "sap-bo-online-training"
+ },
+ {
+  "id": 412,
+  "slug": "sap-bpc-online-training",
+  "link": "https://aststraining.com/sap-bpc-online-training/",
+  "parent": 0,
+  "title": "SAP-BPC-online-training"
+ },
+ {
+  "id": 418,
+  "slug": "sap-abap-online-training",
+  "link": "https://aststraining.com/sap-abap-online-training/",
+  "parent": 0,
+  "title": "SAP-ABAP-online-training"
+ },
+ {
+  "id": 420,
+  "slug": "sap-basis-online-training1",
+  "link": "https://aststraining.com/sap-basis-online-training1/",
+  "parent": 0,
+  "title": "SAP-BASIS-online-training1"
+ },
+ {
+  "id": 422,
+  "slug": "sap-crm-online-training",
+  "link": "https://aststraining.com/sap-crm-online-training/",
+  "parent": 0,
+  "title": "SAp-CRM-online-training"
+ },
+ {
+  "id": 424,
+  "slug": "sap-srm-online-training1",
+  "link": "https://aststraining.com/sap-srm-online-training1/",
+  "parent": 0,
+  "title": "SAP-SRM-online-training1"
+ },
+ {
+  "id": 430,
+  "slug": "oracle-apps-technical",
+  "link": "https://aststraining.com/oracle-apps-technical/",
+  "parent": 0,
+  "title": "Oracle-apps-technical"
+ },
+ {
+  "id": 432,
+  "slug": "oracle-apps-scm",
+  "link": "https://aststraining.com/oracle-apps-scm/",
+  "parent": 0,
+  "title": "Oracle-apps-SCM"
+ },
+ {
+  "id": 434,
+  "slug": "oracle-apps-2",
+  "link": "https://aststraining.com/oracle-apps-2/",
+  "parent": 0,
+  "title": "Oracle-Apps"
+ },
+ {
+  "id": 436,
+  "slug": "oracle-apps-financials",
+  "link": "https://aststraining.com/oracle-apps-financials/",
+  "parent": 0,
+  "title": "Oracle-apps-financials"
+ },
+ {
+  "id": 447,
+  "slug": "oracle-data-warehousing",
+  "link": "https://aststraining.com/oracle-data-warehousing/",
+  "parent": 0,
+  "title": "Oracle-data-warehousing"
+ },
+ {
+  "id": 453,
+  "slug": "oracle-teradata-online-training",
+  "link": "https://aststraining.com/oracle-teradata-online-training/",
+  "parent": 0,
+  "title": "oracle-teradata-online-training"
+ },
+ {
+  "id": 467,
+  "slug": "cognos-tm1-training",
+  "link": "https://aststraining.com/cognos-tm1-training/",
+  "parent": 0,
+  "title": "Cognos-TM1-training"
+ },
+ {
+  "id": 470,
+  "slug": "obiee-online-training-2",
+  "link": "https://aststraining.com/obiee-online-training-2/",
+  "parent": 0,
+  "title": ""
+ },
+ {
+  "id": 473,
+  "slug": "tableau-advanced-training",
+  "link": "https://aststraining.com/tableau-advanced-training/",
+  "parent": 0,
+  "title": ""
+ },
+ {
+  "id": 483,
+  "slug": "slider1-2",
+  "link": "https://aststraining.com/slider1-2/",
+  "parent": 0,
+  "title": "slider1"
+ },
+ {
+  "id": 484,
+  "slug": "slider2-2",
+  "link": "https://aststraining.com/slider2-2/",
+  "parent": 0,
+  "title": "slider2"
+ },
+ {
+  "id": 485,
+  "slug": "slider3-2",
+  "link": "https://aststraining.com/slider3-2/",
+  "parent": 0,
+  "title": "slider3"
+ },
+ {
+  "id": 494,
+  "slug": "html5-infographics",
+  "link": "https://aststraining.com/html5-infographics/",
+  "parent": 0,
+  "title": "HTML5-Infographics"
+ },
+ {
+  "id": 502,
+  "slug": "h_testing41",
+  "link": "https://aststraining.com/h_testing41/",
+  "parent": 0,
+  "title": "Hadoop Testing Online training"
+ },
+ {
+  "id": 503,
+  "slug": "hadoop_job-recovered_a",
+  "link": "https://aststraining.com/hadoop_job-recovered_a/",
+  "parent": 0,
+  "title": "hadoop_job-Recovered_a"
+ },
+ {
+  "id": 507,
+  "slug": "selenium-training",
+  "link": "https://aststraining.com/selenium-training/",
+  "parent": 0,
+  "title": "Selenium Online Training"
+ },
+ {
+  "id": 508,
+  "slug": "selenium-training1",
+  "link": "https://aststraining.com/selenium-training1/",
+  "parent": 0,
+  "title": "selenium-training1"
+ },
+ {
+  "id": 511,
+  "slug": "etl-testing-training-1",
+  "link": "https://aststraining.com/etl-testing-training-1/",
+  "parent": 0,
+  "title": "ETL-Testing-training-1"
+ },
+ {
+  "id": 512,
+  "slug": "etl-testing-infographic",
+  "link": "https://aststraining.com/etl-testing-infographic/",
+  "parent": 0,
+  "title": "ETL-Testing-Infographic"
+ },
+ {
+  "id": 517,
+  "slug": "python",
+  "link": "https://aststraining.com/python/",
+  "parent": 0,
+  "title": "Python"
+ },
+ {
+  "id": 518,
+  "slug": "python-features_infographic-1",
+  "link": "https://aststraining.com/python-features_infographic-1/",
+  "parent": 0,
+  "title": "python-features_Infographic-1"
+ },
+ {
+  "id": 521,
+  "slug": "ruby-on-rails-training",
+  "link": "https://aststraining.com/ruby-on-rails-training/",
+  "parent": 0,
+  "title": "Ruby-on-Rails-Training"
+ },
+ {
+  "id": 524,
+  "slug": "msbi-training",
+  "link": "https://aststraining.com/msbi-training/",
+  "parent": 0,
+  "title": "msbi-training"
+ },
+ {
+  "id": 527,
+  "slug": "obiee-training-and-certification-course-online-with-free-dwh-erwin",
+  "link": "https://aststraining.com/obiee-training-and-certification-course-online-with-free-dwh-erwin/",
+  "parent": 0,
+  "title": "OBIEE-Training-and-Certification-Course-Online-With-Free-DWH-Erwin"
+ },
+ {
+  "id": 528,
+  "slug": "obiee-training-features-benefits-of-obiee",
+  "link": "https://aststraining.com/obiee-training-features-benefits-of-obiee/",
+  "parent": 0,
+  "title": "obiee-training-Features-Benefits-of-OBIEE"
+ },
+ {
+  "id": 532,
+  "slug": "qlikview-training-for-desktop-certification",
+  "link": "https://aststraining.com/qlikview-training-for-desktop-certification/",
+  "parent": 0,
+  "title": "Qlikview-Training-For-Desktop-Certification"
+ },
+ {
+  "id": 533,
+  "slug": "qilkview-vs-tableau",
+  "link": "https://aststraining.com/qilkview-vs-tableau/",
+  "parent": 0,
+  "title": "qilkview-vs-Tableau"
+ },
+ {
+  "id": 540,
+  "slug": "tableau-training",
+  "link": "https://aststraining.com/tableau-training/",
+  "parent": 0,
+  "title": "tableau-training"
+ },
+ {
+  "id": 543,
+  "slug": "spotfire-training-1",
+  "link": "https://aststraining.com/spotfire-training-1/",
+  "parent": 0,
+  "title": "Spotfire-Training-1"
+ },
+ {
+  "id": 544,
+  "slug": "spotfire-training-advantages-of-spotfire3",
+  "link": "https://aststraining.com/spotfire-training-advantages-of-spotfire3/",
+  "parent": 0,
+  "title": "spotfire-training-Advantages-of-Spotfire3"
+ },
+ {
+  "id": 547,
+  "slug": "informatica-training",
+  "link": "https://aststraining.com/informatica-training/",
+  "parent": 0,
+  "title": "informatica-training"
+ },
+ {
+  "id": 550,
+  "slug": "cognos-tm1-training-2",
+  "link": "https://aststraining.com/cognos-tm1-training-2/",
+  "parent": 0,
+  "title": "Cognos TM1 Online Training"
+ },
+ {
+  "id": 553,
+  "slug": "cognos-bicognos-tm11",
+  "link": "https://aststraining.com/cognos-bicognos-tm11/",
+  "parent": 0,
+  "title": "Cognos-BI+Cognos-TM11"
+ },
+ {
+  "id": 554,
+  "slug": "cognos-training-key-features-of-ibm-cognos",
+  "link": "https://aststraining.com/cognos-training-key-features-of-ibm-cognos/",
+  "parent": 0,
+  "title": "cognos-training-Key-Features-of-IBM-Cognos"
+ },
+ {
+  "id": 557,
+  "slug": "pentaho-training-for-certification",
+  "link": "https://aststraining.com/pentaho-training-for-certification/",
+  "parent": 0,
+  "title": "Pentaho-Training-For-Certification"
+ },
+ {
+  "id": 558,
+  "slug": "pentaho_infographic-1",
+  "link": "https://aststraining.com/pentaho_infographic-1/",
+  "parent": 0,
+  "title": "pentaho_infographic-1"
+ },
+ {
+  "id": 561,
+  "slug": "talend-training",
+  "link": "https://aststraining.com/talend-training/",
+  "parent": 0,
+  "title": "Talend-Training"
+ },
+ {
+  "id": 562,
+  "slug": "features-of-talend1",
+  "link": "https://aststraining.com/features-of-talend1/",
+  "parent": 0,
+  "title": "features-of-talend1"
+ },
+ {
+  "id": 565,
+  "slug": "jaspersoft-training",
+  "link": "https://aststraining.com/jaspersoft-training/",
+  "parent": 0,
+  "title": "Jaspersoft-Training"
+ },
+ {
+  "id": 566,
+  "slug": "jaspersoft_infographic",
+  "link": "https://aststraining.com/jaspersoft_infographic/",
+  "parent": 0,
+  "title": "jaspersoft_Infographic"
+ },
+ {
+  "id": 569,
+  "slug": "workday-training-1",
+  "link": "https://aststraining.com/workday-training-1/",
+  "parent": 0,
+  "title": "workday-training"
+ },
+ {
+  "id": 572,
+  "slug": "salesforce-training",
+  "link": "https://aststraining.com/salesforce-training/",
+  "parent": 0,
+  "title": "salesforce-training"
+ },
+ {
+  "id": 575,
+  "slug": "devops-training",
+  "link": "https://aststraining.com/devops-training/",
+  "parent": 0,
+  "title": ""
+ },
+ {
+  "id": 578,
+  "slug": "iphone-app",
+  "link": "https://aststraining.com/iphone-app/",
+  "parent": 0,
+  "title": "iphone-app"
+ },
+ {
+  "id": 581,
+  "slug": "android-app",
+  "link": "https://aststraining.com/android-app/",
+  "parent": 0,
+  "title": "android-app"
+ },
+ {
+  "id": 584,
+  "slug": "nosql-cassandra-hbase-mongodb-training",
+  "link": "https://aststraining.com/nosql-cassandra-hbase-mongodb-training/",
+  "parent": 0,
+  "title": "NoSQL-Cassandra-HBase-MongoDB-Training"
+ },
+ {
+  "id": 585,
+  "slug": "rdms-vs-nosql-mongodb",
+  "link": "https://aststraining.com/rdms-vs-nosql-mongodb/",
+  "parent": 0,
+  "title": "RDMS-vs-NoSql-MongoDB"
+ },
+ {
+  "id": 588,
+  "slug": "mongodb",
+  "link": "https://aststraining.com/mongodb/",
+  "parent": 0,
+  "title": "MongoDB"
+ },
+ {
+  "id": 589,
+  "slug": "mongo-db-training-big-data-e-commerce-and-customer-service",
+  "link": "https://aststraining.com/mongo-db-training-big-data-e-commerce-and-customer-service/",
+  "parent": 0,
+  "title": "mongo-db-Training-Big-Data-E-Commerce-and-Customer-Service"
+ },
+ {
+  "id": 592,
+  "slug": "hbase",
+  "link": "https://aststraining.com/hbase/",
+  "parent": 0,
+  "title": "Hbase"
+ },
+ {
+  "id": 593,
+  "slug": "hbase-training-apache-hbase-top-5-features",
+  "link": "https://aststraining.com/hbase-training-apache-hbase-top-5-features/",
+  "parent": 0,
+  "title": "hbase-training-Apache-HBase-Top-5-Features"
+ },
+ {
+  "id": 596,
+  "slug": "cassandra_",
+  "link": "https://aststraining.com/cassandra_/",
+  "parent": 0,
+  "title": "cassandra-training"
+ },
+ {
+  "id": 597,
+  "slug": "cassandra-training-key-features-of-cassandra",
+  "link": "https://aststraining.com/cassandra-training-key-features-of-cassandra/",
+  "parent": 0,
+  "title": "cassandra-Training-Key-features-of-cassandra"
+ },
+ {
+  "id": 600,
+  "slug": "couchbase-copy",
+  "link": "https://aststraining.com/couchbase-copy/",
+  "parent": 0,
+  "title": "Couchbase-Training"
+ },
+ {
+  "id": 601,
+  "slug": "5-key-features-of-couchdb-couchdb-infographics",
+  "link": "https://aststraining.com/5-key-features-of-couchdb-couchdb-infographics/",
+  "parent": 0,
+  "title": "5-Key-Features-of-CouchDB-CouchDB-Infographics"
+ },
+ {
+  "id": 604,
+  "slug": "search-engine-optimization-seo-training",
+  "link": "https://aststraining.com/search-engine-optimization-seo-training/",
+  "parent": 0,
+  "title": "Search-Engine-Optimization-SEO-Training"
+ },
+ {
+  "id": 607,
+  "slug": "sem",
+  "link": "https://aststraining.com/sem/",
+  "parent": 0,
+  "title": "SEM"
+ },
+ {
+  "id": 610,
+  "slug": "social-media-marketing-smm-training",
+  "link": "https://aststraining.com/social-media-marketing-smm-training/",
+  "parent": 0,
+  "title": "Social-Media-Marketing-SMM-Training"
+ },
+ {
+  "id": 613,
+  "slug": "hadoop-admin-training-1",
+  "link": "https://aststraining.com/hadoop-admin-training-1/",
+  "parent": 0,
+  "title": "hadoop-admin-training"
+ },
+ {
+  "id": 616,
+  "slug": "hadoop-training",
+  "link": "https://aststraining.com/hadoop-training/",
+  "parent": 0,
+  "title": "hadoop-training"
+ },
+ {
+  "id": 620,
+  "slug": "data-science-training-1",
+  "link": "https://aststraining.com/data-science-training-1/",
+  "parent": 0,
+  "title": "data-science-training-1"
+ },
+ {
+  "id": 624,
+  "slug": "data-analytics-training1",
+  "link": "https://aststraining.com/data-analytics-training1/",
+  "parent": 0,
+  "title": "data-analytics-training1"
+ },
+ {
+  "id": 627,
+  "slug": "sap-hana-training1",
+  "link": "https://aststraining.com/sap-hana-training1/",
+  "parent": 0,
+  "title": "SAP HANA Online Training"
+ },
+ {
+  "id": 628,
+  "slug": "sap-hana21",
+  "link": "https://aststraining.com/sap-hana21/",
+  "parent": 0,
+  "title": "sap-hana21"
+ },
+ {
+  "id": 633,
+  "slug": "sap-bibw-training",
+  "link": "https://aststraining.com/sap-bibw-training/",
+  "parent": 0,
+  "title": "SAP BI BW Online Training"
+ },
+ {
+  "id": 634,
+  "slug": "sap-bi-bw-infographic",
+  "link": "https://aststraining.com/sap-bi-bw-infographic/",
+  "parent": 0,
+  "title": "SAP-BI-BW-Infographic"
+ },
+ {
+  "id": 637,
+  "slug": "business-objects-training1",
+  "link": "https://aststraining.com/business-objects-training1/",
+  "parent": 0,
+  "title": "Business-Objects-Training1"
+ },
+ {
+  "id": 638,
+  "slug": "sap-business-objects",
+  "link": "https://aststraining.com/sap-business-objects/",
+  "parent": 0,
+  "title": "SAP-Business-Objects"
+ },
+ {
+  "id": 650,
+  "slug": "sap-crm-training",
+  "link": "https://aststraining.com/sap-crm-training/",
+  "parent": 0,
+  "title": "sap-crm-training"
+ },
+ {
+  "id": 670,
+  "slug": "html-jquery-training",
+  "link": "https://aststraining.com/html-jquery-training/",
+  "parent": 0,
+  "title": "HTML-jQuery-Training"
+ },
+ {
+  "id": 671,
+  "slug": "angularjs-training1",
+  "link": "https://aststraining.com/angularjs-training1/",
+  "parent": 0,
+  "title": "angularjs-training1"
+ },
+ {
+  "id": 672,
+  "slug": "wordpress-training",
+  "link": "https://aststraining.com/wordpress-training/",
+  "parent": 0,
+  "title": "WordPress-Training"
+ },
+ {
+  "id": 673,
+  "slug": "ui-training",
+  "link": "https://aststraining.com/ui-training/",
+  "parent": 0,
+  "title": "ui-training"
+ },
+ {
+  "id": 695,
+  "slug": "corporate-training-icon",
+  "link": "https://aststraining.com/corporate-training-icon/",
+  "parent": 0,
+  "title": "corporate-training-icon"
+ },
+ {
+  "id": 696,
+  "slug": "online-training-icon",
+  "link": "https://aststraining.com/online-training-icon/",
+  "parent": 0,
+  "title": "online-training-icon"
+ },
+ {
+  "id": 697,
+  "slug": "class-room-training-icon",
+  "link": "https://aststraining.com/class-room-training-icon/",
+  "parent": 0,
+  "title": "class-room-training-icon"
+ },
+ {
+  "id": 698,
+  "slug": "bg-green1",
+  "link": "https://aststraining.com/bg-green1/",
+  "parent": 0,
+  "title": "bg-green1"
+ },
+ {
+  "id": 699,
+  "slug": "tableau-training-logo",
+  "link": "https://aststraining.com/tableau-training-logo/",
+  "parent": 0,
+  "title": "Tableau-Training-logo"
+ },
+ {
+  "id": 700,
+  "slug": "sap-businessobjects-logo",
+  "link": "https://aststraining.com/sap-businessobjects-logo/",
+  "parent": 0,
+  "title": "sap-businessobjects-logo"
+ },
+ {
+  "id": 701,
+  "slug": "sap-hana",
+  "link": "https://aststraining.com/sap-hana/",
+  "parent": 0,
+  "title": "SAP-hana"
+ },
+ {
+  "id": 702,
+  "slug": "hadoop-training-logo",
+  "link": "https://aststraining.com/hadoop-training-logo/",
+  "parent": 0,
+  "title": "Hadoop-Training-logo"
+ },
+ {
+  "id": 703,
+  "slug": "big-data-logo",
+  "link": "https://aststraining.com/big-data-logo/",
+  "parent": 0,
+  "title": "Big-Data-logo"
+ },
+ {
+  "id": 704,
+  "slug": "hyperion-2",
+  "link": "https://aststraining.com/hyperion-2/",
+  "parent": 0,
+  "title": "Hyperion"
+ },
+ {
+  "id": 713,
+  "slug": "slider_11",
+  "link": "https://aststraining.com/slider_11/",
+  "parent": 0,
+  "title": "slider_11"
+ },
+ {
+  "id": 714,
+  "slug": "slider_22",
+  "link": "https://aststraining.com/slider_22/",
+  "parent": 0,
+  "title": "slider_22"
+ },
+ {
+  "id": 715,
+  "slug": "slider_33",
+  "link": "https://aststraining.com/slider_33/",
+  "parent": 0,
+  "title": "slider_33"
+ },
+ {
+  "id": 716,
+  "slug": "slider_1",
+  "link": "https://aststraining.com/slider_1/",
+  "parent": 0,
+  "title": "slider_1"
+ },
+ {
+  "id": 720,
+  "slug": "asts-new-logo",
+  "link": "https://aststraining.com/asts-new-logo/",
+  "parent": 0,
+  "title": "asts-new-logo"
+ },
+ {
+  "id": 721,
+  "slug": "online-training-1",
+  "link": "https://aststraining.com/online-training-1/",
+  "parent": 0,
+  "title": "online-training-1"
+ },
+ {
+  "id": 722,
+  "slug": "classroom-training-1",
+  "link": "https://aststraining.com/classroom-training-1/",
+  "parent": 0,
+  "title": "classroom-training-1"
+ },
+ {
+  "id": 723,
+  "slug": "project-support-2",
+  "link": "https://aststraining.com/project-support-2/",
+  "parent": 0,
+  "title": "project-support"
+ },
+ {
+  "id": 724,
+  "slug": "google-plus",
+  "link": "https://aststraining.com/google-plus/",
+  "parent": 0,
+  "title": "google-plus"
+ },
+ {
+  "id": 725,
+  "slug": "facebook-icon-new",
+  "link": "https://aststraining.com/facebook-icon-new/",
+  "parent": 0,
+  "title": "facebook-icon-new"
+ },
+ {
+  "id": 726,
+  "slug": "twitter-icon-new",
+  "link": "https://aststraining.com/twitter-icon-new/",
+  "parent": 0,
+  "title": "twitter-icon-new"
+ },
+ {
+  "id": 727,
+  "slug": "linkedin-icon-new",
+  "link": "https://aststraining.com/linkedin-icon-new/",
+  "parent": 0,
+  "title": "linkedin-icon-new"
+ },
+ {
+  "id": 728,
+  "slug": "youtube-icon-new",
+  "link": "https://aststraining.com/youtube-icon-new/",
+  "parent": 0,
+  "title": "youtube-icon-new"
+ },
+ {
+  "id": 729,
+  "slug": "bg-green2",
+  "link": "https://aststraining.com/bg-green2/",
+  "parent": 0,
+  "title": "bg-green2"
+ },
+ {
+  "id": 730,
+  "slug": "about-us-background",
+  "link": "https://aststraining.com/about-us-background/",
+  "parent": 0,
+  "title": "about-us-background"
+ },
+ {
+  "id": 731,
+  "slug": "about-us-background1",
+  "link": "https://aststraining.com/about-us-background1/",
+  "parent": 0,
+  "title": "about-us-background1"
+ },
+ {
+  "id": 732,
+  "slug": "about-us-background2",
+  "link": "https://aststraining.com/about-us-background2/",
+  "parent": 0,
+  "title": "about-us-background2"
+ },
+ {
+  "id": 733,
+  "slug": "why-choose",
+  "link": "https://aststraining.com/why-choose/",
+  "parent": 0,
+  "title": "why-choose"
+ },
+ {
+  "id": 734,
+  "slug": "sapmm",
+  "link": "https://aststraining.com/sapmm/",
+  "parent": 0,
+  "title": "sapmm"
+ },
+ {
+  "id": 735,
+  "slug": "sap-fico-online-training-2",
+  "link": "https://aststraining.com/sap-fico-online-training-2/",
+  "parent": 0,
+  "title": "sap-fico-online-training"
+ },
+ {
+  "id": 736,
+  "slug": "sap-basis-online-training-2",
+  "link": "https://aststraining.com/sap-basis-online-training-2/",
+  "parent": 0,
+  "title": "sap-basis-online-training"
+ },
+ {
+  "id": 737,
+  "slug": "sap-abap-online-training-2",
+  "link": "https://aststraining.com/sap-abap-online-training-2/",
+  "parent": 0,
+  "title": "sap-abap-online-training"
+ },
+ {
+  "id": 738,
+  "slug": "sap-bpc-online-training-2",
+  "link": "https://aststraining.com/sap-bpc-online-training-2/",
+  "parent": 0,
+  "title": "sap-bpc-online-training"
+ },
+ {
+  "id": 739,
+  "slug": "oracle-apps-financials-online-training",
+  "link": "https://aststraining.com/oracle-apps-financials-online-training/",
+  "parent": 0,
+  "title": "oracle-apps-financials-online-training"
+ },
+ {
+  "id": 741,
+  "slug": "oracle-dba-online-training",
+  "link": "https://aststraining.com/oracle-dba-online-training/",
+  "parent": 0,
+  "title": "oracle-dba-online-training"
+ },
+ {
+  "id": 742,
+  "slug": "oracle-scm-online-training",
+  "link": "https://aststraining.com/oracle-scm-online-training/",
+  "parent": 0,
+  "title": "Oracle Apps Func SCM Online Training"
+ },
+ {
+  "id": 743,
+  "slug": "oracle-apps-technical-online-training-2",
+  "link": "https://aststraining.com/oracle-apps-technical-online-training-2/",
+  "parent": 0,
+  "title": "oracle-apps-technical-online-training"
+ },
+ {
+  "id": 744,
+  "slug": "msbi-online-training-2-2",
+  "link": "https://aststraining.com/msbi-online-training-2-2/",
+  "parent": 0,
+  "title": ""
+ },
+ {
+  "id": 745,
+  "slug": "informatica-online-training-2",
+  "link": "https://aststraining.com/informatica-online-training-2/",
+  "parent": 0,
+  "title": "informatica-online-training"
+ },
+ {
+  "id": 746,
+  "slug": "datastage-online-training-2",
+  "link": "https://aststraining.com/datastage-online-training-2/",
+  "parent": 0,
+  "title": "datastage-online-training"
+ },
+ {
+  "id": 747,
+  "slug": "abinitio-training",
+  "link": "https://aststraining.com/abinitio-training/",
+  "parent": 0,
+  "title": "Abinitio Online Training"
+ },
+ {
+  "id": 748,
+  "slug": "sap-srm-online-training",
+  "link": "https://aststraining.com/sap-srm-online-training/",
+  "parent": 0,
+  "title": "sap-srm-online-training"
+ },
+ {
+  "id": 749,
+  "slug": "qlikview-online-training-2-2",
+  "link": "https://aststraining.com/qlikview-online-training-2-2/",
+  "parent": 0,
+  "title": ""
+ },
+ {
+  "id": 750,
+  "slug": "cognos-online-training-2",
+  "link": "https://aststraining.com/cognos-online-training-2/",
+  "parent": 0,
+  "title": "Cognos Planning Online Training"
+ },
+ {
+  "id": 751,
+  "slug": "ibm-cognos-tm1-online-training",
+  "link": "https://aststraining.com/ibm-cognos-tm1-online-training/",
+  "parent": 0,
+  "title": "ibm-cognos-tm1-online-training"
+ },
+ {
+  "id": 753,
+  "slug": "about-background3",
+  "link": "https://aststraining.com/about-background3/",
+  "parent": 0,
+  "title": "about-background3"
+ },
+ {
+  "id": 754,
+  "slug": "about-background4",
+  "link": "https://aststraining.com/about-background4/",
+  "parent": 0,
+  "title": "about-background4"
+ },
+ {
+  "id": 755,
+  "slug": "about-background5",
+  "link": "https://aststraining.com/about-background5/",
+  "parent": 0,
+  "title": "about-background5"
+ },
+ {
+  "id": 756,
+  "slug": "about-background",
+  "link": "https://aststraining.com/about-background/",
+  "parent": 0,
+  "title": "about-background"
+ },
+ {
+  "id": 757,
+  "slug": "about-background1",
+  "link": "https://aststraining.com/about-background1/",
+  "parent": 0,
+  "title": "about-background1"
+ },
+ {
+  "id": 758,
+  "slug": "why",
+  "link": "https://aststraining.com/why/",
+  "parent": 0,
+  "title": "why"
+ },
+ {
+  "id": 760,
+  "slug": "contact-us",
+  "link": "https://aststraining.com/contact-us/",
+  "parent": 0,
+  "title": "contact-us"
+ },
+ {
+  "id": 761,
+  "slug": "contact-us1",
+  "link": "https://aststraining.com/contact-us1/",
+  "parent": 0,
+  "title": "contact-us1"
+ },
+ {
+  "id": 763,
+  "slug": "contact-us2",
+  "link": "https://aststraining.com/contact-us2/",
+  "parent": 0,
+  "title": "contact-us2"
+ },
+ {
+  "id": 796,
+  "slug": "about-1",
+  "link": "https://aststraining.com/about-1/",
+  "parent": 0,
+  "title": "about-1"
+ },
+ {
+  "id": 797,
+  "slug": "contact-1",
+  "link": "https://aststraining.com/contact-1/",
+  "parent": 0,
+  "title": "contact-1"
+ },
+ {
+  "id": 799,
+  "slug": "contact-3",
+  "link": "https://aststraining.com/contact-3/",
+  "parent": 0,
+  "title": "contact-3"
+ },
+ {
+  "id": 802,
+  "slug": "why-1",
+  "link": "https://aststraining.com/why-1/",
+  "parent": 0,
+  "title": "why-1"
+ },
+ {
+  "id": 803,
+  "slug": "slider-1",
+  "link": "https://aststraining.com/slider-1/",
+  "parent": 0,
+  "title": "slider-1"
+ },
+ {
+  "id": 804,
+  "slug": "slider-2",
+  "link": "https://aststraining.com/slider-2/",
+  "parent": 0,
+  "title": "slider-2"
+ },
+ {
+  "id": 805,
+  "slug": "slider-3",
+  "link": "https://aststraining.com/slider-3/",
+  "parent": 0,
+  "title": "slider-3"
+ },
+ {
+  "id": 806,
+  "slug": "hyperion-image",
+  "link": "https://aststraining.com/hyperion-image/",
+  "parent": 0,
+  "title": "Hyperion-image"
+ },
+ {
+  "id": 807,
+  "slug": "hyperion-fdmee",
+  "link": "https://aststraining.com/hyperion-fdmee/",
+  "parent": 0,
+  "title": "hyperion-fdmee"
+ },
+ {
+  "id": 808,
+  "slug": "oracle-odi-online-training-2",
+  "link": "https://aststraining.com/oracle-odi-online-training-2/",
+  "parent": 0,
+  "title": ""
+ },
+ {
+  "id": 810,
+  "slug": "hpcm-1",
+  "link": "https://aststraining.com/hpcm-1/",
+  "parent": 0,
+  "title": "HPCM-1"
+ },
+ {
+  "id": 811,
+  "slug": "hyperion-planning",
+  "link": "https://aststraining.com/hyperion-planning/",
+  "parent": 0,
+  "title": ""
+ },
+ {
+  "id": 814,
+  "slug": "hpcm-new1",
+  "link": "https://aststraining.com/hpcm-new1/",
+  "parent": 0,
+  "title": "HPCM-new1"
+ },
+ {
+  "id": 815,
+  "slug": "hyperion-hsf",
+  "link": "https://aststraining.com/hyperion-hsf/",
+  "parent": 0,
+  "title": "Hyperion-HSF"
+ },
+ {
+  "id": 816,
+  "slug": "hyperion-fdmee-new",
+  "link": "https://aststraining.com/hyperion-fdmee-new/",
+  "parent": 0,
+  "title": ""
+ },
+ {
+  "id": 817,
+  "slug": "hyperion-essbase-online-training1",
+  "link": "https://aststraining.com/hyperion-essbase-online-training1/",
+  "parent": 0,
+  "title": ""
+ },
+ {
+  "id": 818,
+  "slug": "hyperion-financial-management-training1",
+  "link": "https://aststraining.com/hyperion-financial-management-training1/",
+  "parent": 0,
+  "title": "hyperion-financial-management-training1"
+ },
+ {
+  "id": 819,
+  "slug": "hyperion-financial-management-training11",
+  "link": "https://aststraining.com/hyperion-financial-management-training11/",
+  "parent": 0,
+  "title": ""
+ },
+ {
+  "id": 820,
+  "slug": "about-1-2",
+  "link": "https://aststraining.com/about-1-2/",
+  "parent": 0,
+  "title": "about-1"
+ },
+ {
+  "id": 821,
+  "slug": "about-2",
+  "link": "https://aststraining.com/about-2/",
+  "parent": 0,
+  "title": "about-2"
+ },
+ {
+  "id": 860,
+  "slug": "hyperion-drm",
+  "link": "https://aststraining.com/hyperion-drm/",
+  "parent": 0,
+  "title": "Hyperion-drm"
+ },
+ {
+  "id": 861,
+  "slug": "hyperion-drm1",
+  "link": "https://aststraining.com/hyperion-drm1/",
+  "parent": 0,
+  "title": "Hyperion-drm1"
+ },
+ {
+  "id": 862,
+  "slug": "hyperion-drm2",
+  "link": "https://aststraining.com/hyperion-drm2/",
+  "parent": 0,
+  "title": "Hyperion-drm2"
+ },
+ {
+  "id": 873,
+  "slug": "hyperion-drm11",
+  "link": "https://aststraining.com/hyperion-drm11/",
+  "parent": 0,
+  "title": ""
+ },
+ {
+  "id": 1056,
+  "slug": "asts_new2",
+  "link": "https://aststraining.com/asts_new2/",
+  "parent": 0,
+  "title": "asts_new2"
+ },
+ {
+  "id": 1057,
+  "slug": "asts_1",
+  "link": "https://aststraining.com/asts_1/",
+  "parent": 0,
+  "title": "asts_1"
+ },
+ {
+  "id": 1058,
+  "slug": "asts_new3",
+  "link": "https://aststraining.com/asts_new3/",
+  "parent": 0,
+  "title": "asts_new3"
+ },
+ {
+  "id": 1154,
+  "slug": "sap-bibw-training1",
+  "link": "https://aststraining.com/sap-bibw-training1/",
+  "parent": 0,
+  "title": "sap-bibw- online-training"
+ },
+ {
+  "id": 1485,
+  "slug": "arcs",
+  "link": "https://aststraining.com/arcs/",
+  "parent": 0,
+  "title": "ARCS Online Training"
+ },
+ {
+  "id": 1498,
+  "slug": "epbcs",
+  "link": "https://aststraining.com/epbcs/",
+  "parent": 0,
+  "title": "EPBCS Online Training"
+ },
+ {
+  "id": 1527,
+  "slug": "pbcs",
+  "link": "https://aststraining.com/pbcs/",
+  "parent": 0,
+  "title": "PBCS Online Training"
+ },
+ {
+  "id": 1530,
+  "slug": "r-programming",
+  "link": "https://aststraining.com/r-programming/",
+  "parent": 0,
+  "title": "R Programming Online Training"
+ },
+ {
+  "id": 1536,
+  "slug": "sas",
+  "link": "https://aststraining.com/sas/",
+  "parent": 0,
+  "title": "SAS Online Training"
+ },
+ {
+  "id": 1542,
+  "slug": "statistical",
+  "link": "https://aststraining.com/statistical/",
+  "parent": 0,
+  "title": "statistical Modelling Online Training"
+ },
+ {
+  "id": 1543,
+  "slug": "pbcs-400",
+  "link": "https://aststraining.com/pbcs-400/",
+  "parent": 0,
+  "title": "PBCS Online Training"
+ },
+ {
+  "id": 1544,
+  "slug": "fccs-online-training-copy",
+  "link": "https://aststraining.com/fccs-online-training-copy/",
+  "parent": 0,
+  "title": "FCCS Online Training"
+ },
+ {
+  "id": 1545,
+  "slug": "epbcs-online-training-2",
+  "link": "https://aststraining.com/epbcs-online-training-2/",
+  "parent": 0,
+  "title": "EPBCS Online Training"
+ },
+ {
+  "id": 1546,
+  "slug": "arcs-online-training-2",
+  "link": "https://aststraining.com/arcs-online-training-2/",
+  "parent": 0,
+  "title": "ARCS Online Training"
+ },
+ {
+  "id": 1547,
+  "slug": "statistical-2",
+  "link": "https://aststraining.com/statistical-2/",
+  "parent": 0,
+  "title": "Statistical Modelling Online Training"
+ },
+ {
+  "id": 1548,
+  "slug": "sas-online-training-copy",
+  "link": "https://aststraining.com/sas-online-training-copy/",
+  "parent": 0,
+  "title": "SAS Online Training"
+ },
+ {
+  "id": 1549,
+  "slug": "r-online-training-2",
+  "link": "https://aststraining.com/r-online-training-2/",
+  "parent": 0,
+  "title": "R Programming Online Training"
+ },
+ {
+  "id": 1550,
+  "slug": "deel-learning-online-training",
+  "link": "https://aststraining.com/deel-learning-online-training/",
+  "parent": 0,
+  "title": "Deel Learning Online Training"
+ },
+ {
+  "id": 1552,
+  "slug": "workday-online-training-2",
+  "link": "https://aststraining.com/workday-online-training-2/",
+  "parent": 0,
+  "title": "Workday Financials Online Training"
+ },
+ {
+  "id": 1553,
+  "slug": "sql-dba-online-training-2",
+  "link": "https://aststraining.com/sql-dba-online-training-2/",
+  "parent": 0,
+  "title": "SQL DBA Online Training"
+ },
+ {
+  "id": 1555,
+  "slug": "peoplesoft-online-training-2",
+  "link": "https://aststraining.com/peoplesoft-online-training-2/",
+  "parent": 0,
+  "title": "Peoplesoft Online Training"
+ },
+ {
+  "id": 1561,
+  "slug": "oracle-hrms-online-training-2",
+  "link": "https://aststraining.com/oracle-hrms-online-training-2/",
+  "parent": 0,
+  "title": "Oracle HRMS Online Training"
+ },
+ {
+  "id": 1564,
+  "slug": "oracle-crm-online-training-2",
+  "link": "https://aststraining.com/oracle-crm-online-training-2/",
+  "parent": 0,
+  "title": "Oracle CRM Online Training"
+ },
+ {
+  "id": 1567,
+  "slug": "ms-dynamics-online-training-2",
+  "link": "https://aststraining.com/ms-dynamics-online-training-2/",
+  "parent": 0,
+  "title": "MS Dynamics Online Training"
+ },
+ {
+  "id": 1570,
+  "slug": "talend-online-training-2",
+  "link": "https://aststraining.com/talend-online-training-2/",
+  "parent": 0,
+  "title": "Talend Online Training"
+ },
+ {
+  "id": 1573,
+  "slug": "mulesoft-online-training-2",
+  "link": "https://aststraining.com/mulesoft-online-training-2/",
+  "parent": 0,
+  "title": ""
+ },
+ {
+  "id": 1576,
+  "slug": "power-bi",
+  "link": "https://aststraining.com/power-bi/",
+  "parent": 0,
+  "title": ""
+ },
+ {
+  "id": 1579,
+  "slug": "rpa-uipath-online-training-2",
+  "link": "https://aststraining.com/rpa-uipath-online-training-2/",
+  "parent": 0,
+  "title": "RPA Uipath Online Training"
+ },
+ {
+  "id": 1582,
+  "slug": "blueprism-online-training-2",
+  "link": "https://aststraining.com/blueprism-online-training-2/",
+  "parent": 0,
+  "title": "Blueprism Online Training"
+ },
+ {
+  "id": 1584,
+  "slug": "fullstack-online-training-2",
+  "link": "https://aststraining.com/fullstack-online-training-2/",
+  "parent": 0,
+  "title": "Fullstack Online Training"
+ },
+ {
+  "id": 1586,
+  "slug": "react-js-online-training-2",
+  "link": "https://aststraining.com/react-js-online-training-2/",
+  "parent": 0,
+  "title": "React JS Online Training"
+ },
+ {
+  "id": 1589,
+  "slug": "php-online-training-2",
+  "link": "https://aststraining.com/php-online-training-2/",
+  "parent": 0,
+  "title": "PHP Online Training"
+ },
+ {
+  "id": 1592,
+  "slug": "nodejs-online-training-2",
+  "link": "https://aststraining.com/nodejs-online-training-2/",
+  "parent": 0,
+  "title": "NodeJS Online Training"
+ },
+ {
+  "id": 1595,
+  "slug": "jquery-online-training-2",
+  "link": "https://aststraining.com/jquery-online-training-2/",
+  "parent": 0,
+  "title": "Jquery Online Training"
+ },
+ {
+  "id": 1598,
+  "slug": "java-online-training-2",
+  "link": "https://aststraining.com/java-online-training-2/",
+  "parent": 0,
+  "title": "Java Online Training"
+ },
+ {
+  "id": 1601,
+  "slug": "dotnet-online-training-2",
+  "link": "https://aststraining.com/dotnet-online-training-2/",
+  "parent": 0,
+  "title": "Dotnet Online Training"
+ },
+ {
+  "id": 1604,
+  "slug": "django-online-training-2",
+  "link": "https://aststraining.com/django-online-training-2/",
+  "parent": 0,
+  "title": "Django Online Training"
+ },
+ {
+  "id": 1606,
+  "slug": "angularjs-online-training-3",
+  "link": "https://aststraining.com/angularjs-online-training-3/",
+  "parent": 0,
+  "title": "Angularjs Online Training"
+ },
+ {
+  "id": 1608,
+  "slug": "akka-with-scala-online-training",
+  "link": "https://aststraining.com/akka-with-scala-online-training/",
+  "parent": 0,
+  "title": "Akka with Scala Online Training"
+ },
+ {
+  "id": 1611,
+  "slug": "msbi-online-training-3",
+  "link": "https://aststraining.com/msbi-online-training-3/",
+  "parent": 0,
+  "title": "MSBI online Training"
+ },
+ {
+  "id": 1614,
+  "slug": "microstategy",
+  "link": "https://aststraining.com/microstategy/",
+  "parent": 0,
+  "title": "Microstrategy online Training"
+ },
+ {
+  "id": 1617,
+  "slug": "jaspersoft-online-training",
+  "link": "https://aststraining.com/jaspersoft-online-training/",
+  "parent": 0,
+  "title": "Jaspersoft Online Training"
+ },
+ {
+  "id": 1619,
+  "slug": "salesforce-crm",
+  "link": "https://aststraining.com/salesforce-crm/",
+  "parent": 0,
+  "title": "Salesforce CRMSalesforce CRM Online Training"
+ },
+ {
+  "id": 1620,
+  "slug": "microsoft-azure",
+  "link": "https://aststraining.com/microsoft-azure/",
+  "parent": 0,
+  "title": "Microsoft Azure Online Training"
+ },
+ {
+  "id": 1621,
+  "slug": "google-cloud-online-training-2",
+  "link": "https://aststraining.com/google-cloud-online-training-2/",
+  "parent": 0,
+  "title": "Google Cloud Online Training"
+ },
+ {
+  "id": 1624,
+  "slug": "aws-online-training-2",
+  "link": "https://aststraining.com/aws-online-training-2/",
+  "parent": 0,
+  "title": "AWS Online Training"
+ },
+ {
+  "id": 1625,
+  "slug": "anaplan-online-training-2",
+  "link": "https://aststraining.com/anaplan-online-training-2/",
+  "parent": 0,
+  "title": "Anaplan Online Training"
+ },
+ {
+  "id": 1627,
+  "slug": "service-now-online-training",
+  "link": "https://aststraining.com/service-now-online-training/",
+  "parent": 0,
+  "title": "Service Now Online Training"
+ },
+ {
+  "id": 1630,
+  "slug": "dell-boomi-online-training-2",
+  "link": "https://aststraining.com/dell-boomi-online-training-2/",
+  "parent": 0,
+  "title": ""
+ },
+ {
+  "id": 1632,
+  "slug": "spark-online-training-2",
+  "link": "https://aststraining.com/spark-online-training-2/",
+  "parent": 0,
+  "title": "Spark Online Training"
+ },
+ {
+  "id": 1633,
+  "slug": "kafka-online-training-2",
+  "link": "https://aststraining.com/kafka-online-training-2/",
+  "parent": 0,
+  "title": "Apache Kafka Online Training"
+ },
+ {
+  "id": 1634,
+  "slug": "hive-online-training-2",
+  "link": "https://aststraining.com/hive-online-training-2/",
+  "parent": 0,
+  "title": "Apache Hive Online Training"
+ },
+ {
+  "id": 1635,
+  "slug": "hadoop-online-training-2",
+  "link": "https://aststraining.com/hadoop-online-training-2/",
+  "parent": 0,
+  "title": "Hadoop Online Training"
+ },
+ {
+  "id": 1699,
+  "slug": "asts-logo-png",
+  "link": "https://aststraining.com/asts-logo-png/",
+  "parent": 0,
+  "title": "ASTS-LOGO.png"
+ },
+ {
+  "id": 1700,
+  "slug": "cropped-asts-logo-png-png",
+  "link": "https://aststraining.com/cropped-asts-logo-png-png/",
+  "parent": 0,
+  "title": "cropped-ASTS-LOGO.png.png"
+ },
+ {
+  "id": 1701,
+  "slug": "cropped-asts-logo-1-png-1-png",
+  "link": "https://aststraining.com/cropped-asts-logo-1-png-1-png/",
+  "parent": 0,
+  "title": "cropped-ASTS-LOGO-1.png-1.png"
+ },
+ {
+  "id": 1720,
+  "slug": "og-tag",
+  "link": "https://aststraining.com/og-tag/",
+  "parent": 0,
+  "title": "OG-tag"
+ },
+ {
+  "id": 1741,
+  "slug": "pinterest-icon",
+  "link": "https://aststraining.com/pinterest-icon/",
+  "parent": 0,
+  "title": "pinterest-icon"
+ },
+ {
+  "id": 1747,
+  "slug": "asts-logo",
+  "link": "https://aststraining.com/asts-logo/",
+  "parent": 0,
+  "title": "ODI-Online-Training"
+ },
+ {
+  "id": 1808,
+  "slug": "asts-fdmee",
+  "link": "https://aststraining.com/asts-fdmee/",
+  "parent": 0,
+  "title": "fdmee-online-training"
+ },
+ {
+  "id": 1823,
+  "slug": "home9-bg-png",
+  "link": "https://aststraining.com/home9-bg-png/",
+  "parent": 0,
+  "title": "home9_bg.png"
+ },
+ {
+  "id": 1824,
+  "slug": "main-png",
+  "link": "https://aststraining.com/main-png/",
+  "parent": 0,
+  "title": "main.png"
+ },
+ {
+  "id": 1825,
+  "slug": "1-31-png",
+  "link": "https://aststraining.com/1-31-png/",
+  "parent": 0,
+  "title": "1-31.png"
+ },
+ {
+  "id": 1826,
+  "slug": "2-31-png",
+  "link": "https://aststraining.com/2-31-png/",
+  "parent": 0,
+  "title": "2-31.png"
+ },
+ {
+  "id": 1827,
+  "slug": "spine-png",
+  "link": "https://aststraining.com/spine-png/",
+  "parent": 0,
+  "title": "spine.png"
+ },
+ {
+  "id": 1828,
+  "slug": "asts_training-2",
+  "link": "https://aststraining.com/asts_training-2/",
+  "parent": 0,
+  "title": "asts_training"
+ },
+ {
+  "id": 1829,
+  "slug": "asts_training-3",
+  "link": "https://aststraining.com/asts_training-3/",
+  "parent": 0,
+  "title": "asts_training"
+ },
+ {
+  "id": 1831,
+  "slug": "cropped-asts_training-png",
+  "link": "https://aststraining.com/cropped-asts_training-png/",
+  "parent": 0,
+  "title": "cropped-asts_training.png"
+ },
+ {
+  "id": 1833,
+  "slug": "cropped-asts_training-1-png",
+  "link": "https://aststraining.com/cropped-asts_training-1-png/",
+  "parent": 0,
+  "title": "cropped-asts_training-1.png"
+ },
+ {
+  "id": 1837,
+  "slug": "bg-overlay-2",
+  "link": "https://aststraining.com/bg-overlay-2/",
+  "parent": 0,
+  "title": "bg-overlay"
+ },
+ {
+  "id": 1839,
+  "slug": "slider-1-3",
+  "link": "https://aststraining.com/slider-1-3/",
+  "parent": 0,
+  "title": "Slider-1"
+ },
+ {
+  "id": 1846,
+  "slug": "1-3",
+  "link": "https://aststraining.com/1-3/",
+  "parent": 0,
+  "title": "1"
+ },
+ {
+  "id": 1847,
+  "slug": "2-3",
+  "link": "https://aststraining.com/2-3/",
+  "parent": 0,
+  "title": "2"
+ },
+ {
+  "id": 1848,
+  "slug": "3-2",
+  "link": "https://aststraining.com/3-2/",
+  "parent": 0,
+  "title": "3"
+ },
+ {
+  "id": 1849,
+  "slug": "4-2",
+  "link": "https://aststraining.com/4-2/",
+  "parent": 0,
+  "title": "4"
+ },
+ {
+  "id": 1850,
+  "slug": "5-2",
+  "link": "https://aststraining.com/5-2/",
+  "parent": 0,
+  "title": "5"
+ },
+ {
+  "id": 1851,
+  "slug": "6-2",
+  "link": "https://aststraining.com/6-2/",
+  "parent": 0,
+  "title": "6"
+ },
+ {
+  "id": 1889,
+  "slug": "classroom-training-03",
+  "link": "https://aststraining.com/homepage/classroom-training-03/",
+  "parent": 0,
+  "title": "classroom-training-03"
+ },
+ {
+  "id": 1890,
+  "slug": "idea-discussion-05",
+  "link": "https://aststraining.com/homepage/idea-discussion-05/",
+  "parent": 0,
+  "title": "idea-discussion-05"
+ },
+ {
+  "id": 1891,
+  "slug": "online-learning-02",
+  "link": "https://aststraining.com/homepage/online-learning-02/",
+  "parent": 0,
+  "title": "online-learning-02"
+ },
+ {
+  "id": 1892,
+  "slug": "project-support-04",
+  "link": "https://aststraining.com/homepage/project-support-04/",
+  "parent": 0,
+  "title": "project-support-04"
+ },
+ {
+  "id": 1933,
+  "slug": "aws-online-training-3",
+  "link": "https://aststraining.com/courses/react-js-online-training/aws-online-training-3/",
+  "parent": 0,
+  "title": "AWS-Online-Training"
+ },
+ {
+  "id": 1934,
+  "slug": "google-cloud",
+  "link": "https://aststraining.com/courses/react-js-online-training/google-cloud/",
+  "parent": 0,
+  "title": "google-cloud"
+ },
+ {
+  "id": 1935,
+  "slug": "haddop",
+  "link": "https://aststraining.com/courses/react-js-online-training/haddop/",
+  "parent": 0,
+  "title": "Haddop"
+ },
+ {
+  "id": 1936,
+  "slug": "node-js",
+  "link": "https://aststraining.com/courses/react-js-online-training/node-js/",
+  "parent": 0,
+  "title": "Node-js"
+ },
+ {
+  "id": 1937,
+  "slug": "react-js",
+  "link": "https://aststraining.com/courses/react-js-online-training/react-js/",
+  "parent": 0,
+  "title": "React-js"
+ },
+ {
+  "id": 1938,
+  "slug": "seo-online-training-2",
+  "link": "https://aststraining.com/courses/react-js-online-training/seo-online-training-2/",
+  "parent": 0,
+  "title": "SEO-Online-Training"
+ },
+ {
+  "id": 1955,
+  "slug": "2-4",
+  "link": "https://aststraining.com/homepage/2-4/",
+  "parent": 0,
+  "title": "2"
+ },
+ {
+  "id": 1972,
+  "slug": "about2orange",
+  "link": "https://aststraining.com/homepage/about2orange/",
+  "parent": 0,
+  "title": "about2orange"
+ },
+ {
+  "id": 1973,
+  "slug": "home-8-bg",
+  "link": "https://aststraining.com/homepage/home-8-bg/",
+  "parent": 0,
+  "title": "home-8-bg"
+ },
+ {
+  "id": 1974,
+  "slug": "dotss",
+  "link": "https://aststraining.com/homepage/dotss/",
+  "parent": 0,
+  "title": "dotss"
+ },
+ {
+  "id": 1988,
+  "slug": "1-4",
+  "link": "https://aststraining.com/homepage/1-4/",
+  "parent": 0,
+  "title": "1"
+ },
+ {
+  "id": 1989,
+  "slug": "2-5",
+  "link": "https://aststraining.com/homepage/2-5/",
+  "parent": 0,
+  "title": "2"
+ },
+ {
+  "id": 1990,
+  "slug": "3-3",
+  "link": "https://aststraining.com/homepage/3-3/",
+  "parent": 0,
+  "title": "3"
+ },
+ {
+  "id": 2022,
+  "slug": "cta-bg22",
+  "link": "https://aststraining.com/homepage/cta-bg22/",
+  "parent": 0,
+  "title": "cta-bg22"
+ },
+ {
+  "id": 2141,
+  "slug": "registration-2",
+  "link": "https://aststraining.com/registration/registration-2/",
+  "parent": 0,
+  "title": "Registration"
+ },
+ {
+  "id": 2143,
+  "slug": "con2",
+  "link": "https://aststraining.com/registration/con2/",
+  "parent": 0,
+  "title": "con2"
+ },
+ {
+  "id": 2189,
+  "slug": "inner12",
+  "link": "https://aststraining.com/contact/inner12/",
+  "parent": 0,
+  "title": "inner12"
+ },
+ {
+  "id": 2260,
+  "slug": "classroom-training-2",
+  "link": "https://aststraining.com/corporate-training/classroom-training-2/",
+  "parent": 0,
+  "title": "Classroom-Training"
+ },
+ {
+  "id": 2264,
+  "slug": "project-support-3",
+  "link": "https://aststraining.com/project-support/project-support-3/",
+  "parent": 0,
+  "title": "Project-Support"
+ },
+ {
+  "id": 2296,
+  "slug": "neft-rtgs-and-imps",
+  "link": "https://aststraining.com/payment/neft-rtgs-and-imps/",
+  "parent": 0,
+  "title": "NEFT-RTGS-and-IMPS"
+ },
+ {
+  "id": 2304,
+  "slug": "paytm",
+  "link": "https://aststraining.com/payment/paytm/",
+  "parent": 0,
+  "title": "paytm"
+ },
+ {
+  "id": 2324,
+  "slug": "others",
+  "link": "https://aststraining.com/payment/others/",
+  "parent": 0,
+  "title": "others"
+ },
+ {
+  "id": 2341,
+  "slug": "home-dot-bg",
+  "link": "https://aststraining.com/home-dot-bg/",
+  "parent": 0,
+  "title": "Home-dot-bg"
+ },
+ {
+  "id": 2342,
+  "slug": "about-us-dots-bg",
+  "link": "https://aststraining.com/about-asts-training/about-us-dots-bg/",
+  "parent": 0,
+  "title": "about-us-dots-bg"
+ },
+ {
+  "id": 2343,
+  "slug": "single-post-bg-dots",
+  "link": "https://aststraining.com/single-post-bg-dots/",
+  "parent": 0,
+  "title": "Single-post-bg-dots"
+ },
+ {
+  "id": 2352,
+  "slug": "registration-bg-dots",
+  "link": "https://aststraining.com/registration/registration-bg-dots/",
+  "parent": 0,
+  "title": "Registration-bg-dots"
+ },
+ {
+  "id": 2442,
+  "slug": "slider-21-jpg",
+  "link": "https://aststraining.com/slider-21-jpg/",
+  "parent": 0,
+  "title": "slider-21.jpg"
+ },
+ {
+  "id": 2443,
+  "slug": "slider-31-jpg",
+  "link": "https://aststraining.com/slider-31-jpg/",
+  "parent": 0,
+  "title": "slider-31.jpg"
+ },
+ {
+  "id": 2475,
+  "slug": "smm-training",
+  "link": "https://aststraining.com/courses/smm-online-training/smm-training/",
+  "parent": 0,
+  "title": "SMM-Training"
+ },
+ {
+  "id": 2476,
+  "slug": "sql-dba-online-training-3",
+  "link": "https://aststraining.com/sql-dba-online-training-3/",
+  "parent": 0,
+  "title": "sql-dba-online-training"
+ },
+ {
+  "id": 2494,
+  "slug": "book_cover",
+  "link": "https://aststraining.com/book_cover/",
+  "parent": 0,
+  "title": "book_cover"
+ },
+ {
+  "id": 2532,
+  "slug": "business-intelligence-for-marketing",
+  "link": "https://aststraining.com/business-intelligence-for-marketing/",
+  "parent": 0,
+  "title": "Business-Intelligence-for-Marketing"
+ },
+ {
+  "id": 2533,
+  "slug": "business-intelligence-for-marketing-2",
+  "link": "https://aststraining.com/business-intelligence-for-marketing-2/",
+  "parent": 0,
+  "title": "Business-Intelligence-for-Marketing (2)"
+ },
+ {
+  "id": 2543,
+  "slug": "1-5",
+  "link": "https://aststraining.com/homepage/1-5/",
+  "parent": 0,
+  "title": "1"
+ },
+ {
+  "id": 2544,
+  "slug": "2-2",
+  "link": "https://aststraining.com/homepage/2-2/",
+  "parent": 0,
+  "title": "2"
+ },
+ {
+  "id": 2545,
+  "slug": "3-4",
+  "link": "https://aststraining.com/homepage/3-4/",
+  "parent": 0,
+  "title": "3"
+ },
+ {
+  "id": 2546,
+  "slug": "4-3",
+  "link": "https://aststraining.com/homepage/4-3/",
+  "parent": 0,
+  "title": "4"
+ },
+ {
+  "id": 2547,
+  "slug": "5-3",
+  "link": "https://aststraining.com/homepage/5-3/",
+  "parent": 0,
+  "title": "5"
+ },
+ {
+  "id": 2548,
+  "slug": "6-3",
+  "link": "https://aststraining.com/homepage/6-3/",
+  "parent": 0,
+  "title": "6"
+ },
+ {
+  "id": 2549,
+  "slug": "7-2",
+  "link": "https://aststraining.com/homepage/7-2/",
+  "parent": 0,
+  "title": "7"
+ },
+ {
+  "id": 2553,
+  "slug": "business-intelligence-bi",
+  "link": "https://aststraining.com/business-intelligence-bi/",
+  "parent": 0,
+  "title": "business-intelligence-BI"
+ },
+ {
+  "id": 2554,
+  "slug": "cloud-computing-cc",
+  "link": "https://aststraining.com/cloud-computing-cc/",
+  "parent": 0,
+  "title": "Cloud-Computing-CC"
+ },
+ {
+  "id": 2555,
+  "slug": "hyperion-training-ht",
+  "link": "https://aststraining.com/hyperion-training-ht/",
+  "parent": 0,
+  "title": "Hyperion-training-HT"
+ },
+ {
+  "id": 2557,
+  "slug": "slider-22",
+  "link": "https://aststraining.com/slider-22/",
+  "parent": 0,
+  "title": "Slider-22"
+ },
+ {
+  "id": 2558,
+  "slug": "slider-33",
+  "link": "https://aststraining.com/slider-33/",
+  "parent": 0,
+  "title": "Slider-33"
+ },
+ {
+  "id": 2559,
+  "slug": "erp-development-image",
+  "link": "https://aststraining.com/erp-development-image/",
+  "parent": 0,
+  "title": "ERP-Development-image"
+ },
+ {
+  "id": 2560,
+  "slug": "programming-course-training-online",
+  "link": "https://aststraining.com/programming-course-training-online/",
+  "parent": 0,
+  "title": "programming-course-training-online"
+ },
+ {
+  "id": 2561,
+  "slug": "etl-tools-to-learn-in-2020",
+  "link": "https://aststraining.com/etl-tools-to-learn-in-2020/",
+  "parent": 0,
+  "title": "etl-tools-to-learn-in-2020"
+ },
+ {
+  "id": 2562,
+  "slug": "data-science-ml-training",
+  "link": "https://aststraining.com/data-science-ml-training/",
+  "parent": 0,
+  "title": "Data Science &#038; ML Training"
+ },
+ {
+  "id": 2563,
+  "slug": "software-testing-training",
+  "link": "https://aststraining.com/software-testing-training/",
+  "parent": 0,
+  "title": "software-testing-training"
+ },
+ {
+  "id": 2610,
+  "slug": "white-08",
+  "link": "https://aststraining.com/homepage/white-08/",
+  "parent": 0,
+  "title": "White-08"
+ },
+ {
+  "id": 2611,
+  "slug": "white-09",
+  "link": "https://aststraining.com/homepage/white-09/",
+  "parent": 0,
+  "title": "White-09"
+ },
+ {
+  "id": 2612,
+  "slug": "white-10",
+  "link": "https://aststraining.com/homepage/white-10/",
+  "parent": 0,
+  "title": "White-10"
+ },
+ {
+  "id": 2613,
+  "slug": "white-11",
+  "link": "https://aststraining.com/homepage/white-11/",
+  "parent": 0,
+  "title": "White-11"
+ },
+ {
+  "id": 2614,
+  "slug": "white-12",
+  "link": "https://aststraining.com/homepage/white-12/",
+  "parent": 0,
+  "title": "White-12"
+ },
+ {
+  "id": 2615,
+  "slug": "white-13",
+  "link": "https://aststraining.com/homepage/white-13/",
+  "parent": 0,
+  "title": "White-13"
+ },
+ {
+  "id": 2616,
+  "slug": "white-14",
+  "link": "https://aststraining.com/homepage/white-14/",
+  "parent": 0,
+  "title": "White-14"
+ },
+ {
+  "id": 2690,
+  "slug": "arcs-online-training-3",
+  "link": "https://aststraining.com/courses/arcs-online-training/arcs-online-training-3/",
+  "parent": 0,
+  "title": "ARCS-Online-Training"
+ },
+ {
+  "id": 2724,
+  "slug": "sem-2",
+  "link": "https://aststraining.com/courses/sem-online-training/sem-2/",
+  "parent": 0,
+  "title": "SEM"
+ },
+ {
+  "id": 2725,
+  "slug": "pbcs-online-training-2",
+  "link": "https://aststraining.com/courses/pbcs-online-training/pbcs-online-training-2/",
+  "parent": 0,
+  "title": "PBCS Online Training"
+ },
+ {
+  "id": 2801,
+  "slug": "talend-online-training",
+  "link": "https://aststraining.com/courses/talend-online-training/talend-online-training/",
+  "parent": 0,
+  "title": "Talend Online Training"
+ },
+ {
+  "id": 2810,
+  "slug": "microsoft-power-bi-online-training-courses",
+  "link": "https://aststraining.com/courses/power-bi-online-training/microsoft-power-bi-online-training-courses/",
+  "parent": 0,
+  "title": "Microsoft Power Bi Online Training Courses"
+ },
+ {
+  "id": 2819,
+  "slug": "rpa-uipath-online-training",
+  "link": "https://aststraining.com/courses/rpa-uipath-online-training/rpa-uipath-online-training/",
+  "parent": 0,
+  "title": "RPA-Uipath-Online-Training"
+ },
+ {
+  "id": 2827,
+  "slug": "business-intelligence-tools",
+  "link": "https://aststraining.com/business-intelligence-tools/",
+  "parent": 0,
+  "title": "Business Intelligence Tools"
+ },
+ {
+  "id": 2829,
+  "slug": "microstrategy-online-training",
+  "link": "https://aststraining.com/microstrategy-online-training/",
+  "parent": 0,
+  "title": "Microstrategy Online Training"
+ },
+ {
+  "id": 2885,
+  "slug": "spark-online-training-3",
+  "link": "https://aststraining.com/courses/spark-online-training/spark-online-training-3/",
+  "parent": 0,
+  "title": "Spark-Online-Training"
+ },
+ {
+  "id": 2904,
+  "slug": "kafka-online-training",
+  "link": "https://aststraining.com/courses/kafka-online-training/kafka-online-training/",
+  "parent": 0,
+  "title": "Kafka-Online-Training"
+ },
+ {
+  "id": 2913,
+  "slug": "fccs-online-training",
+  "link": "https://aststraining.com/courses/fccs-online-training/fccs-online-training/",
+  "parent": 0,
+  "title": "FCCS-Online-Training"
+ },
+ {
+  "id": 2929,
+  "slug": "epbcs-online-training",
+  "link": "https://aststraining.com/courses/epbcs-online-training/epbcs-online-training/",
+  "parent": 0,
+  "title": "EPBCS-Online-Training"
+ },
+ {
+  "id": 2945,
+  "slug": "anaplan-online-training",
+  "link": "https://aststraining.com/courses/anaplan-online-training/anaplan-online-training/",
+  "parent": 0,
+  "title": "Anaplan-Online-Training"
+ },
+ {
+  "id": 3007,
+  "slug": "hive-online-training-3",
+  "link": "https://aststraining.com/courses/hive-online-training/hive-online-training-3/",
+  "parent": 0,
+  "title": "Hive-Online-Training"
+ },
+ {
+  "id": 3174,
+  "slug": "hfm-online-training-2",
+  "link": "https://aststraining.com/courses/hfm-online-training/hfm-online-training-2/",
+  "parent": 0,
+  "title": "HFM-Online-Training"
+ },
+ {
+  "id": 3176,
+  "slug": "hyperion-planning-online-training",
+  "link": "https://aststraining.com/courses/hyperion-planning-online-training/hyperion-planning-online-training/",
+  "parent": 0,
+  "title": "hyperion-planning-online-training"
+ },
+ {
+  "id": 3198,
+  "slug": "informatica-online-training-3",
+  "link": "https://aststraining.com/courses/informatica-online-training/informatica-online-training-3/",
+  "parent": 0,
+  "title": "informatica-online-training"
+ },
+ {
+  "id": 3199,
+  "slug": "workday-financials-online-training-2",
+  "link": "https://aststraining.com/courses/workday-financials-online-training/workday-financials-online-training-2/",
+  "parent": 0,
+  "title": "Workday-Financials-Online-Training"
+ },
+ {
+  "id": 3200,
+  "slug": "service-now-online-training-2",
+  "link": "https://aststraining.com/courses/servicenow-online-training/service-now-online-training-2/",
+  "parent": 0,
+  "title": "Service-Now-Online-Training"
+ },
+ {
+  "id": 3228,
+  "slug": "devops-training-2",
+  "link": "https://aststraining.com/courses/devops-online-training/devops-training-2/",
+  "parent": 0,
+  "title": "devops-training"
+ },
+ {
+  "id": 3297,
+  "slug": "oracle-apps-financials-online-training-2",
+  "link": "https://aststraining.com/courses/oracle-apps-func-financials-online-training/oracle-apps-financials-online-training-2/",
+  "parent": 0,
+  "title": "oracle-apps-financials-online-training"
+ },
+ {
+  "id": 3321,
+  "slug": "oracle-scm-online-training-2",
+  "link": "https://aststraining.com/courses/oracle-apps-func-scm-online-training/oracle-scm-online-training-2/",
+  "parent": 0,
+  "title": "oracle-scm-online-training"
+ },
+ {
+  "id": 3443,
+  "slug": "oracle-apps-technical-online-training",
+  "link": "https://aststraining.com/courses/oracle-apps-technical-online-training/oracle-apps-technical-online-training/",
+  "parent": 0,
+  "title": "oracle-apps-technical-online-training"
+ },
+ {
+  "id": 3599,
+  "slug": "hyperion-essbase-online-training-2",
+  "link": "https://aststraining.com/courses/hyperion-essbase-online-training/hyperion-essbase-online-training-2/",
+  "parent": 0,
+  "title": "hyperion-essbase-online-training"
+ },
+ {
+  "id": 3600,
+  "slug": "hyperion-fdmee-online-training",
+  "link": "https://aststraining.com/courses/fdmee-online-training/hyperion-fdmee-online-training/",
+  "parent": 0,
+  "title": "hyperion-fdmee-online-training"
+ },
+ {
+  "id": 3601,
+  "slug": "oracle-odi-online-training-3",
+  "link": "https://aststraining.com/courses/oracle-odi-online-training/oracle-odi-online-training-3/",
+  "parent": 0,
+  "title": "oracle-odi-online-training"
+ },
+ {
+  "id": 3602,
+  "slug": "hyperion-drm-2",
+  "link": "https://aststraining.com/courses/drm-data-relationship-management-online-training/hyperion-drm-2/",
+  "parent": 0,
+  "title": "hyperion-drm"
+ },
+ {
+  "id": 3603,
+  "slug": "sas-online-training-2",
+  "link": "https://aststraining.com/courses/sas-online-training/sas-online-training-2/",
+  "parent": 0,
+  "title": "SAS-Online-Training"
+ },
+ {
+  "id": 3604,
+  "slug": "r-online-training-3",
+  "link": "https://aststraining.com/courses/r-online-training/r-online-training-3/",
+  "parent": 0,
+  "title": "R-Online-Training"
+ },
+ {
+  "id": 3605,
+  "slug": "statistical-modelling-online-training-2",
+  "link": "https://aststraining.com/courses/statistical-modelling-online-training/statistical-modelling-online-training-2/",
+  "parent": 0,
+  "title": "statistical modelling online Training"
+ },
+ {
+  "id": 3624,
+  "slug": "deel-learning-online-training-2",
+  "link": "https://aststraining.com/courses/deep-learning-online-training/deel-learning-online-training-2/",
+  "parent": 0,
+  "title": "Deel-Learning-Online-Training"
+ },
+ {
+  "id": 3629,
+  "slug": "peoplesoft-online-training",
+  "link": "https://aststraining.com/courses/peoplesoft-online-training/peoplesoft-online-training/",
+  "parent": 0,
+  "title": "Peoplesoft-Online-Training"
+ },
+ {
+  "id": 3657,
+  "slug": "oracle-hrms-online-training",
+  "link": "https://aststraining.com/courses/oracle-hrms-online-training/oracle-hrms-online-training/",
+  "parent": 0,
+  "title": "Oracle-HRMS-Online-Training"
+ },
+ {
+  "id": 3675,
+  "slug": "oracle-crm-online-training",
+  "link": "https://aststraining.com/courses/oracle-crm-online-training/oracle-crm-online-training/",
+  "parent": 0,
+  "title": "Oracle-CRM-Online-Training"
+ },
+ {
+  "id": 3707,
+  "slug": "ms-dynamics-online-training",
+  "link": "https://aststraining.com/courses/ms-dynamics-online-training/ms-dynamics-online-training/",
+  "parent": 0,
+  "title": "MS-Dynamics-Online-Training"
+ },
+ {
+  "id": 3726,
+  "slug": "oracle-apps-dba-online-training",
+  "link": "https://aststraining.com/courses/oracle-apps-dba-online-training/oracle-apps-dba-online-training/",
+  "parent": 0,
+  "title": "oracle-apps-dba-online-training"
+ },
+ {
+  "id": 3748,
+  "slug": "sql-dba-online-training-4",
+  "link": "https://aststraining.com/courses/sql-dba-online-training/sql-dba-online-training-4/",
+  "parent": 0,
+  "title": "SQL-DBA-Online-Training"
+ },
+ {
+  "id": 3794,
+  "slug": "oracle-teradata-online-training-2",
+  "link": "https://aststraining.com/courses/teradata-online-training/oracle-teradata-online-training-2/",
+  "parent": 0,
+  "title": "oracle-teradata-online-training"
+ },
+ {
+  "id": 3814,
+  "slug": "datastage-online-training",
+  "link": "https://aststraining.com/courses/datastage-online-training/datastage-online-training/",
+  "parent": 0,
+  "title": "datastage-online-training"
+ },
+ {
+  "id": 3817,
+  "slug": "abinitio-training-2",
+  "link": "https://aststraining.com/courses/abinitio-online-training/abinitio-training-2/",
+  "parent": 0,
+  "title": "abinitio-training"
+ },
+ {
+  "id": 3917,
+  "slug": "msbi-online-training",
+  "link": "https://aststraining.com/courses/msbi-online-training/msbi-online-training/",
+  "parent": 0,
+  "title": "msbi-online-training"
+ },
+ {
+  "id": 3921,
+  "slug": "jaspersoft-online-training-2",
+  "link": "https://aststraining.com/courses/jaspersoft-online-training/jaspersoft-online-training-2/",
+  "parent": 0,
+  "title": "Jaspersoft-Online-Training"
+ },
+ {
+  "id": 4017,
+  "slug": "cognos-online-training",
+  "link": "https://aststraining.com/courses/cognos-planning-online-training/cognos-online-training/",
+  "parent": 0,
+  "title": "cognos-planning-online-training"
+ },
+ {
+  "id": 4065,
+  "slug": "salesforce-crm-2",
+  "link": "https://aststraining.com/courses/salesforce-crm-online-training/salesforce-crm-2/",
+  "parent": 0,
+  "title": "Salesforce-CRM"
+ },
+ {
+  "id": 4078,
+  "slug": "ibm-cognos-tm1-online-training-2",
+  "link": "https://aststraining.com/courses/cognos-online-training/ibm-cognos-tm1-online-training-2/",
+  "parent": 0,
+  "title": "ibm-cognos-tm1-online-training"
+ },
+ {
+  "id": 4094,
+  "slug": "tableau-advanced-training-2",
+  "link": "https://aststraining.com/courses/tableau-online-training/tableau-advanced-training-2/",
+  "parent": 0,
+  "title": "tableau-advanced-training"
+ },
+ {
+  "id": 4116,
+  "slug": "microsoft-azure-2",
+  "link": "https://aststraining.com/courses/microsoft-azure-online-training/microsoft-azure-2/",
+  "parent": 0,
+  "title": "Microsoft-azure"
+ },
+ {
+  "id": 4125,
+  "slug": "qlikview-online-training",
+  "link": "https://aststraining.com/courses/qlikview-online-training/qlikview-online-training/",
+  "parent": 0,
+  "title": "qlikview-online-training"
+ },
+ {
+  "id": 4132,
+  "slug": "obiee-online-training",
+  "link": "https://aststraining.com/courses/obiee-online-training/obiee-online-training/",
+  "parent": 0,
+  "title": "obiee-online-training"
+ },
+ {
+  "id": 4186,
+  "slug": "dell-boomi-online-training",
+  "link": "https://aststraining.com/courses/dell-boomi-online-training/dell-boomi-online-training/",
+  "parent": 0,
+  "title": "Dell-Boomi-Online-Training"
+ },
+ {
+  "id": 4192,
+  "slug": "salesforce-training-2",
+  "link": "https://aststraining.com/courses/salesforce-online-training/salesforce-training-2/",
+  "parent": 0,
+  "title": "salesforce-training"
+ },
+ {
+  "id": 4215,
+  "slug": "workday-training-1-2",
+  "link": "https://aststraining.com/courses/workday-online-training/workday-training-1-2/",
+  "parent": 0,
+  "title": "workday-training-1"
+ },
+ {
+  "id": 4245,
+  "slug": "microstategy-2",
+  "link": "https://aststraining.com/courses/microstrategy-online-training-2/microstategy-2/",
+  "parent": 0,
+  "title": "Microstategy"
+ },
+ {
+  "id": 4252,
+  "slug": "cognos-tm1-training-3",
+  "link": "https://aststraining.com/courses/cognos-tm1-online-training/cognos-tm1-training-3/",
+  "parent": 0,
+  "title": "cognos-tm1-training"
+ },
+ {
+  "id": 4270,
+  "slug": "spotfire-training-1-2",
+  "link": "https://aststraining.com/courses/tibco-spotfire-online-training/spotfire-training-1-2/",
+  "parent": 0,
+  "title": "Spotfire-Training-1"
+ },
+ {
+  "id": 4295,
+  "slug": "mulesoft-online-training",
+  "link": "https://aststraining.com/courses/mulesoft-online-training/mulesoft-online-training/",
+  "parent": 0,
+  "title": "Mulesoft-Online-Training"
+ },
+ {
+  "id": 4366,
+  "slug": "blueprism-online-training",
+  "link": "https://aststraining.com/courses/blue-prism-online-training/blueprism-online-training/",
+  "parent": 0,
+  "title": "Blueprism-Online-Training"
+ },
+ {
+  "id": 4388,
+  "slug": "etl-testing-training-1-2",
+  "link": "https://aststraining.com/courses/etl-testing-online-training/etl-testing-training-1-2/",
+  "parent": 0,
+  "title": "ETL-Testing-training-1"
+ },
+ {
+  "id": 4391,
+  "slug": "selenium-training-2",
+  "link": "https://aststraining.com/courses/selenium-online-training/selenium-training-2/",
+  "parent": 0,
+  "title": "Selenium-Training"
+ },
+ {
+  "id": 4431,
+  "slug": "h_testing41-2",
+  "link": "https://aststraining.com/courses/hadoop-testing-online-training/h_testing41-2/",
+  "parent": 0,
+  "title": "H_testing41"
+ },
+ {
+  "id": 4479,
+  "slug": "fullstack-online-training",
+  "link": "https://aststraining.com/courses/fullstack-online-training/fullstack-online-training/",
+  "parent": 0,
+  "title": "Fullstack-Online-Training"
+ },
+ {
+  "id": 4611,
+  "slug": "php-online-training",
+  "link": "https://aststraining.com/courses/php-online-training/php-online-training/",
+  "parent": 0,
+  "title": "PHP-Online-Training"
+ },
+ {
+  "id": 4653,
+  "slug": "jquery-online-training",
+  "link": "https://aststraining.com/courses/jquery-online-training/jquery-online-training/",
+  "parent": 0,
+  "title": "Jquery-Online-Training"
+ },
+ {
+  "id": 4731,
+  "slug": "java-online-training-3",
+  "link": "https://aststraining.com/courses/java-online-training/java-online-training-3/",
+  "parent": 0,
+  "title": "Java-Online-Training"
+ },
+ {
+  "id": 4734,
+  "slug": "django-online-training",
+  "link": "https://aststraining.com/courses/django-online-training/django-online-training/",
+  "parent": 0,
+  "title": "Django-Online-Training"
+ },
+ {
+  "id": 4800,
+  "slug": "dotnet-online-training",
+  "link": "https://aststraining.com/courses/dot-net-online-training/dotnet-online-training/",
+  "parent": 0,
+  "title": "Dotnet-Online-Training"
+ },
+ {
+  "id": 4881,
+  "slug": "angularjs-online-training",
+  "link": "https://aststraining.com/courses/angularjs-online-training/angularjs-online-training/",
+  "parent": 0,
+  "title": "Angularjs-Online-Training"
+ },
+ {
+  "id": 4911,
+  "slug": "akka-with-scala-online-training-2",
+  "link": "https://aststraining.com/courses/akka-with-scala-online-training/akka-with-scala-online-training-2/",
+  "parent": 0,
+  "title": "Akka-with-Scala-Online-Training"
+ },
+ {
+  "id": 4925,
+  "slug": "ruby-on-rails-training-2",
+  "link": "https://aststraining.com/courses/ruby-on-rails-online-training/ruby-on-rails-training-2/",
+  "parent": 0,
+  "title": "Ruby-on-Rails-Training"
+ },
+ {
+  "id": 4982,
+  "slug": "python-2",
+  "link": "https://aststraining.com/courses/python-online-training/python-2/",
+  "parent": 0,
+  "title": "Python"
+ },
+ {
+  "id": 5182,
+  "slug": "cropped-asts-logo-png",
+  "link": "https://aststraining.com/cropped-asts-logo-png/",
+  "parent": 0,
+  "title": "cropped-ASTS-Logo.png"
+ },
+ {
+  "id": 5332,
+  "slug": "chatgpt-image-sep-22-2026-12_44_51-pm",
+  "link": "https://aststraining.com/homepage/chatgpt-image-sep-22-2026-12_44_51-pm/",
+  "parent": 0,
+  "title": "ChatGPT Image Sep 22, 2026, 12_44_51 PM"
+ }
+]

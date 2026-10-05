@@ -70,14 +70,14 @@ export function CourseCard({ course }) {
         <div className="course-thumbnail">
           <Link to={course.url}>
             <div className="course-img">
-              <img src={course.thumb} alt={course.thumbAlt || 'course thumbnail'} />
+              <img src={course.thumb} alt={course.title} />
             </div>
           </Link>
         </div>
         <div className="course-content">
           <ReviewStars />
           <h3 className="wap-course-title">
-            <Link className="course-permalink" to={course.url}>
+            <Link className="course-permalink" to={course.url} aria-label={course.title}>
               <span className="course-title">{course.title}</span>
             </Link>
           </h3>
@@ -85,7 +85,7 @@ export function CourseCard({ course }) {
             <div>
               <label>by</label>{' '}
               <div className="course-instructor">
-                <a href={course.instructorUrl || ''}>
+                <a href={course.url}>
                   {' '}
                   <span className="instructor-display-name">{course.instructor}</span>
                 </a>
@@ -159,13 +159,13 @@ export function CoursesBar({ search, orderBy, layout, onSearch, onOrder, onLayou
           onSearch(new FormData(e.currentTarget).get('c_search') || '');
         }}
       >
-        <input type="search" placeholder="Search courses..." name="c_search" defaultValue={search} key={search} />
-        <button type="submit" name="lp-btn-search-courses">
+        <input type="search" placeholder="Search courses..." aria-label="Search courses" name="c_search" defaultValue={search} key={search} />
+        <button type="submit" name="lp-btn-search-courses" aria-label="Search courses">
           <i className="lp-icon-search"></i>
         </button>
       </form>
       <div className="courses-order-by-wrapper">
-        <select name="order_by" className="courses-order-by" value={orderBy} onChange={(e) => onOrder(e.target.value)}>
+        <select name="order_by" className="courses-order-by" aria-label="Sort courses" value={orderBy} onChange={(e) => onOrder(e.target.value)}>
           {ORDER_OPTIONS.map(([v, l]) => (
             <option key={v} value={v}>
               {l}
