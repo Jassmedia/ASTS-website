@@ -9,6 +9,10 @@ import os from 'os';
 import path from 'path';
 import { pathToFileURL } from 'url';
 import { LOCAL_COURSES } from '../src/data/local-courses.mjs';
+import { COURSE_IMAGE_OVERRIDES } from '../src/data/course-images.mjs';
+
+// Local courses plus the WordPress courses that use a drawn name image (src/data/course-images.mjs).
+const IMAGES = [...LOCAL_COURSES.map((c) => ({ slug: c.slug, image: c.image })), ...Object.entries(COURSE_IMAGE_OVERRIDES).map(([slug, image]) => ({ slug, image }))];
 
 const OUT = 'public/images/courses';
 const W = 1000; // 5:3, the ratio of the course card image area
@@ -91,7 +95,7 @@ async function main() {
     const evaluate = async (expression) => (await send('Runtime.evaluate', { expression, returnByValue: true })).result?.result?.value;
 
     await send('Emulation.setDeviceMetricsOverride', { width: W, height: H, deviceScaleFactor: 1, mobile: false });
-    for (const course of LOCAL_COURSES) {
+    for (const course of IMAGES) {
       if (!course.image) throw new Error(`${course.slug}: no image text in local-courses.mjs`);
       const file = path.join(tmp, `${course.slug}.html`);
       fs.writeFileSync(file, imageHtml(course.image));

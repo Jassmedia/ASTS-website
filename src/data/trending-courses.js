@@ -62,7 +62,7 @@ export const TRENDING_COURSES = [
     id: 'arcs-online-training',
     title: 'ARCS Online Training',
     url: '/courses/arcs-online-training/',
-    image: { src: '/wp-content/uploads/2021/02/ARCS-Online-Training-400x250.jpg', width: 400, height: 250, alt: 'ARCS Online Training' },
+    image: { src: '/images/courses/arcs-online-training.webp', width: 1000, height: 600, alt: 'ARCS Online Training' },
     category: { name: 'Hyperion', url: '/courses-category/hyperion/' },
     duration: '10 Weeks',
   },

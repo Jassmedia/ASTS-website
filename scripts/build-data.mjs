@@ -3,6 +3,7 @@
 import fs from 'fs';
 import path from 'path';
 import { LOCAL_COURSES, PUBLISHED } from '../src/data/local-courses.mjs';
+import { COURSE_IMAGE_OVERRIDES, courseImagePath } from '../src/data/course-images.mjs';
 import { NOINDEX_PAGES, PAGE_REDIRECTS } from '../src/data/retired-pages.mjs';
 import { resolveLegacyUrl } from '../src/lib/legacy-urls.js';
 
@@ -129,9 +130,10 @@ const index = order.map((o, i) => {
     lessonsLabel: card.lessons,
     quizzesLabel: card.quizzes,
     studentsLabel: card.students,
-    thumb: rel(card.thumb),
+    // Courses listed in data/course-images.mjs use their drawn name image instead of the WordPress one.
+    thumb: COURSE_IMAGE_OVERRIDES[c.slug] ? courseImagePath(c.slug) : rel(card.thumb),
     thumbAlt: card.thumbAlt,
-    preview: rel(c.previewImg),
+    preview: COURSE_IMAGE_OVERRIDES[c.slug] ? courseImagePath(c.slug) : rel(c.previewImg),
     previewAlt: c.previewAlt,
     short: card.short,
     price: coursePrice(c.price),
